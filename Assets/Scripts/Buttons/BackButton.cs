@@ -1,0 +1,78 @@
+using UnityEngine;
+using System.Collections;
+
+public class BackButton : Button
+{
+    [Header("Scripts")]
+    [SerializeField] ClueScreen clueScreen;
+    [SerializeField] GameManager gameManager;
+
+    [Header("Back Arrow Transforms")]
+    [Tooltip("The Back Arrow should start offscreen at the bottom, move to the lower-right corner, and then exit offscreen to the right")]
+    [SerializeField] Vector3 OnscreenPosition;
+    [SerializeField] Vector3 BelowOffscreenPosition;
+    [SerializeField] Vector3 RightOffscreenPosition;
+    [SerializeField] float arrowMovementSpeed;
+
+    [Header("Delays")]
+    [SerializeField] float arrowMoveInDelay;
+
+    bool canMoveArrow = false;
+    Vector3 arrowDestination;
+
+    private void Start()
+    {
+        NotInteractable();
+        transform.position = BelowOffscreenPosition;
+    }
+
+    private void Update()
+    {
+        float stepBackArrow = Time.deltaTime * arrowMovementSpeed;
+
+        if (transform.localPosition != arrowDestination && canMoveArrow)
+        {
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition, arrowDestination, stepBackArrow);
+        }
+
+        if (transform.localPosition == arrowDestination)
+        {
+            canMoveArrow = false;
+            if (transform.localPosition == RightOffscreenPosition) transform.localPosition = BelowOffscreenPosition;
+        }
+    }
+
+    public void CanMoveArrowIn()
+    {
+        StartCoroutine(WaitToBringInArrow());
+    }
+
+    IEnumerator WaitToBringInArrow()
+    {
+        yield return new WaitForSeconds(arrowMoveInDelay);
+
+        Interactable();
+        canMoveArrow = true;
+        arrowDestination = OnscreenPosition;
+    }
+
+    void CanMoveArrowOut()
+    {
+        NotInteractable();
+        canMoveArrow = true;
+        arrowDestination = RightOffscreenPosition;
+    }
+
+    protected override void OnMouseDown()
+    {
+        if (interactable)
+        {
+            interactable = false;
+            GetComponent<SpriteRenderer>().sprite = mouseDown;
+
+            clueScreen.MoveOutClue();
+            CanMoveArrowOut();
+            gameManager.BackButtonPressed();
+        }
+    }
+}
