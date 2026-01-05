@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The billionaire CEO of a technology company based in Cupertino
+  clueText: A cancelled role-playing game that sounds a like popular franchise fighting
+    this very category
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

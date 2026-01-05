@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: "An early collaborator of director Pedro Almod\xF3var, this actor voices
-    a recurring role in the Shrek franchise"
+  clueText: Ron Howard adapated the events of this tumultuous mission for the silver
+    screen
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

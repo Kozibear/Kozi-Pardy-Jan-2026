@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 4-3 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: An adjective used to describe something that's cheerful, and a person
-    at this party
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

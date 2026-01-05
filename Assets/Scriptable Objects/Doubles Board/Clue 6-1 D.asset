@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 6-1 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A motorsport that returns to Notre Dame Island every Summer
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

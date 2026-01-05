@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: "Pork, beef and potatoes are the main ingredients of this baked dish
-    that's traditionally served on Christmas and New Year\u2019s Eve"
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

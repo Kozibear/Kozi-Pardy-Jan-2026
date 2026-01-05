@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 6-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Originally from Puerto Rico, its name means "strained pineapple" in Spanish
+  clueText: The protagonists of this action-fantasy series are named after a famous
+    set of biblical vices
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

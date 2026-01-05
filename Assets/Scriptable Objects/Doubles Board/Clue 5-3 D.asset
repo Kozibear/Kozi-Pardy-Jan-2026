@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-3 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A cloud of dust follows this Charles Schulz character wherever he goes
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

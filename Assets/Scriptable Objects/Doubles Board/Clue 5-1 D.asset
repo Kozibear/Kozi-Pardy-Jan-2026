@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-1 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This toy aisle mainstay was portrayed by Margot Robbie on the silver
-    screen
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

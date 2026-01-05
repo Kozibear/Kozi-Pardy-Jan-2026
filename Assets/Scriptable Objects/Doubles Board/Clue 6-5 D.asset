@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 6-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: "Competitors in some disciplines of this sport are required to wear an
-    electrically conductive jacket known as a \"lam\xE9\""
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

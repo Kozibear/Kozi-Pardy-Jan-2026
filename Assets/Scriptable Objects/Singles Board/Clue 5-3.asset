@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Long, narrow, and the name of a Pixar Protagonist
+  clueText: The "inhabitants" of this fictional restaurant chain worship a claw
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A viral scene involving a chicken sent screenings of this video game
-    adaptation into chaos
+  clueText: A warrior from the sewers named after a sculptor from the Italian Renaissance
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

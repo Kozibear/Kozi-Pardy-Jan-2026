@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 1-3 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This northern city shares the same name as a popular lunch meat
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

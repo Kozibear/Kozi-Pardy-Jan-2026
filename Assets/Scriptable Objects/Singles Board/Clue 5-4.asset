@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Only four letters, and often used in baked dishes
+  clueText: A college town chain themed around the characters of Art Clokey
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Curvier versions of it are sometimes named after an upper body part
+  clueText: A ghost kitchen delivery service called "Pasqually's Pizza & Wings" operated
+    out of this chain's locations during the pandemic
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

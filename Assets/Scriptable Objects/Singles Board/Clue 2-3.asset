@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The latest entry in an action-comedy franchise that originally starred
-    Leslie Nielsen
+  clueText: An Italian-American actor who made his film debut in Sam Raimi's Spider-Man
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

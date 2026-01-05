@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 1-1 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: It wasn't built in a day
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

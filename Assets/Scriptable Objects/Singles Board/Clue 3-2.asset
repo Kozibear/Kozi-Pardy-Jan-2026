@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 3-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: "\u201CThe way I see it, if you're gonna build a time machine into a
-    car, why not do it with some style?\u201D"
+  clueText: 'Ben Starr portrayed the main character of this acclaimed roguelike '
   haikuClueText: []
   songLyricText:
   - To protect the world from devastation!

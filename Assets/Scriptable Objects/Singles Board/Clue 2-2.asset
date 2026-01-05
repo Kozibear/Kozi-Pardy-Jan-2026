@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: An animated movie from Sony Pictures with a Golden reputation
+  clueText: The namesake of both a Shakespearean play and a board game invented in
+    1883
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

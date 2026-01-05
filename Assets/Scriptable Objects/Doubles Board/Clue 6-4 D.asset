@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 6-4 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A sport played on four legs; even if you've never watched it, you've
-    likely worn it
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

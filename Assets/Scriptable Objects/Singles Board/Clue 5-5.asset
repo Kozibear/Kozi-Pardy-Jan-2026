@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Its name and appearance suggest it emerged from a cocoon
+  clueText: This San Francisco-based establishment is not to be confused with an
+    esports commentator
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

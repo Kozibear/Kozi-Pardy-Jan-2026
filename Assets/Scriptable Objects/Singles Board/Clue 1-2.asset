@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A musical group from Liverpool that began its life as "The Quarrymen"
+  clueText: Major games that released during it include Bioshock Infinite, The Last
+    of Us and Grand Theft Auto V
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

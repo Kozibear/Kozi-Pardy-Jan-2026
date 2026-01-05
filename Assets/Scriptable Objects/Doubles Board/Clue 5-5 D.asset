@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: An actress, singer, and former American Idol judge often goes by this
-    two-syllable abbreviation
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

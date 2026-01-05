@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 1-4 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The setting of a star-crossed tragedy written by an English playwright
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

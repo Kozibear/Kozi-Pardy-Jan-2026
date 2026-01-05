@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-4 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This restaurant chain is named after the Montreal commercial street it
-    was founded on in 1951
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

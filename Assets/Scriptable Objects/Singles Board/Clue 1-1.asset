@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The creator and host of the most popular drag race on network television
+  clueText: The first horror franchise that IllFonic adapted into an asymmetrical
+    multiplayer game
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

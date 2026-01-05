@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 3-1 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Capable of forming during thunderstorms, it is not to be confused with
-    an enthusiastic greeting
+  clueText: N/A
   haikuClueText: []
   songLyricText:
   - I wanna be the very best

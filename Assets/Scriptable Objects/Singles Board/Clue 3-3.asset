@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: "\u201CLook! It's moving. It's alive. It's alive... It's alive, it's
-    moving, it's alive, it's alive, it's alive, it's alive, IT'S ALIVE!\u201D"
+  clueText: "A Japanese multimedia franchise that literally translates to \u201CKing
+    of Games\u201D"
   haikuClueText: []
   songLyricText:
   - It's a whole new place,

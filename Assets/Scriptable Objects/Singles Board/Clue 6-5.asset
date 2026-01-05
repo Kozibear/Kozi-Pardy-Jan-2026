@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 6-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: "Japanese liqueur is the star of this drink that\u2019ll leave your lips
-    puckered"
+  clueText: It's Kozibear
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

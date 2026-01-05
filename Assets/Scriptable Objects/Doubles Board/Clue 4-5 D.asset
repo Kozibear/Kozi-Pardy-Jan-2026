@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 4-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A specially-selected piece of timber, and a contraction
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

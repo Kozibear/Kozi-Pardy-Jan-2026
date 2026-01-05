@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 6-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A beverage with five types of alcohol from the southeastern tip of New
-    York state
+  clueText: "A Shonen franchise set during the Taish\u014D era; its first movie was
+    the highest-grossing film of 2020"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

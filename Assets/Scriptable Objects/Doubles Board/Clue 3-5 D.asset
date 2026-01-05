@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 3-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: An "explosive" phenomena that occurs when cold air from the Earth's polar
-    vortex is pushed south
+  clueText: N/A
   haikuClueText: []
   songLyricText:
   - It's a whole new place,

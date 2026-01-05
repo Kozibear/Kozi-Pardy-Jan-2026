@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: "A fire-breathing monster with a lion's head, a goat's body, and a snake\u2019s
-    tail"
+  clueText: A hugely successful Kickstarter campaign funded this spiritual successor
+    to a Konami-owned franchise
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

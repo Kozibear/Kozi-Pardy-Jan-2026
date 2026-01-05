@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 4-2 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A piece of clothing that holds gifts, and the act of obsessively following
-    someone
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 6-3 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A winter sport in which teams of 2 to 4 athletes make timed speed runs
-    down tracks of ice
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

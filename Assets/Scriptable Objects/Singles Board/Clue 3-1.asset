@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: '"Damn it, man, I''m a doctor, not a physicist!"'
+  clueText: Second Dinner developed this game that recalls one of the MCU's most
+    harrowing moments
   haikuClueText: []
   songLyricText:
   - I wanna be the very best

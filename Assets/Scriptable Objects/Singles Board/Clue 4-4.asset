@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Considered an invasive species in many parts of the world, its gel is
-    found in countless commercial products
+  clueText: This villainous scientist has been depicted on the silver screen by both
+    Tyler Perry and Giancarlo Esposito
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

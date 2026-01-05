@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 3-2 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The namesake of both a renowned video game studio and a fast food chain's
-    signature dessert
+  clueText: N/A
   haikuClueText: []
   songLyricText:
   - To protect the world from devastation!

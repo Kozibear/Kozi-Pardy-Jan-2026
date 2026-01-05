@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The cast of this Mississippi period piece are no saints
+  clueText: These American entertainers were the highest-paid comedy duo during the
+    Second World War
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

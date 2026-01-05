@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 3-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: "\u201CYou have brains in your head. You have feet in your shoes. You
-    can steer yourself any direction you choose.\u201D"
+  clueText: This sanguine minigame was playable in 2024 Game of the Year nominee
   haikuClueText: []
   songLyricText:
   - It's a whole new place,

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: '"The power of the sun, in the palm of my hand!"'
+  clueText: A "racing" game from the makers of Pokemon that first debuted on the
+    3DS in 2013
   haikuClueText: []
   songLyricText:
   - It's a whole new place,

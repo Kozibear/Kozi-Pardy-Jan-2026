@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 6-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A mix Ginger Beer, Vodka and Lime that will take you to a capital on
-    the other side of the world
+  clueText: The name of this studio Ghibli movie means "Red Pig" in Italian
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

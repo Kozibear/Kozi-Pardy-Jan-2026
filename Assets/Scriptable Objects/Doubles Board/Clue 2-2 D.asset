@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-2 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The fruit used to make this fermented beverage is frozen before being
-    harvested
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

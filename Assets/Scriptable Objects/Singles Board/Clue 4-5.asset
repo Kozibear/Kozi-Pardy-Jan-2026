@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A large, cauldron-like hollow that forms shortly after a volcanic eruption
+  clueText: Located 30 kilometers offshore from Manhattan, it was used by the Patriots
+    to disguise the development of a submersible fortress
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

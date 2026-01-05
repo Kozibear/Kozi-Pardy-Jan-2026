@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The latest film from Academy Award-winning director Bong Joon Ho
+  clueText: This citrus-flavored soft drink was introduced in 1979 to compete with
+    Mountain Dew
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

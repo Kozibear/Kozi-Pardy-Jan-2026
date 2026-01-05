@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 4-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A substance used to enhance and thicken eyelashes
+  clueText: A rhythm-based VR game that first released in 2019
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}
