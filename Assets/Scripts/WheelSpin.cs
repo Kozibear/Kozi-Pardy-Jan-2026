@@ -49,7 +49,7 @@ public class WheelSpin : MonoBehaviour
         wheelAndArrow.transform.localPosition = moveOutPosition;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         float step = Time.deltaTime * moveSpeed;
 

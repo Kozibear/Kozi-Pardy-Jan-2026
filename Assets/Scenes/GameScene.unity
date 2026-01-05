@@ -2600,7 +2600,7 @@ SpriteRenderer:
   m_SortingLayerID: 88982989
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: cf234a0ae15146e4a90e55457cc7bd86, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 660fc6afd6960a24b97b36dcfc673a40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2657,8 +2657,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CategoryTitleChange
   spriteRenderer: {fileID: 260839256}
-  singleTitle: {fileID: 21300000, guid: cf234a0ae15146e4a90e55457cc7bd86, type: 3}
-  doubleTitle: {fileID: 21300000, guid: d3fccc75ca4907e488cd03725a065f8d, type: 3}
+  singleTitle: {fileID: 21300000, guid: 660fc6afd6960a24b97b36dcfc673a40, type: 3}
+  doubleTitle: {fileID: 21300000, guid: 660fc6afd6960a24b97b36dcfc673a40, type: 3}
 --- !u!1 &261109451
 GameObject:
   m_ObjectHideFlags: 0
@@ -9539,7 +9539,7 @@ SpriteRenderer:
   m_SortingLayerID: 88982989
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: ebc13f019bc0ff24fa39716cdbcb5a81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83797b482cacd8345915e232970a0e5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9596,8 +9596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CategoryTitleChange
   spriteRenderer: {fileID: 974529605}
-  singleTitle: {fileID: 21300000, guid: ebc13f019bc0ff24fa39716cdbcb5a81, type: 3}
-  doubleTitle: {fileID: 21300000, guid: bc6dd312d5b4f5140ae413f074d4938e, type: 3}
+  singleTitle: {fileID: 21300000, guid: 83797b482cacd8345915e232970a0e5d, type: 3}
+  doubleTitle: {fileID: 21300000, guid: 83797b482cacd8345915e232970a0e5d, type: 3}
 --- !u!1 &988714097
 GameObject:
   m_ObjectHideFlags: 0
@@ -10006,7 +10006,7 @@ SpriteRenderer:
   m_SortingLayerID: 88982989
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 3435993740570bc46af13c72308eba02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1269fca862b57be43abd235d1473f58c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10063,8 +10063,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CategoryTitleChange
   spriteRenderer: {fileID: 1013308774}
-  singleTitle: {fileID: 21300000, guid: 3435993740570bc46af13c72308eba02, type: 3}
-  doubleTitle: {fileID: 21300000, guid: d2ac93281134070489b531368b19aeeb, type: 3}
+  singleTitle: {fileID: 21300000, guid: 1269fca862b57be43abd235d1473f58c, type: 3}
+  doubleTitle: {fileID: 21300000, guid: 1269fca862b57be43abd235d1473f58c, type: 3}
 --- !u!1 &1025573372
 GameObject:
   m_ObjectHideFlags: 0
@@ -14112,7 +14112,7 @@ SpriteRenderer:
   m_SortingLayerID: 88982989
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 47a18cae21a61ea42abb7b00b7ffca33, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 374d0bd6db43de646bab26c53a3695e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14169,8 +14169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CategoryTitleChange
   spriteRenderer: {fileID: 1429556845}
-  singleTitle: {fileID: 21300000, guid: 47a18cae21a61ea42abb7b00b7ffca33, type: 3}
-  doubleTitle: {fileID: 21300000, guid: 089a1bfb516f8364e8ef733098cf96e8, type: 3}
+  singleTitle: {fileID: 21300000, guid: 374d0bd6db43de646bab26c53a3695e7, type: 3}
+  doubleTitle: {fileID: 21300000, guid: 374d0bd6db43de646bab26c53a3695e7, type: 3}
 --- !u!1 &1445055320
 GameObject:
   m_ObjectHideFlags: 0
@@ -15244,8 +15244,8 @@ MonoBehaviour:
   moveOutPosition: {x: 0, y: 10.75, z: 0}
   moveInSpeed: 39.5
   moveOutSpeed: 41
-  rotationSpeed: 5
-  rotationSubtractionFactor: 2.6
+  rotationSpeed: 20
+  rotationSubtractionFactor: 12
   panicButton: {fileID: 1008689313}
 --- !u!1 &1704852647
 GameObject:
@@ -16063,7 +16063,7 @@ SpriteRenderer:
   m_SortingLayerID: 88982989
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 8770bcb6f1230a04f8ca040ba5f3c3f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37e025f57de478f4a93219ea9710ec37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16120,8 +16120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CategoryTitleChange
   spriteRenderer: {fileID: 1800625531}
-  singleTitle: {fileID: 21300000, guid: 8770bcb6f1230a04f8ca040ba5f3c3f0, type: 3}
-  doubleTitle: {fileID: 21300000, guid: 40a7b49e0d8f6f743b1a6355affd39bc, type: 3}
+  singleTitle: {fileID: 21300000, guid: 37e025f57de478f4a93219ea9710ec37, type: 3}
+  doubleTitle: {fileID: 21300000, guid: 37e025f57de478f4a93219ea9710ec37, type: 3}
 --- !u!1 &1835516619
 GameObject:
   m_ObjectHideFlags: 0
@@ -16578,7 +16578,7 @@ MonoBehaviour:
     Decks Stuff'
   - 'That''s
 
-    B___ S___ Tim!'
+    B__ S__ Tim!'
   - 'The Pizza
 
     People Pick'
@@ -18187,7 +18187,7 @@ SpriteRenderer:
   m_SortingLayerID: 88982989
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 8f1284e72352ee246a0fc4be7e5e3e4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98c460eaa4da9614ba5589b8703af60b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18244,8 +18244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CategoryTitleChange
   spriteRenderer: {fileID: 2101298104}
-  singleTitle: {fileID: 21300000, guid: 8f1284e72352ee246a0fc4be7e5e3e4d, type: 3}
-  doubleTitle: {fileID: 21300000, guid: 3245e96b61d5ee943a364925fa94ab48, type: 3}
+  singleTitle: {fileID: 21300000, guid: 98c460eaa4da9614ba5589b8703af60b, type: 3}
+  doubleTitle: {fileID: 21300000, guid: 98c460eaa4da9614ba5589b8703af60b, type: 3}
 --- !u!1 &2102737378
 GameObject:
   m_ObjectHideFlags: 0

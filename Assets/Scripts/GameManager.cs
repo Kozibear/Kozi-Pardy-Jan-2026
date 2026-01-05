@@ -182,10 +182,10 @@ public class GameManager : MonoBehaviour
     {
         clues = cluesDouble;
 
-        wheelSpinButton.gameObject.SetActive(false);
+        //wheelSpinButton.gameObject.SetActive(false);
 
-        doublesBoardButton.gameObject.SetActive(true);
-        doublesBoardButton.BrightenAndInteractable();
+        //doublesBoardButton.gameObject.SetActive(true);
+        //doublesBoardButton.BrightenAndInteractable();
 
         beforeSwitchToDoubles = true;
     }
