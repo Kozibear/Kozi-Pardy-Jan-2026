@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This villainous scientist has been depicted on the silver screen by both
-    Tyler Perry and Giancarlo Esposito
+  clueText: This scientist has been depicted on the silver screen by both Tyler Perry
+    and Giancarlo Esposito
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 3-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A "racing" game from the makers of Pokemon that first debuted on the
-    3DS
+  clueText: A "racing" game from the makers of Pokemon that debuted on the 3DS
   haikuClueText: []
   songLyricText:
   - It's a whole new place,
