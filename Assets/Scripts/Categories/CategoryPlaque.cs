@@ -27,16 +27,25 @@ public class CategoryPlaque : MonoBehaviour
 
         if (canMove && transform.localPosition != currentDestination)
         {
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, currentDestination, step);
+            MoveToDestination(step);
         }
 
         if (canMove && transform.localPosition == currentDestination)
         {
-            canMove = false;
-
-            if (canDestroy) { Destroy(gameObject); }
-            categoryCover.GetComponent<SpriteFade>().FadeOut();
+            ArrivedAtDestination();
         }
+    }
+
+    private void ArrivedAtDestination()
+    {
+        canMove = false;
+        if (canDestroy) { Destroy(gameObject); }
+        categoryCover.GetComponent<SpriteFade>().FadeOut();
+    }
+
+    private void MoveToDestination(float step)
+    {
+        transform.localPosition = Vector3.MoveTowards(transform.localPosition, currentDestination, step);
     }
 
     public void SetCategoryText(string categoryName)
@@ -57,5 +66,4 @@ public class CategoryPlaque : MonoBehaviour
         currentDestination = offScreenPosition;
         canDestroy = true;
     }
-
 }
