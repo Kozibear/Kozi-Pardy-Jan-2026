@@ -49,37 +49,52 @@ public class WheelSpin : MonoBehaviour
         wheelAndArrow.transform.localPosition = moveOutPosition;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         float step = Time.deltaTime * moveSpeed;
 
         if (canMove && wheelAndArrow.transform.localPosition != destinationPosition)
         {
-            wheelAndArrow.transform.localPosition = Vector3.MoveTowards(wheelAndArrow.transform.localPosition, destinationPosition, step);
+            MoveToDestination(step);
+        }
 
-            if (wheelAndArrow.transform.localPosition == destinationPosition)
-            {
-                canMove = false;
-                if (destinationPosition == moveOutPosition)
-                {
-                    foreach (WheelSegment segment in wheelSegments) { segment.DestroyChild(); }
-                    justWheel.transform.eulerAngles = new Vector3(0, 0, 0);
-                }    
-            }
+        if (wheelAndArrow.transform.localPosition == destinationPosition)
+        {
+            ArrivedAtDestination();
         }
 
         if (canRotate)
         {
-            justWheel.transform.Rotate(0, 0, -tempRotationSpeed);
-            tempRotationSpeed -= Time.deltaTime * rotationSubtractionFactor;
-
-            if (tempRotationSpeed <= 0)
-            {
-                canRotate = false;
-                justWheel.transform.Rotate(0, 0, 0);
-                wheelArrow.SelectSegment();
-            }
+            Rotate();
         }
+    }
+
+    private void Rotate()
+    {
+        justWheel.transform.Rotate(0, 0, -tempRotationSpeed);
+        tempRotationSpeed -= Time.deltaTime * rotationSubtractionFactor;
+
+        if (tempRotationSpeed <= 0)
+        {
+            canRotate = false;
+            justWheel.transform.Rotate(0, 0, 0);
+            wheelArrow.SelectSegment();
+        }
+    }
+
+    private void ArrivedAtDestination()
+    {
+        canMove = false;
+        if (destinationPosition == moveOutPosition)
+        {
+            foreach (WheelSegment segment in wheelSegments) { segment.DestroyChild(); }
+            justWheel.transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+    }
+
+    private void MoveToDestination(float step)
+    {
+        wheelAndArrow.transform.localPosition = Vector3.MoveTowards(wheelAndArrow.transform.localPosition, destinationPosition, step);
     }
 
     public void StartWheelSpin()
