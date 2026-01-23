@@ -27,38 +27,48 @@ public abstract class ColorFade : MonoBehaviour
     {
         if (fadeInBool)
         {
-            tempColor.r += Time.deltaTime * fadeInSpeed;
-            tempColor.g += Time.deltaTime * fadeInSpeed;
-            tempColor.b += Time.deltaTime * fadeInSpeed;
-
-            SetColor(tempColor);
-
-            if (tempColor.r >= fadeInThreshold)
-            {
-                Color color = new Color(fadeInThreshold, fadeInThreshold, fadeInThreshold, 1f);
-                SetColor(color);
-
-                inTheMiddleOfFading = false;
-                fadeInBool = false;
-            }
+            FadeInColor();
         }
 
         if (fadeOutBool && tempColor.r > fadeOutThreshold)
         {
-            tempColor.r -= Time.deltaTime * fadeOutSpeed;
-            tempColor.g -= Time.deltaTime * fadeOutSpeed;
-            tempColor.b -= Time.deltaTime * fadeOutSpeed;
+            FadeOutColor();
+        }
+    }
 
-            SetColor(tempColor);
+    private void FadeOutColor()
+    {
+        tempColor.r -= Time.deltaTime * fadeOutSpeed;
+        tempColor.g -= Time.deltaTime * fadeOutSpeed;
+        tempColor.b -= Time.deltaTime * fadeOutSpeed;
 
-            if (tempColor.r <= fadeOutThreshold)
-            {
-                Color color = new Color(fadeOutThreshold, fadeOutThreshold, fadeOutThreshold, 1f);
-                SetColor(color);
+        SetColor(tempColor);
 
-                inTheMiddleOfFading = false;
-                fadeOutBool = false;
-            }
+        if (tempColor.r <= fadeOutThreshold)
+        {
+            Color color = new Color(fadeOutThreshold, fadeOutThreshold, fadeOutThreshold, 1f);
+            SetColor(color);
+
+            inTheMiddleOfFading = false;
+            fadeOutBool = false;
+        }
+    }
+
+    private void FadeInColor()
+    {
+        tempColor.r += Time.deltaTime * fadeInSpeed;
+        tempColor.g += Time.deltaTime * fadeInSpeed;
+        tempColor.b += Time.deltaTime * fadeInSpeed;
+
+        SetColor(tempColor);
+
+        if (tempColor.r >= fadeInThreshold)
+        {
+            Color color = new Color(fadeInThreshold, fadeInThreshold, fadeInThreshold, 1f);
+            SetColor(color);
+
+            inTheMiddleOfFading = false;
+            fadeInBool = false;
         }
     }
 

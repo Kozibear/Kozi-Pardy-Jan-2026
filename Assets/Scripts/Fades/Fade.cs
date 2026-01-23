@@ -24,21 +24,25 @@ public abstract class Fade : MonoBehaviour
 
     void Update()
     {
-        if (fadeInBool)
-        {
-            tempColor.a += Time.deltaTime * fadeInSpeed;
-            SetColor(tempColor);
+        if (fadeInBool) { FadeInGraphic(); }
 
-            if (tempColor.a >= fadeInThreshold) fadeInBool = false;
-        }
+        if (fadeOutBool) { FadeOutGraphic(); }
+    }
 
-        if (fadeOutBool)
-        {
-            tempColor.a -= Time.deltaTime * fadeOutSpeed;
-            SetColor(tempColor);
+    private void FadeOutGraphic()
+    {
+        tempColor.a -= Time.deltaTime * fadeOutSpeed;
+        SetColor(tempColor);
 
-            if (tempColor.a <= fadeOutThreshold) fadeOutBool = false;
-        }
+        if (tempColor.a <= fadeOutThreshold) fadeOutBool = false;
+    }
+
+    private void FadeInGraphic()
+    {
+        tempColor.a += Time.deltaTime * fadeInSpeed;
+        SetColor(tempColor);
+
+        if (tempColor.a >= fadeInThreshold) fadeInBool = false;
     }
 
     public void FadeIn()
