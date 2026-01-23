@@ -140,7 +140,7 @@ public class GameManager : MonoBehaviour
         blackBackgroundFade.SetFadeInThreshold(0.4f);
         blackBackgroundFade.SetFadeSpeeds(2.8f);
         blackBackgroundFade.FadeIn();
-        blur.BlurBackground();
+        blur.StartBlurBackground();
     }
 
     public void ActivateButtonsAndHideWheel(List<int> buttonsToActivate)
@@ -151,7 +151,7 @@ public class GameManager : MonoBehaviour
         }
         wheelSpin.MoveOutWheelSpin();
         blackBackgroundFade.FadeOut();
-        blur.UnBlurBackground();
+        blur.StartUnBlurBackground();
         canShowClue = true;
     }
 

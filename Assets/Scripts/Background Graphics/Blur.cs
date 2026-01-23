@@ -27,30 +27,40 @@ public class Blur : MonoBehaviour
     {
         if (canBlur)
         {
-            currentDOFvalue -= Time.deltaTime * blurSpeed;
-            depthOfField.focusDistance.value = currentDOFvalue; 
-
-            if (depthOfField.focusDistance.value <= blurThreshold) canBlur = false;
+            BlurAction();
         }
 
         if (canUnBlur)
         {
-            currentDOFvalue += Time.deltaTime * unBlurSpeed;
-            depthOfField.focusDistance.value = currentDOFvalue;
-
-            if (depthOfField.focusDistance.value >= unBlurThreshold) canUnBlur = false;
+            UnBlurAction();
         }
     }
 
+    private void UnBlurAction()
+    {
+        currentDOFvalue += Time.deltaTime * unBlurSpeed;
+        depthOfField.focusDistance.value = currentDOFvalue;
+
+        if (depthOfField.focusDistance.value >= unBlurThreshold) canUnBlur = false;
+    }
+
+    private void BlurAction()
+    {
+        currentDOFvalue -= Time.deltaTime * blurSpeed;
+        depthOfField.focusDistance.value = currentDOFvalue;
+
+        if (depthOfField.focusDistance.value <= blurThreshold) canBlur = false;
+    }
+
     [ContextMenu("Test BlurBackground")]
-    public void BlurBackground()
+    public void StartBlurBackground()
     {
         currentDOFvalue = depthOfField.focusDistance.value;
         canBlur = true;
     }
 
     [ContextMenu("Test UnBlurBackground")]
-    public void UnBlurBackground()
+    public void StartUnBlurBackground()
     {
         currentDOFvalue = depthOfField.focusDistance.value;
         canUnBlur = true;
