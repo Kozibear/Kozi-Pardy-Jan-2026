@@ -31,27 +31,37 @@ public class ClueScreen : MonoBehaviour
 
         if (transform.localPosition != destinationPosition && canMoveClue)
         {
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, destinationPosition, step);
+            MoveToDestination(step);
         }
 
         if (canMoveClue && transform.localPosition == destinationPosition)
         {
-            canMoveClue = false;
-
-            if (transform.localPosition == moveInPosition)
-            {
-                gameManager.HardDeActivationAndHidePointNumber();
-                backButton.CanMoveArrowIn();
-
-                wheelSpin.CheckIfSinglesAreDone();
-            }
-            if (transform.localPosition == moveOffscreenAbovePosition)
-            {
-                gameManager.BoardBeforeWheelSpin();
-                transform.localPosition = moveOffscreenBelowPosition;
-                if (ClueImagesSpawnPoint.transform.childCount > 0) Destroy(ClueImagesSpawnPoint.transform.GetChild(0).gameObject);
-            }
+            ArrivedAtDestination();
         }
+    }
+
+    private void ArrivedAtDestination()
+    {
+        canMoveClue = false;
+
+        if (transform.localPosition == moveInPosition)
+        {
+            gameManager.HardDeActivationAndHidePointNumber();
+            backButton.CanMoveArrowIn();
+
+            wheelSpin.CheckIfSinglesAreDone();
+        }
+        if (transform.localPosition == moveOffscreenAbovePosition)
+        {
+            gameManager.BoardBeforeWheelSpin();
+            transform.localPosition = moveOffscreenBelowPosition;
+            if (ClueImagesSpawnPoint.transform.childCount > 0) Destroy(ClueImagesSpawnPoint.transform.GetChild(0).gameObject);
+        }
+    }
+
+    private void MoveToDestination(float step)
+    {
+        transform.localPosition = Vector3.MoveTowards(transform.localPosition, destinationPosition, step);
     }
 
     public void MoveInClue()
