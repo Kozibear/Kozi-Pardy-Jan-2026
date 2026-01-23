@@ -30,33 +30,31 @@ public class WheelspinButton : Button
     {
         if (interactable)
         {
-            if (pulsingUp)
-            {
-                tempColor.r += Time.deltaTime * pulseSpeed;
-                tempColor.g += Time.deltaTime * pulseSpeed;
-                tempColor.b += Time.deltaTime * pulseSpeed;
-
-                gameObject.GetComponent<SpriteRenderer>().color = tempColor;
-
-                if (tempColor.r >= maxPulse.r)
-                {
-                    pulsingUp = false;
-                }
-            }
-            else
-            {
-                tempColor.r -= Time.deltaTime * pulseSpeed/1.1f;
-                tempColor.g -= Time.deltaTime * pulseSpeed/1.1f;
-                tempColor.b -= Time.deltaTime * pulseSpeed/1.1f;
-
-                gameObject.GetComponent<SpriteRenderer>().color = tempColor;
-
-                if (tempColor.r <= minPulse.r)
-                {
-                    pulsingUp = true;
-                }
-            }
+            if (pulsingUp) { PulsingUpButton(); }
+            else { PulsingDownButton(); }
         }
+    }
+
+    private void PulsingDownButton()
+    {
+        tempColor.r -= Time.deltaTime * pulseSpeed / 1.1f;
+        tempColor.g -= Time.deltaTime * pulseSpeed / 1.1f;
+        tempColor.b -= Time.deltaTime * pulseSpeed / 1.1f;
+
+        gameObject.GetComponent<SpriteRenderer>().color = tempColor;
+
+        if (tempColor.r <= minPulse.r) { pulsingUp = true; }
+    }
+
+    private void PulsingUpButton()
+    {
+        tempColor.r += Time.deltaTime * pulseSpeed;
+        tempColor.g += Time.deltaTime * pulseSpeed;
+        tempColor.b += Time.deltaTime * pulseSpeed;
+
+        gameObject.GetComponent<SpriteRenderer>().color = tempColor;
+
+        if (tempColor.r >= maxPulse.r) { pulsingUp = false; }
     }
 
     protected override void OnMouseDown()

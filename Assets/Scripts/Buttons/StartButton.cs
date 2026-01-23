@@ -9,12 +9,14 @@ public class StartButton : Button
 
     protected override void OnMouseDown()
     {
-        if (interactable)
-        {
-            interactable = false;
-            GetComponent<SpriteRenderer>().sprite = mouseDown;
+        if (interactable) { StartButtonPressed(); }
+    }
 
-            splashScreen.OnStartButtonPressed();
-        }
+    private void StartButtonPressed()
+    {
+        interactable = false;
+        GetComponent<SpriteRenderer>().sprite = mouseDown;
+
+        splashScreen.OnStartButtonPressed();
     }
 }

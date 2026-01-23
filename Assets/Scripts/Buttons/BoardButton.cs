@@ -34,10 +34,7 @@ public class BoardButton : Button
 
     public bool GetHasBeenClicked() { return hasBeenClicked; }
 
-    public bool WasJustInteractable()
-    {
-        return wasJustInteractable;
-    }
+    public bool WasJustInteractable() { return wasJustInteractable; }
 
     public void InteractableFadeIn()
     {
@@ -104,8 +101,5 @@ public class BoardButton : Button
         }
     }
 
-    public bool GetInteractable()
-    {
-        return interactable;
-    }
+    public bool GetInteractable() { return interactable; }
 }

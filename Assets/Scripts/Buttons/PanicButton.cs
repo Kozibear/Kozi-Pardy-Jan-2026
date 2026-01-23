@@ -10,18 +10,17 @@ public class PanicButton : Button
         NotInteractable();
     }
 
-
-
     protected override void OnMouseDown()
     {
-        if (interactable)
-        {
-            foreach (BoardButton boardbutton in boardButtons)
-            {
-                if (!boardbutton.GetInteractable()) boardbutton.InteractableFadeIn();
-            }
+        if (interactable) { PanicButtonPressed(); }
+    }
 
-            NotInteractable();
+    private void PanicButtonPressed()
+    {
+        foreach (BoardButton boardbutton in boardButtons)
+        {
+            if (!boardbutton.GetInteractable()) boardbutton.InteractableFadeIn();
         }
+        NotInteractable();
     }
 }

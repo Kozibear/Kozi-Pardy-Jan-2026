@@ -32,14 +32,24 @@ public class BackButton : Button
 
         if (transform.localPosition != arrowDestination && canMoveArrow)
         {
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, arrowDestination, stepBackArrow);
+            MoveArrowToDestination(stepBackArrow);
         }
 
         if (transform.localPosition == arrowDestination)
         {
-            canMoveArrow = false;
-            if (transform.localPosition == RightOffscreenPosition) transform.localPosition = BelowOffscreenPosition;
+            ArrowIsAtDestination();
         }
+    }
+
+    private void ArrowIsAtDestination()
+    {
+        canMoveArrow = false;
+        if (transform.localPosition == RightOffscreenPosition) transform.localPosition = BelowOffscreenPosition;
+    }
+
+    private void MoveArrowToDestination(float stepBackArrow)
+    {
+        transform.localPosition = Vector3.MoveTowards(transform.localPosition, arrowDestination, stepBackArrow);
     }
 
     public void CanMoveArrowIn()
@@ -65,14 +75,16 @@ public class BackButton : Button
 
     protected override void OnMouseDown()
     {
-        if (interactable)
-        {
-            interactable = false;
-            GetComponent<SpriteRenderer>().sprite = mouseDown;
+        if (interactable) { BackButtonClicked(); }
+    }
 
-            clueScreen.MoveOutClue();
-            CanMoveArrowOut();
-            gameManager.BackButtonPressed();
-        }
+    private void BackButtonClicked()
+    {
+        interactable = false;
+        GetComponent<SpriteRenderer>().sprite = mouseDown;
+
+        clueScreen.MoveOutClue();
+        CanMoveArrowOut();
+        gameManager.BackButtonPressed();
     }
 }
