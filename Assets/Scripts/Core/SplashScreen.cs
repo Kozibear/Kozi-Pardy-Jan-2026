@@ -35,8 +35,7 @@ public class SplashScreen : MonoBehaviour
 
         if (moveOutStuff)
         {
-            koziDeskImage.transform.localPosition = Vector3.MoveTowards(koziDeskImage.transform.localPosition, koziDeskOffscreenPosition, step1);
-            koziPardyTitle.transform.localPosition = Vector3.MoveTowards(koziPardyTitle.transform.localPosition, koziPardyOffscreenPosition, step2);
+            MoveOutObjects(step1, step2);
         }
 
         if (moveOutStuff
@@ -46,5 +45,11 @@ public class SplashScreen : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+    }
+
+    private void MoveOutObjects(float step1, float step2)
+    {
+        koziDeskImage.transform.localPosition = Vector3.MoveTowards(koziDeskImage.transform.localPosition, koziDeskOffscreenPosition, step1);
+        koziPardyTitle.transform.localPosition = Vector3.MoveTowards(koziPardyTitle.transform.localPosition, koziPardyOffscreenPosition, step2);
     }
 }
