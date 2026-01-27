@@ -35,7 +35,9 @@ public class WheelSpin : MonoBehaviour
     [Header("Rotation")]
     [SerializeField] float rotationSpeed;
     [SerializeField] float rotationSubtractionFactor;
+    [SerializeField] float rotationSlowFactor;
     private float tempRotationSpeed;
+    private float tempSubtractionFactor;
 
     [Header("Panic Button")]
     [SerializeField] PanicButton panicButton;
@@ -69,22 +71,15 @@ public class WheelSpin : MonoBehaviour
         }
     }
 
-    private void Rotate()
+    private void MoveToDestination(float step)
     {
-        justWheel.transform.Rotate(0, 0, -tempRotationSpeed);
-        tempRotationSpeed -= Time.deltaTime * rotationSubtractionFactor;
-
-        if (tempRotationSpeed <= 0)
-        {
-            canRotate = false;
-            justWheel.transform.Rotate(0, 0, 0);
-            wheelArrow.SelectSegment();
-        }
+        wheelAndArrow.transform.localPosition = Vector3.MoveTowards(wheelAndArrow.transform.localPosition, destinationPosition, step);
     }
 
     private void ArrivedAtDestination()
     {
         canMove = false;
+
         if (destinationPosition == moveOutPosition)
         {
             foreach (WheelSegment segment in wheelSegments) { segment.DestroyChild(); }
@@ -92,9 +87,19 @@ public class WheelSpin : MonoBehaviour
         }
     }
 
-    private void MoveToDestination(float step)
+    private void Rotate()
     {
-        wheelAndArrow.transform.localPosition = Vector3.MoveTowards(wheelAndArrow.transform.localPosition, destinationPosition, step);
+        justWheel.transform.Rotate(0, 0, -tempRotationSpeed);
+        tempRotationSpeed -= Time.deltaTime * tempSubtractionFactor;
+
+        tempSubtractionFactor = Mathf.Clamp(tempSubtractionFactor -= rotationSlowFactor, 0.5f, rotationSubtractionFactor);
+
+        if (tempRotationSpeed <= 0)
+        {
+            canRotate = false;
+            justWheel.transform.Rotate(0, 0, 0);
+            wheelArrow.SelectSegment();
+        }
     }
 
     public void StartWheelSpin()
@@ -108,8 +113,10 @@ public class WheelSpin : MonoBehaviour
         float randomDegree = Random.Range(0f, 360f);
         justWheel.transform.eulerAngles = new Vector3(0, 0, randomDegree);
 
-        canRotate = true;
         tempRotationSpeed = rotationSpeed;
+        tempSubtractionFactor = rotationSubtractionFactor;
+
+        canRotate = true;
     }
 
     public void MoveOutWheelSpin()

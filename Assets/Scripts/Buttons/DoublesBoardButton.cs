@@ -82,8 +82,8 @@ public class DoublesBoardButton : Button
 
     public void BrightenAndInteractable()
     {
-        //Interactable();
-        //doublesBoardText.InstantBrighten();
-        //doublesBoardButtonDesk.InstantBrighten();
+        Interactable();
+        doublesBoardText.InstantBrighten();
+        doublesBoardButtonDesk.InstantBrighten();
     }
 }

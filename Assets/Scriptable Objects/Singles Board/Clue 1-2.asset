@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Major games that released during it include Bioshock Infinite, The Last
-    of Us and Grand Theft Auto V
+  clueText: 'Major games that released during it include Batman: Arkham Origins,
+    The Stanley Parable and Super Mario 3D World'
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

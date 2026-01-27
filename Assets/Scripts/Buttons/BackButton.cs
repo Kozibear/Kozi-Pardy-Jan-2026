@@ -83,7 +83,6 @@ public class BackButton : Button
         interactable = false;
         GetComponent<SpriteRenderer>().sprite = mouseDown;
 
-        clueScreen.MoveOutClue();
         CanMoveArrowOut();
         gameManager.BackButtonPressed();
     }

@@ -1098,7 +1098,7 @@ SpriteRenderer:
   m_SortingLayerID: 88982989
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9fd0ab7a1a85d9649a85508c3e942ea9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14bee1928e7a842498aaf57f61c773c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10728,7 +10728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1052587552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10741,7 +10741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff134f38affd7ec4497bb8ff6f3c7acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skipIntro: 0
+  skipIntro: 1
   readyDoublesBoard: 0
   gameManager: {fileID: 1170810759}
   splashScreen: {fileID: 1045187684}
@@ -11581,6 +11581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blur: {fileID: 1749786573}
   wheelSpin: {fileID: 1661278015}
+  waitBeforeBringingInWheel: 0.5
   wheelSpinButton: {fileID: 695657513}
   doublesBoardButton: {fileID: 1372971708}
   boardButtons:
@@ -11708,7 +11709,8 @@ MonoBehaviour:
   clueImageSpawnPoint: {fileID: 544762247}
   blackBackgroundFade: {fileID: 1336746491}
   panicButton: {fileID: 1008689313}
-  canShowClue: 1
+  gameState: 0
+  onlySingles: 1
 --- !u!1 &1197416973
 GameObject:
   m_ObjectHideFlags: 0
@@ -15244,8 +15246,9 @@ MonoBehaviour:
   moveOutPosition: {x: 0, y: 10.75, z: 0}
   moveInSpeed: 39.5
   moveOutSpeed: 41
-  rotationSpeed: 20
-  rotationSubtractionFactor: 12
+  rotationSpeed: 5
+  rotationSubtractionFactor: 2.61
+  rotationSlowFactor: 0.004
   panicButton: {fileID: 1008689313}
 --- !u!1 &1704852647
 GameObject:
@@ -18846,9 +18849,9 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 614123972}
   - {fileID: 1045187685}
+  - {fileID: 1336746489}
   - {fileID: 1904622526}
   - {fileID: 1661278014}
-  - {fileID: 1336746489}
   - {fileID: 2102737379}
   - {fileID: 697584039}
   - {fileID: 325400605}

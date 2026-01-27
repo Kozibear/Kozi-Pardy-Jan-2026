@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A cancelled role-playing game that sounds a like popular franchise fighting
-    this very category
+  clueText: A cancelled role-playing game; its name pitted a certain, popular franchise
+    against this very category
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

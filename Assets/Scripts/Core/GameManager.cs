@@ -1,14 +1,19 @@
-using UnityEngine;
-using TMPro;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    enum GameState { Singleboard, DoubleBoard, FinalBoard };
+
     [Header("Blur")]
     [SerializeField] Blur blur;
 
     [Header("Wheel Spin")]
     [SerializeField] WheelSpin wheelSpin;
+    [SerializeField] float waitBeforeBringingInWheel = 1f;
+    private bool wheelSpinButtonActive = true;
 
     [Header("Bottom Buttons")]
     [SerializeField] WheelspinButton wheelSpinButton;
@@ -23,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     [Header("ClueScreen")]
     [SerializeField] ClueScreen clueScreen;
+    private bool canShowClue = true;
 
     [Header("Clues SOs")]
     [SerializeField] List<ClueSO> clues;
@@ -46,9 +52,73 @@ public class GameManager : MonoBehaviour
     [Header("Panic Button")]
     [SerializeField] PanicButton panicButton;
 
-    public bool canShowClue = true;
-    int currentIndex;
+    [Header("Game State Enum")]
+    [SerializeField] GameState gameState = GameState.Singleboard;
 
+    [Header("Only Singles Board?")]
+    [SerializeField] bool onlySingles;
+
+    private int currentIndex;
+
+    public void BoardBeforeWheelSpin()
+    {
+        HideClueTexts();
+        StartCoroutine(WheelSpinSetup());
+    }
+
+    public void HideClueTexts()
+    {
+        foreach (TextMeshPro standardClue in clueText) standardClue.gameObject.SetActive(false);
+
+        foreach (TextMeshPro haikuClue in haikuClueText) haikuClue.gameObject.SetActive(false);
+        foreach (TextMeshPro haikuClueShadow in haikuClueTextShadows) haikuClueShadow.gameObject.SetActive(false);
+
+        foreach (TextMeshPro songLyric in songLyricText) songLyric.gameObject.SetActive(false);
+        foreach (TextMeshPro songLyricShadow in songLyricTextShadows) songLyricShadow.gameObject.SetActive(false);
+
+        //destruction of child image prefabs is handled in the ClueScreen script
+    }
+
+    private IEnumerator WheelSpinSetup()
+    {
+        if (!beforeSwitchToDoubles)
+        {
+            if (wheelSpinButtonActive)
+            {
+                wheelSpinButton.gameObject.SetActive(true);
+                wheelSpinButton.BrightenAndInteractable();
+            }
+            else
+            {
+                yield return new WaitForSeconds(waitBeforeBringingInWheel);
+                ShowWheel();
+            }
+        }
+
+        yield return null;
+    }
+    public void ShowWheel()
+    {
+        wheelSpinButtonActive = false;
+        wheelSpin.StartWheelSpin();
+
+        blackBackgroundFade.SetFadeInThreshold(0.4f);
+        blackBackgroundFade.SetFadeSpeeds(2.8f);
+        blackBackgroundFade.FadeIn();
+        blur.StartBlurBackground();
+    }
+
+    public void ActivateButtonsAndHideWheel(List<int> buttonsToActivate)
+    {
+        foreach (int buttonToActivate in buttonsToActivate)
+        {
+            boardButtons[buttonToActivate].GetComponent<BoardButton>().InteractableFadeIn();
+        }
+        wheelSpin.MoveOutWheelSpin();
+        blackBackgroundFade.FadeOut();
+        blur.StartUnBlurBackground();
+        canShowClue = true;
+    }
 
     public void OnClueSelected(int index)
     {
@@ -110,51 +180,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void HideClueTexts()
-    {
-        foreach (TextMeshPro standardClue in clueText) standardClue.gameObject.SetActive(false);
-
-        foreach (TextMeshPro haikuClue in haikuClueText) haikuClue.gameObject.SetActive(false);
-        foreach (TextMeshPro haikuClueShadow in haikuClueTextShadows) haikuClueShadow.gameObject.SetActive(false);
-
-        foreach (TextMeshPro songLyric in songLyricText) songLyric.gameObject.SetActive(false);
-        foreach (TextMeshPro songLyricShadow in songLyricTextShadows) songLyricShadow.gameObject.SetActive(false);
-
-        //destruction of child image prefabs is handled in the ClueScreen script
-    }
-
-    public void BoardBeforeWheelSpin()
-    {
-        HideClueTexts();
-
-        if (!beforeSwitchToDoubles)
-        {
-            wheelSpinButton.gameObject.SetActive(true);
-            wheelSpinButton.BrightenAndInteractable();
-        }
-    }
-
-    public void ShowWheel()
-    {
-        wheelSpin.StartWheelSpin();
-        blackBackgroundFade.SetFadeInThreshold(0.4f);
-        blackBackgroundFade.SetFadeSpeeds(2.8f);
-        blackBackgroundFade.FadeIn();
-        blur.StartBlurBackground();
-    }
-
-    public void ActivateButtonsAndHideWheel(List<int> buttonsToActivate)
-    {
-        foreach (int buttonToActivate in buttonsToActivate)
-        {
-            boardButtons[buttonToActivate].GetComponent<BoardButton>().InteractableFadeIn();
-        }
-        wheelSpin.MoveOutWheelSpin();
-        blackBackgroundFade.FadeOut();
-        blur.StartUnBlurBackground();
-        canShowClue = true;
-    }
-
     public void HardDeActivationAndHidePointNumber()
     {
         boardButtons[currentIndex].transform.GetChild(0).gameObject.SetActive(false);
@@ -170,24 +195,26 @@ public class GameManager : MonoBehaviour
 
     public void BackButtonPressed()
     {
+        if (!wheelSpinButtonActive) { wheelSpinButton.gameObject.SetActive(false); }
         clueScreen.MoveOutClue();
-        if (!beforeSwitchToDoubles)
-        {
-            wheelSpinButton.gameObject.SetActive(true);
-            wheelSpinButton.BrightenAndInteractable();
-        }
     }
+
 
     public void SwitchCluesToDoubles()
     {
-        clues = cluesDouble;
-
-        //wheelSpinButton.gameObject.SetActive(false);
-
-        //doublesBoardButton.gameObject.SetActive(true);
-        //doublesBoardButton.BrightenAndInteractable();
-
         beforeSwitchToDoubles = true;
+        wheelSpinButton.gameObject.SetActive(false);
+
+        if (!onlySingles)
+        {
+            gameState = GameState.DoubleBoard;
+
+            doublesBoardButton.gameObject.SetActive(true);
+            doublesBoardButton.BrightenAndInteractable();
+
+            clues = cluesDouble;
+        }
+        
     }
 
     public void UpdateBoardTitlesAndButtons()

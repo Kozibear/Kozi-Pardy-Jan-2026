@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: An English Heavy Metal Band from Birmingham; its music was used during
-    the end credits of an early MCU movie
+  clueText: An English band from Birmingham; its music was used during the end credits
+    of an early MCU movie
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}
