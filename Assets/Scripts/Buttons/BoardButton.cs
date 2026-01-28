@@ -20,6 +20,8 @@ public class BoardButton : Button
     [SerializeField] SpriteColorFade categoryTitleColorFade;
     [SerializeField] SpriteColorFade categoryBackgroundColorFade;
 
+    private ParticleSystem particleSys;
+
     private bool hasBeenClicked = false;
     private bool postClickState = false;
     private bool wasJustInteractable = false;
@@ -28,6 +30,7 @@ public class BoardButton : Button
     {
         InteractableFadeOut();
         transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = singleValue;
+        particleSys = transform.GetChild(1).GetComponent<ParticleSystem>();
     }
 
     public int GetNumber() { return buttonNumber; }
@@ -35,6 +38,36 @@ public class BoardButton : Button
     public bool GetHasBeenClicked() { return hasBeenClicked; }
 
     public bool WasJustInteractable() { return wasJustInteractable; }
+
+    public bool GetInteractable() { return interactable; }
+
+    protected override void OnMouseEnter()
+    {
+        if (interactable)
+        {
+            GetComponent<SpriteRenderer>().sprite = mouseOver;
+            particleSys.Play();
+        }
+    }
+
+    protected override void OnMouseExit()
+    {
+        if (interactable) { GetComponent<SpriteRenderer>().sprite = regular; }
+    }
+
+    protected override void OnMouseDown()
+    {
+        if (interactable)
+        {
+            postClickState = true;
+            hasBeenClicked = true;
+
+            interactable = false;
+            GetComponent<SpriteRenderer>().sprite = mouseDown;
+
+            gameManager.OnClueSelected(buttonNumber);
+        }
+    }
 
     public void InteractableFadeIn()
     {
@@ -87,19 +120,4 @@ public class BoardButton : Button
         transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = doubleValue;
     }
 
-    protected override void OnMouseDown()
-    {
-        if (interactable)
-        {
-            postClickState = true;
-            hasBeenClicked = true;
-
-            interactable = false;
-            GetComponent<SpriteRenderer>().sprite = mouseDown;
-
-            gameManager.OnClueSelected(buttonNumber);
-        }
-    }
-
-    public bool GetInteractable() { return interactable; }
 }

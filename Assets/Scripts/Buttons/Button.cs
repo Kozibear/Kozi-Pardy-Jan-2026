@@ -23,13 +23,13 @@ public abstract class Button : MonoBehaviour
     }
 
     //For when the mouse is hovering over it
-    protected void OnMouseEnter()
+    protected virtual void OnMouseEnter()
     {
         if (interactable) { GetComponent<SpriteRenderer>().sprite = mouseOver; }
     }
 
     //For when the mouse is no longer hovering over it
-    protected void OnMouseExit()
+    protected virtual void OnMouseExit()
     {
         if (interactable) { GetComponent<SpriteRenderer>().sprite = regular; }
     }
