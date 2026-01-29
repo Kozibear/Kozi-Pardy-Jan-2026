@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 83dc5ec9d23512c43bba2c1683469be9
+guid: fc418f7a50bd7774fb9edc2aaf0a4d3e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5551923536328317152
-    second: Kozi Desk Christmas_0
+      213: 1213415428752611994
+    second: Kozi Desk Headless_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kozi Desk Christmas_0
+      name: Kozi Desk Headless_0
       rect:
         serializedVersion: 2
         x: 3
         y: 0
         width: 1513
-        height: 980
+        height: 730
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e8dafa7a056c0d40800000000000000
-      internalID: 5551923536328317152
+      spriteID: a9a17cb47eae6d010800000000000000
+      internalID: 1213415428752611994
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Kozi Desk Christmas_0: 5551923536328317152
+      Kozi Desk Headless_0: 1213415428752611994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -18,6 +18,8 @@ public class SplashScreen : MonoBehaviour
     [Header("Category Reveals")]
     [SerializeField] CategoryReveals categoryReveals;
 
+    [Header("Particle System")]
+    [SerializeField] ParticleSystem koziHeadParticles;
 
     bool moveOutStuff = false;
 
@@ -49,6 +51,7 @@ public class SplashScreen : MonoBehaviour
 
     private void MoveOutObjects(float step1, float step2)
     {
+        koziHeadParticles.Stop();
         koziDeskImage.transform.localPosition = Vector3.MoveTowards(koziDeskImage.transform.localPosition, koziDeskOffscreenPosition, step1);
         koziPardyTitle.transform.localPosition = Vector3.MoveTowards(koziPardyTitle.transform.localPosition, koziPardyOffscreenPosition, step2);
     }
