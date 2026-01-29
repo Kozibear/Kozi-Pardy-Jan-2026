@@ -62,6 +62,7 @@ public class ClueScreen : MonoBehaviour
     private void MoveToDestination(float step)
     {
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, destinationPosition, step);
+        //Insert a bit about resizing it here
     }
 
     public void MoveInClue()

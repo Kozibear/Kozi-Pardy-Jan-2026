@@ -92,7 +92,7 @@ public class WheelSpin : MonoBehaviour
         justWheel.transform.Rotate(0, 0, -tempRotationSpeed);
         tempRotationSpeed -= Time.deltaTime * tempSubtractionFactor;
 
-        tempSubtractionFactor = Mathf.Clamp(tempSubtractionFactor -= rotationSlowFactor, 0.5f, rotationSubtractionFactor);
+        //tempSubtractionFactor = Mathf.Clamp(tempSubtractionFactor -= rotationSlowFactor, 0.5f, rotationSubtractionFactor);
 
         if (tempRotationSpeed <= 0)
         {
