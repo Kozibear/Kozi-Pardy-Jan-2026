@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Splash Screen/Splash Screen Scene.unity
+    path: Assets/Scenes/Splash Cateogries/Splash Cateogries Scene.unity
     guid: defeda7c1bf2ae94f906f52393fbab9f
-  - enabled: 1
-    path: Assets/Scenes/Category Reveals/Category Reveals Scene.unity
-    guid: 673bb6fe41dfbb9468295149d1055109
   - enabled: 1
     path: Assets/Scenes/Game Board/Game Board Scene.unity
     guid: 60a13936574f23f4989d7a25b59555bc
