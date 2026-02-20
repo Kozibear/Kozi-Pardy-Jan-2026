@@ -20,7 +20,7 @@ public class BoardButton : Button
     [SerializeField] SpriteColorFade categoryTitleColorFade;
     [SerializeField] SpriteColorFade categoryBackgroundColorFade;
 
-    private ParticleSystem particleSys;
+    //private ParticleSystem particleSys;
 
     private bool hasBeenClicked = false;
     private bool postClickState = false;
@@ -30,7 +30,7 @@ public class BoardButton : Button
     {
         InteractableFadeOut();
         transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = singleValue;
-        particleSys = transform.GetChild(1).GetComponent<ParticleSystem>();
+        //particleSys = transform.GetChild(1).GetComponent<ParticleSystem>();
     }
 
     public int GetNumber() { return buttonNumber; }
@@ -46,7 +46,7 @@ public class BoardButton : Button
         if (interactable)
         {
             GetComponent<SpriteRenderer>().sprite = mouseOver;
-            particleSys.Play();
+            //particleSys.Play();
         }
     }
 
@@ -86,9 +86,10 @@ public class BoardButton : Button
 
     public void InteractableFadeOut()
     {
-        if (!hasBeenClicked) //This is to prevent the button from being further, unecessarily darkened
+        if (!hasBeenClicked || postClickState) //This is to prevent the button from being further, unecessarily darkened
         {
             interactable = false;
+            postClickState = false;
 
             buttonColorFade.Darken();
             numberColorFade.Darken();
@@ -99,17 +100,19 @@ public class BoardButton : Button
         categoryBackgroundColorFade.Darken();
     }
 
+    //We make all the buttons on the board non-interactive, but don't change their appearance
+    //In previous versions, we made an exception and immediately darekened the button had just been clicked
     public void SoftNotInteractable()
     {
         interactable = false;
         GetComponent<SpriteRenderer>().sprite = regular;
 
-        if (postClickState)
-        {
-            buttonColorFade.InstantDarken();
-            numberColorFade.InstantDarken();
-            postClickState = false;
-        }
+        //if (postClickState)
+        //{
+        //    buttonColorFade.InstantDarken();
+        //    numberColorFade.InstantDarken();
+        //    postClickState = false;
+        //}
     }
 
     public void DoubleBoardReset()

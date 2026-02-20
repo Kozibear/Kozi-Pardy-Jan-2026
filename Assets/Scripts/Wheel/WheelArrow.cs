@@ -6,10 +6,15 @@ using UnityEngine;
 
 public class WheelArrow : MonoBehaviour
 {
-
+    [Header("GameManager")]
     [SerializeField] GameManager gameManager;
 
-    [SerializeField] float wait;
+    [Header("White Flash Sprite Fade")]
+    [SerializeField] SpriteFade whiteFlash;
+
+    [Header("Wait Times")]
+    [SerializeField] float waitBeforeFlash;
+    [SerializeField] float waitAfterFlash;
 
     private int currentSelectedSegment;
 
@@ -37,7 +42,10 @@ public class WheelArrow : MonoBehaviour
 
     IEnumerator TellGameManagerButtonsToActivate()
     {
-        yield return new WaitForSeconds(wait);
+        yield return new WaitForSeconds(waitBeforeFlash);
+        whiteFlash.Pulse(1);
+
+        yield return new WaitForSeconds(waitAfterFlash);
 
         switch (currentSelectedSegment)
         {

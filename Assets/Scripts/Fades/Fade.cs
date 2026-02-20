@@ -17,6 +17,8 @@ public abstract class Fade : MonoBehaviour
     private bool fadeInBool = false;
     private bool fadeOutBool = false;
 
+    private int pulses = 0;
+
     void Start()
     {
         tempColor = GetColor();
@@ -34,7 +36,17 @@ public abstract class Fade : MonoBehaviour
         tempColor.a -= Time.deltaTime * fadeOutSpeed;
         SetColor(tempColor);
 
-        if (tempColor.a <= fadeOutThreshold) fadeOutBool = false;
+        if (tempColor.a <= fadeOutThreshold)
+        {
+            fadeOutBool = false;
+
+            if (pulses <= 1) pulses = 0;
+            else if (pulses > 1)
+            {
+                pulses--;
+                fadeInBool = true;
+            }
+        }
     }
 
     private void FadeInGraphic()
@@ -42,7 +54,11 @@ public abstract class Fade : MonoBehaviour
         tempColor.a += Time.deltaTime * fadeInSpeed;
         SetColor(tempColor);
 
-        if (tempColor.a >= fadeInThreshold) fadeInBool = false;
+        if (tempColor.a >= fadeInThreshold)
+        {
+            fadeInBool = false;
+            if (pulses > 0) fadeOutBool = true;
+        }
     }
 
     public void FadeIn()
@@ -55,6 +71,13 @@ public abstract class Fade : MonoBehaviour
     {
         tempColor = GetColor();
         fadeOutBool = true;
+    }
+
+    public void Pulse(int pulsesAmount)
+    {
+        tempColor = GetColor();
+        fadeInBool = true;
+        pulses = pulsesAmount;
     }
 
     public void SetFadeInThreshold(float newThreshold)
