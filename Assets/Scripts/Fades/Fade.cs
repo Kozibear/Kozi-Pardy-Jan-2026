@@ -7,8 +7,8 @@ public abstract class Fade : MonoBehaviour
     [SerializeField] Color tempColor;
 
     [Header("Fade Speeds")]
-    [SerializeField] float fadeInSpeed;
-    [SerializeField] float fadeOutSpeed;
+    [SerializeField] float fadeInSpeed = 1;
+    [SerializeField] float fadeOutSpeed = 1;
 
     [Header("Fade Thresholds")]
     public float fadeInThreshold = 1;

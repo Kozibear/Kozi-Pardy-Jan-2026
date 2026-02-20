@@ -124,7 +124,7 @@ public class WheelSpin : MonoBehaviour
         canMove = true;
         moveSpeed = moveOutSpeed;
         destinationPosition = moveOutPosition;
-        panicButton.Interactable();
+        //panicButton.Interactable();
     }
 
     void UpdatePossibleWheelSegments()

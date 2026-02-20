@@ -22,7 +22,7 @@ public class WheelspinButton : Button
 
     private void Awake()
     {
-        NotInteractable();
+        Interactable();
         tempColor = gameObject.GetComponent<SpriteRenderer>().color;
     }
 

@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
     {
         if (canShowClue)
         {
-            panicButton.NotInteractable();
+            //panicButton.NotInteractable();
             canShowClue = false;
 
             //we show the current clue/haiku on the clue screen
