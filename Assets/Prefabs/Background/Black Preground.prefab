@@ -50,6 +50,7 @@ MonoBehaviour:
   fadeOutSpeed: 1
   fadeInThreshold: 1
   fadeOutThreshold: 0
+  fadeListenerImplementer: {fileID: 0}
   spriteRenderer: {fileID: 2926044549706629761}
 --- !u!1 &1080539325871507430
 GameObject:
@@ -129,7 +130,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 383825231
   m_SortingLayer: 1
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0

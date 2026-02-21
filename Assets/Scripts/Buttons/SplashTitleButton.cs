@@ -5,6 +5,9 @@ public class SplashTitleButton : Button
     [Header("CategoryReveals")]
     [SerializeField] CategoryReveals categoryReveals;
 
+    [Header("CategoryReveals")]
+    [SerializeField] SpriteFade blackForeground;
+
     private void Start() { Interactable(); }
 
     protected override void OnMouseDown()
@@ -13,6 +16,8 @@ public class SplashTitleButton : Button
         {
             categoryReveals.StartCategoryReveals();
             GetComponent<SpriteFade>().FadeOut();
+            blackForeground.FadeIn();
+
             NotInteractable();
         }
     }

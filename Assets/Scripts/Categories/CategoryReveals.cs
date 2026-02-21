@@ -20,15 +20,26 @@ public class CategoryReveals : MonoBehaviour, IFadeListener
     [SerializeField] SpriteFade blackPreground;
 
     [Header("Board Silhouette")]
-    [SerializeField] SpriteFade blackBoardSilhouette;
-    [SerializeField] SpriteFade whitePreground;
+    [SerializeField] GameObject boardSilhouette;
+    SpriteFade blackBoardSilhouette;
+    SpriteFade whitePreground;
 
-
-    private bool canDeactivate = false;
+    private void Start()
+    {
+        blackBoardSilhouette = boardSilhouette.transform.GetChild(0).GetComponent<SpriteFade>();
+        whitePreground = boardSilhouette.transform.GetChild(1).GetComponent<SpriteFade>();
+    }
 
     public void StartCategoryReveals()
     {
+        SetPersistentObjects();
         StartCoroutine(WaitBetweenCategoryReveals());
+    }
+
+    private void SetPersistentObjects()
+    {
+        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(boardSilhouette);
     }
 
     IEnumerator WaitBetweenCategoryReveals()
@@ -52,14 +63,19 @@ public class CategoryReveals : MonoBehaviour, IFadeListener
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(waitBeforeChangingScene);
-        SceneManager.LoadScene(1);
+        yield return SceneManager.LoadSceneAsync(1);
+
+        blackBoardSilhouette.SetFadeSpeeds(1.5f);
+        blackBoardSilhouette.FadeOut();
+
+        whitePreground.SetFadeSpeeds(1f);
+        whitePreground.FadeOut();
     }
 
 
     public void ShowDoublesCategories()
     {
         categoryNames = categoryNamesDoubles;
-        canDeactivate = false;
         StartCoroutine(WaitBetweenCategoryReveals());
     }
 
@@ -68,5 +84,9 @@ public class CategoryReveals : MonoBehaviour, IFadeListener
         StartCoroutine(ChangeScene());
     }
 
-    public void FadeOutComplete() { }
+    public void FadeOutComplete()
+    {
+        Destroy(boardSilhouette);
+        Destroy(gameObject);
+    }
 }
