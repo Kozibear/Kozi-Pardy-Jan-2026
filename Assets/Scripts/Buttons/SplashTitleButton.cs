@@ -13,6 +13,7 @@ public class SplashTitleButton : Button
         {
             categoryReveals.StartCategoryReveals();
             GetComponent<SpriteFade>().FadeOut();
+            NotInteractable();
         }
     }
 }

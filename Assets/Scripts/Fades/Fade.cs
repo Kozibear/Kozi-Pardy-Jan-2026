@@ -14,6 +14,10 @@ public abstract class Fade : MonoBehaviour
     public float fadeInThreshold = 1;
     public float fadeOutThreshold = 0;
 
+    [Header("Fade Listener")]
+    [SerializeField] GameObject fadeListenerImplementer = null;
+    IFadeListener fadeListener = null;
+
     private bool fadeInBool = false;
     private bool fadeOutBool = false;
 
@@ -22,6 +26,8 @@ public abstract class Fade : MonoBehaviour
     void Start()
     {
         tempColor = GetColor();
+
+        if (fadeListenerImplementer != null) fadeListener = fadeListenerImplementer.GetComponent<IFadeListener>();
     }
 
     void Update()
@@ -39,6 +45,10 @@ public abstract class Fade : MonoBehaviour
         if (tempColor.a <= fadeOutThreshold)
         {
             fadeOutBool = false;
+            if (fadeListener != null)
+            {
+                fadeListenerImplementer.GetComponent<IFadeListener>().FadeOutComplete();
+            }
 
             if (pulses <= 1) pulses = 0;
             else if (pulses > 1)
@@ -57,6 +67,11 @@ public abstract class Fade : MonoBehaviour
         if (tempColor.a >= fadeInThreshold)
         {
             fadeInBool = false;
+            if (fadeListener != null)
+            {
+                fadeListenerImplementer.GetComponent<IFadeListener>().FadeInComplete();
+            }
+
             if (pulses > 0) fadeOutBool = true;
         }
     }

@@ -4298,6 +4298,7 @@ MonoBehaviour:
   fadeOutSpeed: 1
   fadeInThreshold: 1
   fadeOutThreshold: 0
+  fadeListenerImplementer: {fileID: 0}
   spriteRenderer: {fileID: 377357167}
 --- !u!1 &379496520
 GameObject:
@@ -14923,7 +14924,10 @@ MonoBehaviour:
   - N/A
   - N/A
   waitBeforeNextCategory: 3
-  blackBackground: {fileID: 0}
+  waitBeforeChangingScene: 0
+  blackPreground: {fileID: 0}
+  blackBoardSilhouette: {fileID: 0}
+  whitePreground: {fileID: 0}
 --- !u!1 &1906366284
 GameObject:
   m_ObjectHideFlags: 0

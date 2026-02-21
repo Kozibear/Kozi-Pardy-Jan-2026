@@ -369,7 +369,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -498325229
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: b9a69f48aa470fa4fa49e67a7720ee8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -399,6 +399,7 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0
+  fadeListenerImplementer: {fileID: 0}
   spriteRenderer: {fileID: 528401524}
 --- !u!114 &528401526
 MonoBehaviour:
@@ -500,7 +501,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 23abac1a000000004565f496c77c422499e602155f1bdc9d6d716f0cd7d8fdd2cdc54d05d3ede3d2f54d5f5bcdef71872dc6d93113294ce2b76aa5a79d49ef1391d1cabb4fb5e016
+  m_ApplyToSortingLayers: 23abac1a000000004565f496c77c422499e602155f1bdc9d6d716f0cd7d8fdd2cdc54d05d3ede3d2f54d5f5bcdef71872dc6d93113294ce2b76aa5a79d49ef1391d1cabb4fb5e016f5eecb12
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -742,6 +743,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
+--- !u!114 &1796709854 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5352923599934406689, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
+  m_PrefabInstance: {fileID: 1796709853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60d802c1c871ff4b9cfb94374bd287a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteFade
 --- !u!1 &1904622525
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,33 +802,113 @@ MonoBehaviour:
   CategoryRevealPrefab: {fileID: 6520978425369470359, guid: afd4d70e47d4a984eb084b1052428878, type: 3}
   CategorySpawnPoint: {fileID: 338069913}
   categoryNames:
-  - 'A Baker''s
-
-    Dozen'
-  - 'Rhymes
-
-    with Coello'
-  - 'Love &
-
-    Decks Stuff'
-  - 'That''s
-
-    B__ S__ Tim!'
-  - 'The Pizza
-
-    People Pick'
-  - 'Kinda
-
-    Anime'
+  - PlayStation 1
+  - PlayStation 2
+  - PlayStation 3
+  - PlayStation 4
+  - PlayStation 5
   categoryNamesDoubles:
   - N/A
   - N/A
   - N/A
   - N/A
   - N/A
-  - N/A
   waitBeforeNextCategory: 3
-  blackBackground: {fileID: 0}
+  waitBeforeChangingScene: 1
+  blackPreground: {fileID: 1796709854}
+  blackBoardSilhouette: {fileID: 2083408219}
+  whitePreground: {fileID: 3213556532500546740}
+--- !u!114 &2083408219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1267605530306414093, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+  m_PrefabInstance: {fileID: 1465141599723689599}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60d802c1c871ff4b9cfb94374bd287a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteFade
+--- !u!1001 &1465141599723689599
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1267605530306414093, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: fadeListenerImplementer
+      value: 
+      objectReference: {fileID: 1904622525}
+    - target: {fileID: 1840396618710084977, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_Name
+      value: Board Silhouette
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126380172230682829, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380282942888057664, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+--- !u!114 &3213556532500546740 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4125607404289171145, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+  m_PrefabInstance: {fileID: 1465141599723689599}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60d802c1c871ff4b9cfb94374bd287a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteFade
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -826,3 +918,4 @@ SceneRoots:
   - {fileID: 1904622526}
   - {fileID: 1796709853}
   - {fileID: 1682720858}
+  - {fileID: 1465141599723689599}

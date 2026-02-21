@@ -62,6 +62,9 @@ TagManager:
   - name: Wheel Spin
     uniqueID: 836355629
     locked: 0
+  - name: Board Silhouette
+    uniqueID: 315354869
+    locked: 0
   - name: White Flash
     uniqueID: 1815774969
     locked: 0
