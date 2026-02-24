@@ -1,5 +1,8 @@
 using NUnit.Framework;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class BoardClueMovement : MonoBehaviour
 {
@@ -8,24 +11,33 @@ public class BoardClueMovement : MonoBehaviour
     [SerializeField] Vector3 originalPosition;
 
     [Header("Rotations")]
-    [SerializeField] Vector3 frontRotation;
-    [SerializeField] Vector3 originalRotation;
+    [SerializeField] Quaternion frontRotation;
+    [SerializeField] Quaternion originalRotation;
 
     [Header("Speeds")]
-    [SerializeField] float moveSpeed = 1;
+    [SerializeField] float positionMoveSpeed = 1;
+    [SerializeField] float rotationMoveSpeed = 1;
+
+    [Header("Wait Times")]
+    [SerializeField] float waitBeforeRotateIn = 0.05f;
+    [SerializeField] float waitBeforeRotateOut = 0;
+
 
     private Vector3 destinationPosition;
     private bool canMoveClue = false;
+    private bool isUpFront = false;
 
     void Start()
     {
         originalPosition = transform.position;
         destinationPosition = transform.position;
+
+        originalRotation = transform.rotation;
     }
 
     void Update()
     {
-        float step = Time.deltaTime * moveSpeed;
+        float step = Time.deltaTime * positionMoveSpeed;
 
         if (canMoveClue)
         {
@@ -37,7 +49,25 @@ public class BoardClueMovement : MonoBehaviour
     private void MoveToDestination(float step)
     {
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, destinationPosition, step);
+    }
 
+    private IEnumerator RotateToDestination(Quaternion target, float wait)
+    {
+        yield return new WaitForSeconds(wait);
+        Quaternion from = transform.rotation;
+
+        float startDistance = Vector3.Distance(transform.localPosition, destinationPosition);
+
+        while (transform.localPosition != destinationPosition)
+        { 
+            float currentDistance = Vector3.Distance(transform.localPosition, destinationPosition);
+            float distanceDifference = (startDistance - currentDistance) / startDistance;
+
+            transform.rotation = Quaternion.Slerp(from, target, distanceDifference);
+
+            yield return null;
+        }
+        transform.rotation = target;
     }
 
     private void ArrivedAtDestination()
@@ -46,6 +76,7 @@ public class BoardClueMovement : MonoBehaviour
 
         if (transform.localPosition == frontPosition)
         {
+            isUpFront = true;
             GetComponent<BoardClueMediaManager>().HideFrontText();
 
             //gameManager.HardDeActivationAndHidePointNumber();
@@ -54,6 +85,7 @@ public class BoardClueMovement : MonoBehaviour
         }
         if (transform.localPosition == originalPosition)
         {
+            isUpFront = false;
             GetComponent<BoardClueMediaManager>().ClueCleanup();
 
             //gameManager.BoardBeforeWheelSpin();
@@ -62,18 +94,27 @@ public class BoardClueMovement : MonoBehaviour
         }
     }
 
-    [ContextMenu("Move In Clue")]
     public void MoveInClue()
     {
-        canMoveClue = true;
-        destinationPosition = frontPosition;
-        GetComponent<BoardClueMediaManager>().CluePrep();
+        if (!isUpFront)
+        {
+            destinationPosition = frontPosition;
+            canMoveClue = true;
+
+            StartCoroutine(RotateToDestination(frontRotation, waitBeforeRotateIn));
+
+            GetComponent<BoardClueMediaManager>().CluePrep();
+        }
     }
 
-    [ContextMenu("Move Out Clue")]
     public void MoveOutClue()
     {
-        canMoveClue = true;
-        destinationPosition = originalPosition;
+        if (isUpFront)
+        {
+            destinationPosition = originalPosition;
+            canMoveClue = true;
+
+            StartCoroutine(RotateToDestination(originalRotation, waitBeforeRotateOut));
+        }
     }
 }

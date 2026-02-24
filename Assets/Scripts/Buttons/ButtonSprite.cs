@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public abstract class Button : MonoBehaviour
+public abstract class ButtonSprite : MonoBehaviour
 {
     [Header("Sprites")]
     public Sprite regular;

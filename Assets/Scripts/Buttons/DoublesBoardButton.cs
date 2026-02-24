@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DoublesBoardButton : Button
+public class DoublesBoardButton : ButtonSprite
 {
     [Header("Scripts")]
     [SerializeField] GameManager gameManager;

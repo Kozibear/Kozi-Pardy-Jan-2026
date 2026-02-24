@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class BackButton : Button
+public class BackButton : ButtonSprite
 {
     [Header("Scripts")]
     [SerializeField] ClueScreen clueScreen;

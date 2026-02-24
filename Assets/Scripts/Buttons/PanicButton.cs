@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PanicButton : Button
+public class PanicButton : ButtonSprite
 {
     [SerializeField] List<BoardButton> boardButtons;
 

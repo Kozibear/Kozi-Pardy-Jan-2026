@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SplashTitleButton : Button
+public class SplashTitleButton : ButtonSprite
 {
     [Header("CategoryReveals")]
     [SerializeField] CategoryReveals categoryReveals;

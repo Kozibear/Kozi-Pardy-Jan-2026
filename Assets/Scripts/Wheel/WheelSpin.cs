@@ -21,10 +21,9 @@ public class WheelSpin : MonoBehaviour
     [Header("Game Manager")]
     [SerializeField] GameManager gameManager;
 
-    [Header("Moving in")]
+    [Header("Moving Positions")]
+    [SerializeField] Vector3 ResetPosition;
     [SerializeField] Vector3 moveInPosition;
-
-    [Header("Moving Out")]
     [SerializeField] Vector3 moveOutPosition;
 
     [Header("Move Speed")]
@@ -48,7 +47,7 @@ public class WheelSpin : MonoBehaviour
 
     private void Start()
     {
-        wheelAndArrow.transform.localPosition = moveOutPosition;
+        wheelAndArrow.transform.localPosition = ResetPosition;
     }
 
     private void Update()

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StartButton : Button
+public class StartButton : ButtonSprite
 {
     [Header("Scripts")]
     [SerializeField] SplashScreen splashScreen;

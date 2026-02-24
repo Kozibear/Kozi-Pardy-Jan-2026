@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WheelspinButton : Button
+public class WheelspinButton : ButtonSprite
 {
     [Header("Scripts")]
     [SerializeField] WheelSpin wheelSpin;

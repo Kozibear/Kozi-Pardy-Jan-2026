@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BackButtonInvisible : Button
+public class BackButtonInvisible : ButtonSprite
 {
     [Header("Scripts")]
     [SerializeField] ClueScreen clueScreen;
