@@ -13,12 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'Ben Starr portrayed the main character of this acclaimed roguelike '
+  clueText: N/A
   haikuClueText: []
-  songLyricText:
-  - To protect the world from devastation!
-  - To unite all peoples within our nation!
-  - To denounce the evils of truth and love!
-  - To extend _______
+  songLyricText: []
   image: {fileID: 0}
   buttonNumber: 0

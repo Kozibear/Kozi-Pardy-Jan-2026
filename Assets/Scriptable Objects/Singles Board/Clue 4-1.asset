@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 4-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A rhythm-based VR game that first released in 2019
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 4-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This scientist has been depicted on the silver screen by both Tyler Perry
-    and Giancarlo Esposito
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

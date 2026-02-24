@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 6-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: It's Kozibear
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

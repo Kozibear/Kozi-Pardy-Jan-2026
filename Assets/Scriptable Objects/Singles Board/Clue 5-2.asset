@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A ghost kitchen delivery service called "Pasqually's Pizza & Wings" operated
-    out of this chain's locations during the pandemic
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

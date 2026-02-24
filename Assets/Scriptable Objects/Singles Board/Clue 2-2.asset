@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The namesake of both a Shakespearean play and a board game invented in
-    1883
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

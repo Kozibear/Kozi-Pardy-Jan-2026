@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 4-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A hugely successful Kickstarter campaign funded this spiritual successor
-    to a Konami-owned franchise
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

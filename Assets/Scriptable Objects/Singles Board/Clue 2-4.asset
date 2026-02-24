@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: These American entertainers were the highest-paid comedy duo during the
-    Second World War
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

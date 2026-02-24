@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 6-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A Shonen franchise set during the Taisho era; its first movie released
-    to tremendous success in 2020
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

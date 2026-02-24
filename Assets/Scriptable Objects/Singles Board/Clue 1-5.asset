@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 1-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A cancelled role-playing game; its name pitted a certain, popular franchise
-    against this very category
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

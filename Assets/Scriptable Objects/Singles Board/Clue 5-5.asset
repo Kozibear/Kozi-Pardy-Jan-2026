@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This San Francisco-based establishment is not to be confused with an
-    esports commentator
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

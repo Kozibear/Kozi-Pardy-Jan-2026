@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 1-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The most recent game from this Novato-based studio made Nick feel deeply
-    nostalgic
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

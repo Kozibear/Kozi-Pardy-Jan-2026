@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 6-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Willem Dafoe starred in the 2017 Netflix adaptation of this supernatural
-    thriller franchise
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

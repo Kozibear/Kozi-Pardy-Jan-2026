@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This citrus-flavored soft drink was introduced in 1979 to compete with
-    Mountain Dew
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

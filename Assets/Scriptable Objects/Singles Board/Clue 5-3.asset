@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: The "inhabitants" of this fictional restaurant have great reverence for
-    a claw
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

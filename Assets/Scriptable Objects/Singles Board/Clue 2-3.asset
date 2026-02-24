@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: An Italian-American actor who made his film debut in Sam Raimi's Spider-Man
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

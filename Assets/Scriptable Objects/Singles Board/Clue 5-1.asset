@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A grocery store mainstay; it reached the semifinals in Kinda Funny's
-    "First Annual Best Friend Tournament"
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

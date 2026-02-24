@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 1-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'Major games that released during it include Batman: Arkham Origins,
-    The Stanley Parable and Super Mario 3D World'
+  clueText: N/A
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,12 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This sanguine minigame was playable in a 2024 Game of the Year nominee
+  clueText: N/A
   haikuClueText: []
-  songLyricText:
-  - It's a whole new place,
-  - with a brand new attitude
-  - But you've still gotta catch 'em all
-  - And be _______
+  songLyricText: []
   image: {fileID: 0}
   buttonNumber: 0
