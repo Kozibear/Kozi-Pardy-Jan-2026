@@ -22,6 +22,10 @@ public class BoardClueMediaManager : MonoBehaviour
             clueText.text = clueSO.GetClueText();
             clueTextShadow.text = clueSO.GetClueText();
         }
+
+        //For an image:
+        //Instantiate(clueSO.GetImage(), clueImageSpawnPoint.transform.position, Quaternion.identity, clueImageSpawnPoint.transform);
+
     }
 
     public void HideFrontText()

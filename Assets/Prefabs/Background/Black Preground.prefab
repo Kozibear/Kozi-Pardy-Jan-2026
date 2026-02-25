@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6659989556750463690}
   - component: {fileID: 5352923599934406689}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Black Preground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -65,7 +65,7 @@ public class BoardButton : ButtonSprite
             interactable = false;
             GetComponent<SpriteRenderer>().sprite = mouseDown;
 
-            gameManager.OnClueSelected(buttonNumber);
+            //gameManager.OnClueSelected(buttonNumber);
         }
     }
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2627421207624213582}
   - component: {fileID: 5819696774404646616}
   - component: {fileID: 7732754158159776890}
+  - component: {fileID: 4929396572620392930}
   m_Layer: 8
   m_Name: 3D Board Button
   m_TagString: Untagged
@@ -73,6 +74,18 @@ MonoBehaviour:
   normalClueTextParent: {fileID: 5592768793358479475}
   clueText: {fileID: 6311640276607957268}
   clueTextShadow: {fileID: 1789037110075878597}
+--- !u!114 &4929396572620392930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2468669621317944008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
 --- !u!1 &2713969150311978872
 GameObject:
   m_ObjectHideFlags: 0

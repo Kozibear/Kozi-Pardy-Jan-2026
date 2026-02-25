@@ -4,7 +4,7 @@ using UnityEngine;
 public class WheelspinButton : ButtonSprite
 {
     [Header("Scripts")]
-    [SerializeField] WheelSpin wheelSpin;
+    [SerializeField] WheelSpinMovement wheelSpin;
     [SerializeField] GameManager gameManager;
 
     [Header("Pulsing")]

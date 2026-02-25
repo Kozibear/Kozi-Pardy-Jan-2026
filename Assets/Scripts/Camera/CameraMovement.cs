@@ -6,40 +6,86 @@ using static UnityEngine.GraphicsBuffer;
 public class CameraMovement : MonoBehaviour
 {
     [Header("Position")]
-    [SerializeField] Vector3 normalPosition;
+    [SerializeField] Vector3 originalPosition;
     [SerializeField] Vector3 wheelSpinPosition;
 
     [Header("Rotation")]
-    [SerializeField] Quaternion normalRotation;
+    [SerializeField] Quaternion originalRotation;
     [SerializeField] Quaternion wheelSpinRotation;
 
     [Header("Speeds")]
     [SerializeField] float moveSpeed = 1;
 
+    private Vector3 destinationPosition;
+    private bool canMoveClue = false;
+
+    void Start()
+    {
+        originalPosition = transform.position;
+        destinationPosition = transform.position;
+
+        originalRotation = transform.rotation;
+    }
+
+    void Update()
+    {
+        float step = Time.deltaTime * moveSpeed;
+
+        if (canMoveClue)
+        {
+            if (transform.localPosition != destinationPosition) MoveToDestination(step);
+            else ArrivedAtDestination();
+        }
+    }
+
+    private void MoveToDestination(float step)
+    {
+        transform.localPosition = Vector3.MoveTowards(transform.localPosition, destinationPosition, step);
+    }
+
+    private IEnumerator RotateToDestination(Quaternion target)
+    {
+        Quaternion from = transform.rotation;
+
+        float startDistance = Vector3.Distance(transform.localPosition, destinationPosition);
+
+        while (transform.localPosition != destinationPosition)
+        {
+            float currentDistance = Vector3.Distance(transform.localPosition, destinationPosition);
+            float distanceDifference = (startDistance - currentDistance) / startDistance;
+
+            transform.rotation = Quaternion.Slerp(from, target, distanceDifference);
+
+            yield return null;
+        }
+        transform.rotation = target;
+    }
+
+    private void ArrivedAtDestination()
+    {
+        canMoveClue = false;
+
+        if (transform.localPosition == wheelSpinPosition)
+        {
+
+        }
+        if (transform.localPosition == originalPosition)
+        {
+
+        }
+    }
+
     public void MoveForWheelSpin()
     {
-        StartCoroutine(RotateTo(wheelSpinRotation));
-
+        destinationPosition = wheelSpinPosition;
+        canMoveClue = true;
+        StartCoroutine(RotateToDestination(wheelSpinRotation));
     }
 
     public void MoveBackToNormal()
     {
-        StartCoroutine(RotateTo(normalRotation));
-
-    }
-
-    private IEnumerator RotateTo(Quaternion target)
-    {
-        Quaternion from = transform.rotation;
-
-        //You need to record the rotation at the time you initiated the rotation, and modify the third argument so it goes 0-1.
-        //If you don't, the speed of the rotation will slow down the closer it gets to the destination rotation
-        for (float t = 0f; t < 1f; t += moveSpeed * Time.deltaTime)
-        {
-            transform.rotation = Quaternion.Lerp(from, target, t);
-            yield return null;
-        }
-
-        transform.rotation = target;
+        destinationPosition = originalPosition;
+        canMoveClue = true;
+        StartCoroutine(RotateToDestination(originalRotation));
     }
 }

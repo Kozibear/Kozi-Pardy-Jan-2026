@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8352910696524673617}
   - component: {fileID: 4477558338907103127}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: White Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1815774969
-  m_SortingLayer: 8
-  m_SortingOrder: 1
+  m_SortingLayer: 9
+  m_SortingOrder: 59
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 397083313647683015}
   - component: {fileID: 7603441919205844990}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: White Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,4 +140,5 @@ MonoBehaviour:
   fadeOutSpeed: 3.75
   fadeInThreshold: 0.7
   fadeOutThreshold: 0
+  fadeListenerImplementer: {fileID: 0}
   spriteRenderer: {fileID: 4477558338907103127}

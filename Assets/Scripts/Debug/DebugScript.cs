@@ -27,7 +27,7 @@ public class DebugScript : MonoBehaviour
 
         if (readyDoublesBoard)
         {
-            gameManager.SwitchCluesToDoubles();
+            //gameManager.SwitchCluesToDoubles();
         }
     }
 }

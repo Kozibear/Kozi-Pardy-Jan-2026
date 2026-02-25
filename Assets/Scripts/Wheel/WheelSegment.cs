@@ -5,7 +5,6 @@ using UnityEngine;
 public class WheelSegment : MonoBehaviour
 {
     [SerializeField] List<GameObject> segmentNames;
-    [SerializeField] List<GameObject> segmentNamesDouble;
 
     private int currentSegment;
 
@@ -27,9 +26,5 @@ public class WheelSegment : MonoBehaviour
     public void DestroyChild()
     {
         if (transform.childCount > 0) Destroy(transform.GetChild(0).gameObject);
-    }
-    public void SwitchToDoubleSegments()
-    {
-        segmentNames = segmentNamesDouble;
     }
 }

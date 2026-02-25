@@ -16,7 +16,7 @@ public class ClueScreen : MonoBehaviour
     [SerializeField] GameObject ClueImagesSpawnPoint;
     [SerializeField] BackButton backButton;
     [SerializeField] BackButtonInvisible backButtonInvisible;
-    [SerializeField] WheelSpin wheelSpin;
+    [SerializeField] WheelSpinMovement wheelSpin;
 
     private bool canMoveClue = false;
     private Vector3 destinationPosition;
@@ -52,7 +52,7 @@ public class ClueScreen : MonoBehaviour
             backButtonInvisible.Interactable();
             //backButton.CanMoveArrowIn();
 
-            wheelSpin.CheckIfSinglesAreDone();
+            //wheelSpin.CheckIfSinglesAreDone();
         }
         if (transform.localPosition == moveOffscreenAbovePosition)
         {
