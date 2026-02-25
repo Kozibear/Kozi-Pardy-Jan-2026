@@ -237,7 +237,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -381,7 +381,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 44205205}
   - component: {fileID: 44205209}
   m_Layer: 5
-  m_Name: Button Canvas
+  m_Name: 'Button Canvas '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -598,6 +598,7 @@ MonoBehaviour:
   - {fileID: 1912095522}
   - {fileID: 871001512}
   backButton: {fileID: 1004657691}
+  gameManager: {fileID: 1170810759}
 --- !u!1 &80858781
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,16 +697,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!1 &112590483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1306,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1980,16 +1981,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!60 &352704390
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2250,16 +2251,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!1 &419720712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,16 +2307,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!60 &419720715
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2435,7 +2436,7 @@ SpriteRenderer:
   m_SortingLayerID: 836355629
   m_SortingLayer: 7
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: bbb5742b6dbe61a48add2b0f0d4d72a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3fe20caf77a26e439ff169d96b70f43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2455,10 +2456,13 @@ Transform:
   m_GameObject: {fileID: 420521342}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.76, z: 0}
-  m_LocalScale: {x: 1.05, y: 0.85, z: 1}
+  m_LocalPosition: {x: -0, y: 4.65, z: -0.203}
+  m_LocalScale: {x: 0.9, y: 0.73, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1846118871}
+  - {fileID: 721361481}
+  - {fileID: 1682993590}
   m_Father: {fileID: 2029818913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &420521346
@@ -2476,7 +2480,7 @@ MonoBehaviour:
   gameManager: {fileID: 1170810759}
   whiteFlash: {fileID: 8729388767142314598}
   waitBeforeFlash: 0.2
-  waitAfterFlash: 0.6
+  waitAfterFlash: 0.75
 --- !u!61 &420521347
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3145,7 +3149,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3354,16 +3358,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!60 &570821479
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4083,7 +4087,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4131,6 +4135,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720726631}
   m_CullTransparentMesh: 1
+--- !u!1 &721361480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721361481}
+  - component: {fileID: 721361484}
+  - component: {fileID: 721361483}
+  m_Layer: 7
+  m_Name: Arrow Cube 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721361481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721361480}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.000000044703484, y: -0, z: -0.31424382, w: 0.94934237}
+  m_LocalPosition: {x: -0.0019998983, y: -0.28290078, z: 0.08499977}
+  m_LocalScale: {x: 0.69370633, y: 0.8836937, z: 0.16000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 420521344}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -36.63}
+--- !u!23 &721361483
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721361480}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2cccda513f133f549a4fcb4bc2e357df, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &721361484
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721361480}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &743482209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4227,7 +4320,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4405,7 +4498,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4766,7 +4859,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5011,7 +5104,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5105,16 +5198,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!60 &971743071
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5442,7 +5535,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5586,7 +5679,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6172,7 +6265,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6496,7 +6589,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6590,16 +6683,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!60 &1042256763
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6748,7 +6841,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6921,16 +7014,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!60 &1093076610
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7360,7 +7453,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7454,16 +7547,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!60 &1207066890
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7850,7 +7943,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8038,7 +8131,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8154,16 +8247,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNames:
-  - {fileID: 3071554363623102951, guid: b0ef21c6cad37af44b079eb107845647, type: 3}
-  - {fileID: 2169983629600751119, guid: b82ba08b90c4e3946a1705c6a1d77506, type: 3}
-  - {fileID: 3071554363623102951, guid: 44a799fcd1cd56043a8deef66a06a083, type: 3}
-  - {fileID: 3382736769589351063, guid: 4aa81e4ba2dfddf429b48b289e31a72b, type: 3}
-  - {fileID: 3071554363623102951, guid: 80ccb1b75b40f35448c376f73114ba4f, type: 3}
-  - {fileID: 7586121479668744584, guid: b33c925d161304940b63f4e7b4b6c64e, type: 3}
-  - {fileID: 3071554363623102951, guid: a5e2b1992c5337645b0c665b21e8cf6a, type: 3}
-  - {fileID: 8908570435879814422, guid: 53106e3918c21fd45b1b1800020d4c18, type: 3}
-  - {fileID: 3071554363623102951, guid: f7012237fda0bf84fb8e84e33f88445f, type: 3}
-  - {fileID: 7904910390936493021, guid: bd0646647cdac894fb104ed6733d1662, type: 3}
+  - {fileID: 3071554363623102951, guid: 1fa4b33028961e244abb9e5340d9d50b, type: 3}
+  - {fileID: 3071554363623102951, guid: 470006487a291f541bd60dfb604cc025, type: 3}
+  - {fileID: 3071554363623102951, guid: bb1f59d05df58264f9a96368c419d26d, type: 3}
+  - {fileID: 3071554363623102951, guid: bb3236e400716424d84d7a8905813e1c, type: 3}
+  - {fileID: 3071554363623102951, guid: 573b6101251598e4a85d08ce31bb3c39, type: 3}
+  - {fileID: 3071554363623102951, guid: 4c5296e5d4c71594e96bb92a4160f9a0, type: 3}
+  - {fileID: 3071554363623102951, guid: b3212f52953b08d459d6f2d7eb0b848b, type: 3}
+  - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
+  - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
+  - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
 --- !u!60 &1445055323
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8459,7 +8552,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8684,6 +8777,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
+--- !u!1 &1682993589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1682993590}
+  - component: {fileID: 1682993593}
+  - component: {fileID: 1682993592}
+  m_Layer: 7
+  m_Name: Arrow Cube 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1682993590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682993589}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.00000011920929, z: -0.45604184, w: 0.8899584}
+  m_LocalPosition: {x: 0.06762, y: -0.34658, z: 0.085}
+  m_LocalScale: {x: 0.76150113, y: 0.67129207, z: 0.16}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 420521344}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -54.264}
+--- !u!23 &1682993592
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682993589}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2cccda513f133f549a4fcb4bc2e357df, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1682993593
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682993589}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1706735448
 GameObject:
   m_ObjectHideFlags: 0
@@ -8780,7 +8962,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9061,7 +9243,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9371,7 +9553,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9419,6 +9601,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838687114}
   m_CullTransparentMesh: 1
+--- !u!1 &1846118870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846118871}
+  - component: {fileID: 1846118874}
+  - component: {fileID: 1846118873}
+  m_Layer: 7
+  m_Name: Arrow Cube 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1846118871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846118870}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00301, y: 0.0379, z: 0.085}
+  m_LocalScale: {x: 1.0939711, y: 0.94198704, z: 0.16}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 420521344}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1846118873
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846118870}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2cccda513f133f549a4fcb4bc2e357df, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1846118874
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846118870}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1876144842
 GameObject:
   m_ObjectHideFlags: 0
@@ -9515,7 +9786,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10009,7 +10280,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10479,7 +10750,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10677,7 +10948,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 44205209}
         m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
-        m_MethodName: ClueIsUpFront
+        m_MethodName: ClueHasBeenSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13499,6 +13770,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: d5fcca68930ccba42bcd6ba9418dcb2f, type: 2}
+    - target: {fileID: 245575987641327437, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 306164286433630599, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13543,6 +13818,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 30ebcc10140b3dc46a45fa087b38e9ff, type: 2}
+    - target: {fileID: 605391133049292925, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 690653797085833116, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13623,6 +13902,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 93282a589c6082d43bb6900a62a18f58, type: 2}
+    - target: {fileID: 1046115587643099621, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 1100932085181602012, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: number
       value: 1
@@ -13635,6 +13918,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 70bc17100579aaf46ad3eec7de187cf0, type: 2}
+    - target: {fileID: 1161115228202639582, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 1168646618677797501, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: clueSO
       value: 
@@ -13643,6 +13930,10 @@ PrefabInstance:
       propertyPath: frontRotation.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1168646618677797501, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 1198835709270682757, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13651,6 +13942,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 2a4f5f4e143803a4e9080f9a4611bd18, type: 2}
+    - target: {fileID: 1221266124238516773, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 1249602426556360580, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13659,6 +13954,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 3a794cb71e693bc42b73b9cb1bccefc5, type: 2}
+    - target: {fileID: 1250258756946630504, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 1323128257484346460, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13707,6 +14006,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 9833cf5b0c488e64f8f5ef1291c717f4, type: 2}
+    - target: {fileID: 1603420185493352802, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 1626959300244941878, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13759,6 +14062,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 94e9e6e6d45568c49a1c9fa3de2cdbba, type: 2}
+    - target: {fileID: 2012054151045150694, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 2042407210597799222, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13815,6 +14122,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 784b26cd7855cca46a95d8a81ce3468f, type: 2}
+    - target: {fileID: 2388347234411613089, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 2389703701701290752, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13839,6 +14150,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 475d9bdb89a068542b011ac57b0bb802, type: 2}
+    - target: {fileID: 2482099350986172509, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 2520612304160195897, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13859,6 +14174,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 4f71498cf07f5234ab0eec104f82ea01, type: 2}
+    - target: {fileID: 2552893052963623012, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 2582955672805289885, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14031,6 +14350,10 @@ PrefabInstance:
       propertyPath: rotationMoveSpeed
       value: 1.57
       objectReference: {fileID: 0}
+    - target: {fileID: 3507038863147575988, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 3541770807388779182, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14159,6 +14482,10 @@ PrefabInstance:
       propertyPath: frontRotation.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4388010025252210986, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 4389219779180865931, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14267,6 +14594,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: fd22146afa44f8140988f860187e1871, type: 2}
+    - target: {fileID: 5091022150092220674, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 5150565780991883779, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14319,6 +14650,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 8cf6b07aa975d1544ac614dd96e121d3, type: 2}
+    - target: {fileID: 5475506191519000990, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 5484764162713893216, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14351,6 +14686,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 4b4bb528717758844b0110c823bd2c66, type: 2}
+    - target: {fileID: 5644896170448659647, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 5648808400274238778, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14375,6 +14714,10 @@ PrefabInstance:
       propertyPath: frontRotation.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 5900225395970732398, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 5903229712345461876, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14451,6 +14794,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 84dca36e56a9c6349a0085d85e6dfbce, type: 2}
+    - target: {fileID: 6247270648061976125, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 6275893367558953469, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14475,6 +14822,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: c8e83078c7c2aca4b81a88959765c211, type: 2}
+    - target: {fileID: 6536628841263667241, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 6556599327991466885, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: number
       value: 19
@@ -14507,6 +14858,10 @@ PrefabInstance:
       propertyPath: frontRotation.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 6679919729568462424, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 6741931984515962569, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14519,6 +14874,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 7dcc0cf3f34203842a503410bc8cb7b0, type: 2}
+    - target: {fileID: 6771637882478360257, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 6834415094931095673, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14543,6 +14902,10 @@ PrefabInstance:
       propertyPath: frontRotation.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 6902886132987294581, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 6946745399559788106, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14707,6 +15070,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: 34888a89b962cbf4fbf106dfd83c74e7, type: 2}
+    - target: {fileID: 7987653013033759014, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 7989962683052356644, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14755,6 +15122,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: aa4720582ac04364cb5a54be5694c889, type: 2}
+    - target: {fileID: 8339604718511973007, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: buttonCanvasControl
+      value: 
+      objectReference: {fileID: 44205209}
     - target: {fileID: 8486266754847723037, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: clueSO
       value: 

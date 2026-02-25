@@ -67,7 +67,8 @@ public class WheelSpinMovement : MonoBehaviour
         if (destinationPosition == moveOutPosition)
         {
             GetComponent<WheelSpinSegmentControl>().DestroyWheelSegments();
-            justWheel.transform.eulerAngles = new Vector3(0, 0, 0);
+            //justWheel.transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.localPosition = ResetPosition;
         }
     }
 
@@ -90,12 +91,12 @@ public class WheelSpinMovement : MonoBehaviour
     {
         GetComponent<WheelSpinSegmentControl>().UpdatePossibleWheelSegments();
 
+        float randomDegree = Random.Range(0f, 360f);
+        //justWheel.transform.eulerAngles = new Vector3(0, 0, randomDegree);
+
         destinationPosition = moveInPosition;
         moveSpeed = moveInSpeed;
         canMove = true;
-
-        float randomDegree = Random.Range(0f, 360f);
-        //justWheel.transform.eulerAngles = new Vector3(0, 0, randomDegree);
 
         tempRotationSpeed = rotationSpeed;
         tempSubtractionFactor = rotationSubtractionFactor;

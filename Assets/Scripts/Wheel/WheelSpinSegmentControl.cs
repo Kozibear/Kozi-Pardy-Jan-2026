@@ -71,8 +71,6 @@ public class WheelSpinSegmentControl : MonoBehaviour
             wheelSegmentsAvailable.Remove(9); //Removes PS1 & PS5
         }
 
-        wheelSegmentsAvailable.Remove(9);
-
         AssignWheelSegments();
     }
 

@@ -57,6 +57,7 @@ MonoBehaviour:
   rotationMoveSpeed: 1.57
   waitBeforeRotateIn: 0.05
   waitBeforeRotateOut: 0
+  buttonCanvasControl: {fileID: 0}
 --- !u!114 &7732754158159776890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
+  number: 0
 --- !u!1 &2713969150311978872
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,6 +133,7 @@ GameObject:
   - component: {fileID: 3619615333490187651}
   - component: {fileID: 6650567186404439522}
   - component: {fileID: 5040706974353697841}
+  - component: {fileID: 4879514183250385833}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
@@ -230,6 +233,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4879514183250385833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2922398159664233416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
+  blueHighlight: {r: 0, g: 0.37254903, b: 1, a: 0}
+  orangeHighlight: {r: 1, g: 0.3882353, b: 0, a: 0}
+  purpleHighlight: {r: 0.61960787, g: 0, b: 1, a: 0}
+  blueDarkened: {r: 0, g: 0.24176821, b: 0.65, a: 0}
+  orangeDarkened: {r: 0.6392157, g: 0.2509804, b: 0, a: 0}
+  purpleDarkened: {r: 0.40392157, g: 0, b: 0.6509804, a: 0}
+  resetWhite: {r: 1, g: 1, b: 1, a: 0}
+  desiredDurationInSeconds: 1
+  clueCubeMaterial: {fileID: 2100000, guid: 6d66d0ac3bd71ca43b564ce2e221beea, type: 2}
 --- !u!1 &5552672689618257138
 GameObject:
   m_ObjectHideFlags: 0

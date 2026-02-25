@@ -6,11 +6,22 @@ public class ButtonCanvasControl : MonoBehaviour
 {
     [SerializeField] List<Button> boardButtons;
     [SerializeField] Button backButton;
+    [SerializeField] GameManager gameManager;
+
+    public void ClueHasBeenSelected()
+    {
+        setAllBoardButtonsState(false);
+    }
 
     public void ClueIsUpFront()
     {
-        setAllBoardButtonsState(false);
         backButtonState(true);
+        //code for darkening all the buttons
+    }
+
+    public void ClueIsBackHome()
+    {
+        gameManager.BoardBeforeWheelSpin();
     }
 
     public void backButtonState(bool state)

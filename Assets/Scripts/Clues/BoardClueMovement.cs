@@ -22,6 +22,8 @@ public class BoardClueMovement : MonoBehaviour
     [SerializeField] float waitBeforeRotateIn = 0.05f;
     [SerializeField] float waitBeforeRotateOut = 0;
 
+    [Header("ButtonCanvasControl")]
+    [SerializeField] ButtonCanvasControl buttonCanvasControl;
 
     private Vector3 destinationPosition;
     private bool canMoveClue = false;
@@ -79,18 +81,14 @@ public class BoardClueMovement : MonoBehaviour
             isUpFront = true;
             GetComponent<BoardClueMediaManager>().HideFrontText();
 
-            //gameManager.HardDeActivationAndHidePointNumber();
-            //backButtonInvisible.Interactable();
-            //wheelSpin.CheckIfSinglesAreDone();
+            buttonCanvasControl.ClueIsUpFront();
         }
         if (transform.localPosition == originalPosition)
         {
             isUpFront = false;
             GetComponent<BoardClueMediaManager>().ClueCleanup();
 
-            //gameManager.BoardBeforeWheelSpin();
-            //transform.localPosition = moveOffscreenBelowPosition;
-            //if (ClueImagesSpawnPoint.transform.childCount > 0) Destroy(ClueImagesSpawnPoint.transform.GetChild(0).gameObject);
+            buttonCanvasControl.ClueIsBackHome();
         }
     }
 
