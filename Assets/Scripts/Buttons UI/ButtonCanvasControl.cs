@@ -8,6 +8,14 @@ public class ButtonCanvasControl : MonoBehaviour
     [SerializeField] Button backButton;
     [SerializeField] GameObject gameManagerObject;
 
+    public void ActivateSpecificClues(List<int> buttonsToActivate)
+    {
+        foreach (int i in buttonsToActivate)
+        {
+            
+        }
+    }
+    
     public void ClueHasBeenSelected()
     {
         setAllBoardButtonsState(false);

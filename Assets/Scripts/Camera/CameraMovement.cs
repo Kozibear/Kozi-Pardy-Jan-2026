@@ -1,10 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class CameraMovement : MonoBehaviour
 {
+    [Header("GameManager")]
+    [SerializeField] GameManager gameManager;
+
     [Header("Position")]
     [SerializeField] Vector3 originalPosition;
     [SerializeField] Vector3 wheelSpinPosition;
@@ -65,13 +66,9 @@ public class CameraMovement : MonoBehaviour
     {
         canMoveClue = false;
 
-        if (transform.localPosition == wheelSpinPosition)
-        {
-
-        }
         if (transform.localPosition == originalPosition)
         {
-
+            gameManager.ActivateBoardClues();
         }
     }
 

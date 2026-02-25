@@ -83,7 +83,7 @@ public class WheelSpinMovement : MonoBehaviour
         {
             canRotate = false;
             justWheel.transform.Rotate(0, 0, 0);
-            wheelArrow.SelectSegment();
+            GetComponent<WheelSpinBoardSelections>().ConfirmBoardSelection();
         }
     }
 
@@ -100,8 +100,9 @@ public class WheelSpinMovement : MonoBehaviour
 
         tempRotationSpeed = rotationSpeed;
         tempSubtractionFactor = rotationSubtractionFactor;
-
         canRotate = true;
+
+        wheelArrow.SetTriggerSelection(true);
     }
 
     public void MoveOutWheelSpin()
@@ -109,5 +110,7 @@ public class WheelSpinMovement : MonoBehaviour
         destinationPosition = moveOutPosition;
         moveSpeed = moveOutSpeed;
         canMove = true;
+
+        wheelArrow.SetTriggerSelection(false);
     }
 }

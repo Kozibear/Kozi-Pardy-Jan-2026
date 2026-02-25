@@ -11,11 +11,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] WheelSpinMovement wheelSpinMovement;
     [SerializeField] float waitBeforeBringingInWheel = 1f;
 
-    [Header("ClueScreen")]
-    [SerializeField] ClueScreen clueScreen;
+    [Header("Button Canvas Control")]
+    [SerializeField] ButtonCanvasControl buttonCanvasControl;
 
     [Header("Black Background Fade")]
     [SerializeField] SpriteFade blackBackgroundFade;
+
+    private List<int> storedButtonsToActivate;
 
     //[Header("Game State Enum")]
     //[SerializeField] GameState gameState = GameState.Singleboard;
@@ -41,16 +43,18 @@ public class GameManager : MonoBehaviour
         blackBackgroundFade.FadeIn();
     }
 
-    public void ActivateButtonsAndHideWheel(List<int> buttonsToActivate)
+    public void HideWheelAndReturnToBoard(List<int> buttonsToActivate)
     {
-        foreach (int buttonToActivate in buttonsToActivate)
-        {
-            //boardButtons[buttonToActivate].GetComponent<BoardButton>().InteractableFadeIn();
-        }
+        storedButtonsToActivate = buttonsToActivate;
 
         cameraMovement.MoveBackToNormal();
         wheelSpinMovement.MoveOutWheelSpin();
         blackBackgroundFade.FadeOut();
+    }
+
+    public void ActivateBoardClues()
+    {
+        buttonCanvasControl.ActivateSpecificClues(storedButtonsToActivate);
     }
 
     public void HardDeActivationAndHidePointNumber() { }

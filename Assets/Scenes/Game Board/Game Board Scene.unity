@@ -598,7 +598,18 @@ MonoBehaviour:
   - {fileID: 1912095522}
   - {fileID: 871001512}
   backButton: {fileID: 1004657691}
-  gameManager: {fileID: 1170810759}
+  gameManagerObject: {fileID: 1170810757}
+--- !u!114 &58288542 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6597915675810199003, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &80858781
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +718,17 @@ MonoBehaviour:
   - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
   - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
   - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
+--- !u!114 &101983576 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5530360353299615236, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &112590483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +1031,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
+--- !u!114 &138758453 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 619372195056700055, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!114 &175607969 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5091022150092220674, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
@@ -1210,6 +1243,17 @@ MeshRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 3
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &199803658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 375009348788358163, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &206170955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,6 +1577,17 @@ MeshRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 4
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &248612328 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6737858558805627464, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &253963228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,6 +1789,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
+--- !u!114 &314951153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4798018679854615583, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &323598555
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,6 +2109,17 @@ PolygonCollider2D:
       - {x: 0.54685485, y: -1.552021}
       - {x: 1.609126, y: 1.6194355}
   m_UseDelaunayMesh: 0
+--- !u!114 &365546929 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2157435019588138132, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &377357166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,6 +2338,17 @@ MonoBehaviour:
   - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
   - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
   - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
+--- !u!114 &395610077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3465943884122238229, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &419720712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,10 +2565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72771f8dc9914ca4c9f95b8c2409f8a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1170810759}
-  whiteFlash: {fileID: 8729388767142314598}
-  waitBeforeFlash: 0.2
-  waitAfterFlash: 0.75
+  wheelSpinBoardSelections: {fileID: 1661278017}
 --- !u!61 &420521347
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2554,6 +2639,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &422587051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5748814927933705001, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &423960241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,6 +3008,17 @@ MeshRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 3
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &447607417 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5027970620274238284, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4763,6 +4870,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 614123972}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &805773420 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 157059303719479833, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
+--- !u!114 &817038756 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3532514360863528236, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &830062524
 GameObject:
   m_ObjectHideFlags: 0
@@ -4917,6 +5046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842536995}
   - component: {fileID: 842536994}
+  - component: {fileID: 842536996}
   m_Layer: 7
   m_Name: The Wheel
   m_TagString: Untagged
@@ -5008,6 +5138,18 @@ Transform:
   - {fileID: 771114675}
   m_Father: {fileID: 2029818913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &842536996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842536993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68f5cc4b1def044aa59c4c4b9b1e61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelColorChange
 --- !u!1 &871001510
 GameObject:
   m_ObjectHideFlags: 0
@@ -5152,6 +5294,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871001510}
   m_CullTransparentMesh: 1
+--- !u!114 &886904656 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 245779366807477679, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
+--- !u!114 &905927887 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5315081409606886744, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
+--- !u!114 &927791346 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6184219101198210163, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
+--- !u!114 &940381063 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1160878818958025276, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &971743068
 GameObject:
   m_ObjectHideFlags: 0
@@ -6131,6 +6317,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 44205209}
+        m_TargetAssemblyTypeName: ButtonCanvasControl, Assembly-CSharp
+        m_MethodName: BackButtonBeenSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1004657692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6968,6 +7166,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
+--- !u!114 &1091052799 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8508531424603299972, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b557a5abb87b66d4d804be4a22a95abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardSpriteColorChange
 --- !u!1 &1093076607
 GameObject:
   m_ObjectHideFlags: 0
@@ -7098,6 +7307,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
+--- !u!114 &1117337081 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6379583013336880367, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1137406413
 GameObject:
   m_ObjectHideFlags: 0
@@ -7277,6 +7497,28 @@ MeshRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 3
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1148596394 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2534966452833647556, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
+--- !u!114 &1165348668 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9056153041078193239, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1170810757
 GameObject:
   m_ObjectHideFlags: 0
@@ -7287,6 +7529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170810758}
   - component: {fileID: 1170810759}
+  - component: {fileID: 1170810760}
   m_Layer: 6
   m_Name: Game Manager
   m_TagString: Untagged
@@ -7324,39 +7567,67 @@ MonoBehaviour:
   cameraMovement: {fileID: 1453430540}
   wheelSpinMovement: {fileID: 1661278015}
   waitBeforeBringingInWheel: 0.5
-  boardButtons:
-  - {fileID: 4692453195067676745}
-  - {fileID: 579629704945558049}
-  - {fileID: 8512668067690698845}
-  - {fileID: 7777620485185175823}
-  - {fileID: 3406727347271963808}
-  - {fileID: 3274242353222763619}
-  - {fileID: 5827112534921653090}
-  - {fileID: 3398347231491415914}
-  - {fileID: 1946858751274332122}
-  - {fileID: 3189006833934336792}
-  - {fileID: 4615781910373229151}
-  - {fileID: 5274670474736528969}
-  - {fileID: 8552095100280922382}
-  - {fileID: 7618392073973491172}
-  - {fileID: 5689855581904134569}
-  - {fileID: 8644158393405155205}
-  - {fileID: 961933514513183998}
-  - {fileID: 2521900731734478996}
-  - {fileID: 2654890154836520839}
-  - {fileID: 817067217234060855}
-  - {fileID: 3404284033511937344}
-  - {fileID: 8397208550672801410}
-  - {fileID: 4813779274257757879}
-  - {fileID: 8320208867253864903}
-  - {fileID: 8248513967318340484}
-  - {fileID: 161498651359984116}
-  - {fileID: 476764891011315325}
-  - {fileID: 2534681462224765196}
-  - {fileID: 5691718587279814817}
-  - {fileID: 7104554850572792668}
-  clueScreen: {fileID: 1712354115}
+  buttonCanvasControl: {fileID: 44205209}
   blackBackgroundFade: {fileID: 2000171511}
+--- !u!114 &1170810760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170810757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c396ca0a530a1d14fbaaf95edadcd357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalColorManager
+  globalColorState: 0
+  boardClueColorChanges:
+  - {fileID: 1793246074}
+  - {fileID: 138758453}
+  - {fileID: 199803658}
+  - {fileID: 817038756}
+  - {fileID: 1165348668}
+  - {fileID: 1340466939}
+  - {fileID: 1304649312}
+  - {fileID: 365546929}
+  - {fileID: 886904656}
+  - {fileID: 1718564562}
+  - {fileID: 447607417}
+  - {fileID: 940381063}
+  - {fileID: 1934664044}
+  - {fileID: 395610077}
+  - {fileID: 905927887}
+  - {fileID: 1117337081}
+  - {fileID: 805773420}
+  - {fileID: 927791346}
+  - {fileID: 1228619002}
+  - {fileID: 1289318053}
+  - {fileID: 422587051}
+  - {fileID: 314951153}
+  - {fileID: 2147297135}
+  - {fileID: 2104761582}
+  - {fileID: 101983576}
+  CategoryColorChanges:
+  - {fileID: 248612328}
+  - {fileID: 1148596394}
+  - {fileID: 1227639036}
+  - {fileID: 58288542}
+  - {fileID: 1183416411}
+  boardSpriteColorChange: {fileID: 1091052799}
+  wheelColorChange: {fileID: 842536996}
+  backgroundColorChange: {fileID: 1578960658}
+--- !u!114 &1183416411 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6837457351035228847, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1183456566
 GameObject:
   m_ObjectHideFlags: 0
@@ -7609,6 +7880,28 @@ PolygonCollider2D:
       - {x: 0.4977396, y: -1.5385898}
       - {x: 1.5498261, y: 1.6439278}
   m_UseDelaunayMesh: 0
+--- !u!114 &1227639036 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1745376127151204965, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
+--- !u!114 &1228619002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5660325352540326832, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1251757159
 GameObject:
   m_ObjectHideFlags: 0
@@ -7810,6 +8103,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
+--- !u!114 &1289318053 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6711067155350198734, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1297398740
 GameObject:
   m_ObjectHideFlags: 0
@@ -7847,6 +8151,17 @@ Transform:
   - {fileID: 112590484}
   m_Father: {fileID: 1976345894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1304649312 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 254167764100108116, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1308923536
 GameObject:
   m_ObjectHideFlags: 0
@@ -8013,6 +8328,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
+--- !u!114 &1340466939 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1950897750445765900, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!114 &1368536158 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1603420185493352802, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
@@ -8451,6 +8777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd947b129a67e5843b93d34ff0be415f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
+  gameManager: {fileID: 1170810759}
   originalPosition: {x: 0, y: 0, z: 0}
   wheelSpinPosition: {x: 1.05, y: 0, z: -9.8}
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -8600,11 +8927,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537823819}
   m_CullTransparentMesh: 1
---- !u!4 &1544900605 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3595234554272753597, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
+--- !u!114 &1578960658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6290828161310262336, guid: 146eae55e3e769343b2502189dc47b76, type: 3}
+  m_PrefabInstance: {fileID: 8625759376710187140}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 550653d995fb93b4da7acf99d09db54c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundColorChange
 --- !u!114 &1586348179 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7987653013033759014, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
@@ -8660,8 +8993,9 @@ GameObject:
   - component: {fileID: 1661278014}
   - component: {fileID: 1661278015}
   - component: {fileID: 1661278016}
+  - component: {fileID: 1661278017}
   m_Layer: 7
-  m_Name: 'Wheel Spin '
+  m_Name: Wheel Spin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8755,6 +9089,22 @@ MonoBehaviour:
   - {fileID: 126658787}
   - {fileID: 1283587796}
   - {fileID: 791879384}
+--- !u!114 &1661278017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661278013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7c6eb3d583653489c5f75e7915a918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelSpinBoardLightUps
+  gameManager: {fileID: 1170810759}
+  whiteFlash: {fileID: 8729388767142314598}
+  waitBeforeFlash: 0.2
+  waitAfterFlash: 0.75
 --- !u!114 &1682726159 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6679919729568462424, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
@@ -9066,6 +9416,17 @@ MonoBehaviour:
   backButton: {fileID: 0}
   backButtonInvisible: {fileID: 1733222668}
   wheelSpin: {fileID: 1661278015}
+--- !u!114 &1718564562 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3625729795504649936, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!4 &1733222667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8598513256455294251, guid: 20bddcbea735c55449ecc317d8b75096, type: 3}
@@ -9457,6 +9818,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779636975}
   m_CullTransparentMesh: 1
+--- !u!114 &1793246074 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2584980896794286021, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1838687114
 GameObject:
   m_ObjectHideFlags: 0
@@ -9856,116 +10228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
---- !u!1001 &1894856710
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1544900605}
-    m_Modifications:
-    - target: {fileID: 2376421251605283417, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_Name
-      value: Clue Camera Reference
-      objectReference: {fileID: 0}
-    - target: {fileID: 2376421251605283417, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2376421251605283417, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2815088319570761705, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3041819662865251161, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5703042484908503266, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5703042484908503266, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5744280976903537763, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5769146114228457576, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5943467384412776009, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: clueSO
-      value: 
-      objectReference: {fileID: 11400000, guid: bfd5bbe8ec60bdd4396f85607188a3f6, type: 2}
-    - target: {fileID: 5943467384412776009, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: frontPosition.z
-      value: -7.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 6395193139177846315, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7205042001149870445, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
---- !u!4 &1894856711 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2796382234627531999, guid: a52b6527290ef79418c77f098ca237ac, type: 3}
-  m_PrefabInstance: {fileID: 1894856710}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1898195308
 GameObject:
   m_ObjectHideFlags: 0
@@ -10508,6 +10770,17 @@ MeshRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 3
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1934664044 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6973834346841858046, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1976345893
 GameObject:
   m_ObjectHideFlags: 0
@@ -10852,6 +11125,17 @@ Transform:
   - {fileID: 1712354114}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2104761582 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3427631787620987995, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &2108841242
 GameObject:
   m_ObjectHideFlags: 0
@@ -11197,6 +11481,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
+--- !u!114 &2147297135 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 235294138478550796, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!212 &19239139993378678
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13855,6 +14150,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 860746678607118239, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 3-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 860746678607118239, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -14011,6 +14310,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 44205209}
     - target: {fileID: 1626959300244941878, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 1-5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626959300244941878, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -14077,6 +14380,10 @@ PrefabInstance:
     - target: {fileID: 2088338132569907456, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098845312643518988, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 2
       objectReference: {fileID: 0}
     - target: {fileID: 2098845312643518988, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14155,6 +14462,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 44205209}
     - target: {fileID: 2520612304160195897, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 3-5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520612304160195897, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -14182,6 +14493,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2584980896794286021, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: test
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2608443036742531629, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14189,6 +14504,10 @@ PrefabInstance:
     - target: {fileID: 2633352671092015310, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665587130996599624, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 5-1
       objectReference: {fileID: 0}
     - target: {fileID: 2665587130996599624, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14199,8 +14518,16 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2716926233041038289, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 4-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716926233041038289, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753467837228598189, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 3
       objectReference: {fileID: 0}
     - target: {fileID: 2753467837228598189, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14217,6 +14544,10 @@ PrefabInstance:
     - target: {fileID: 2833861169918564514, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848030438768242277, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 5-5
       objectReference: {fileID: 0}
     - target: {fileID: 2848030438768242277, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14245,6 +14576,10 @@ PrefabInstance:
     - target: {fileID: 2969008974244528039, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002785471013612670, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 5-2
       objectReference: {fileID: 0}
     - target: {fileID: 3002785471013612670, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14313,6 +14648,10 @@ PrefabInstance:
     - target: {fileID: 3328750609843704392, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3386431265772127021, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 3-1
       objectReference: {fileID: 0}
     - target: {fileID: 3386431265772127021, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14407,6 +14746,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3724794769799099534, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 4-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724794769799099534, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -14429,6 +14772,10 @@ PrefabInstance:
     - target: {fileID: 3859046492909413531, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: number
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3898839567018801583, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 4-5
       objectReference: {fileID: 0}
     - target: {fileID: 3898839567018801583, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14507,6 +14854,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4533778375366341650, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 4-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533778375366341650, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -14567,6 +14918,10 @@ PrefabInstance:
       value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4947363739438961722, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 5-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947363739438961722, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -14614,6 +14969,10 @@ PrefabInstance:
       propertyPath: clueSO
       value: 
       objectReference: {fileID: 11400000, guid: aa4720582ac04364cb5a54be5694c889, type: 2}
+    - target: {fileID: 5252964658617005988, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 1-1
+      objectReference: {fileID: 0}
     - target: {fileID: 5252964658617005988, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14811,8 +15170,16 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6442641032920078001, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 2-5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442641032920078001, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6503187901309302093, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 1-4
       objectReference: {fileID: 0}
     - target: {fileID: 6503187901309302093, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14829,6 +15196,10 @@ PrefabInstance:
     - target: {fileID: 6556599327991466885, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: number
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566376289389710708, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 3-4
       objectReference: {fileID: 0}
     - target: {fileID: 6566376289389710708, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14911,6 +15282,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6984270501067930471, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984270501067930471, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -14935,8 +15310,16 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7174010553770015616, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174010553770015616, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7179166969093942006, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 1-2
       objectReference: {fileID: 0}
     - target: {fileID: 7179166969093942006, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14979,6 +15362,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7322320170571521043, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7322320170571521043, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -15007,16 +15394,32 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7516748436603551182, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 2-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516748436603551182, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528359608057528173, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 5-3
       objectReference: {fileID: 0}
     - target: {fileID: 7528359608057528173, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7547762309228064565, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 2-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547762309228064565, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571687259834583672, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 4-2
       objectReference: {fileID: 0}
     - target: {fileID: 7571687259834583672, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -15049,6 +15452,10 @@ PrefabInstance:
     - target: {fileID: 7869429038505841020, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930197844968811634, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 1-3
       objectReference: {fileID: 0}
     - target: {fileID: 7930197844968811634, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -15095,6 +15502,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8082570184620610925, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 2-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082570184620610925, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -15135,6 +15546,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8559454277584409845, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 2-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8559454277584409845, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
@@ -15161,6 +15576,10 @@ PrefabInstance:
     - target: {fileID: 8856054433948593261, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8873693022858019421, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_Name
+      value: Cube 3-2
       objectReference: {fileID: 0}
     - target: {fileID: 8873693022858019421, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -15192,10 +15611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 3595234554272753597, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 1894856711}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5731193291660106530, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       insertIndex: -1

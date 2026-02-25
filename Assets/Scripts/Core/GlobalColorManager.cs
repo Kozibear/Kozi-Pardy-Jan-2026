@@ -42,6 +42,12 @@ public class GlobalColorManager : MonoBehaviour
         }
     }
 
+    public void BrightenSpecificBoardButtons(int buttonToBrighten)
+    {
+
+        //remember to also brighten associated cateogry headers
+    }
+
     public void DarkenAllOtherBoardButtons(int buttonToWhiteList)
     {
         for (int i = 0; i < boardClueColorChanges.Count; i++)

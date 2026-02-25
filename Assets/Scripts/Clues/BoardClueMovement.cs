@@ -102,6 +102,7 @@ public class BoardClueMovement : MonoBehaviour
             StartCoroutine(RotateToDestination(frontRotation, waitBeforeRotateIn));
 
             GetComponent<BoardClueMediaManager>().CluePrep();
+            GetComponent<BoardClueStateControl>().SetHasBeenClicked(true);
         }
     }
 

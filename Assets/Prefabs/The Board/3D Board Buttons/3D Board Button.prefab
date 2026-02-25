@@ -88,6 +88,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
   number: 0
+  boardClueColorChange: {fileID: 4879514183250385833}
 --- !u!1 &2713969150311978872
 GameObject:
   m_ObjectHideFlags: 0
