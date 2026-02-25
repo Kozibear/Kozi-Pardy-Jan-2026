@@ -17,6 +17,7 @@ public class WheelSpinBoardSelections : MonoBehaviour
     List<BoardClueStateControl> boardClueStateControls;
 
     private int currentSelectedSegment;
+    private List<int> currentList;
 
     private List<int> tensOnlyList = new List<int>() { 0, 5, 10, 15, 20 };
     private List<int> columnsFourFive = new List<int>() { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 };
@@ -35,10 +36,14 @@ public class WheelSpinBoardSelections : MonoBehaviour
 
     private List<int> wholeBoardList = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 };
 
+    private void Start()
+    {
+        boardClueStateControls = GetComponent<WheelSpinSegmentControl>().GetboardClueStateControls();
+    }
+
     public void LightUpBoardParts(int selectedSegment)
     {
         currentSelectedSegment = selectedSegment;
-        boardClueStateControls = GetComponent<WheelSpinSegmentControl>().GetboardClueStateControls();
 
         foreach (BoardClueStateControl clue in boardClueStateControls)
         {
@@ -48,83 +53,60 @@ public class WheelSpinBoardSelections : MonoBehaviour
         switch (currentSelectedSegment)
         {
             case 0:
-                for (int i = 0; i < tensOnlyList.Count; i++)
-                {
-                    boardClueStateControls[tensOnlyList[i]].InstantLighten();
-                }
+                foreach (int i in  tensOnlyList) { boardClueStateControls[i].InstantLighten(); }
+                currentList = tensOnlyList;
                 break;
 
             case 1:
-                for (int i = 0; i < columnsFourFive.Count; i++)
-                {
-                    boardClueStateControls[columnsFourFive[i]].InstantLighten();
-                }
+                foreach (int i in columnsFourFive) { boardClueStateControls[i].InstantLighten(); }
+                currentList = columnsFourFive;
                 break;
 
             case 2:
-                for (int i = 0; i < twentiesOnlyList.Count; i++)
-                {
-                    boardClueStateControls[twentiesOnlyList[i]].InstantLighten();
-                }
+                foreach (int i in twentiesOnlyList) { boardClueStateControls[i].InstantLighten(); }
+                currentList = twentiesOnlyList;
                 break;
 
             case 3:
-                for (int i = 0; i < columnsOneTwo.Count; i++)
-                {
-                    boardClueStateControls[columnsOneTwo[i]].InstantLighten();
-                }
+                foreach (int i in columnsOneTwo) { boardClueStateControls[i].InstantLighten(); }
+                currentList = columnsOneTwo;
                 break;
 
             case 4:
-                for (int i = 0; i < thirtiesOnlyList.Count; i++)
-                {
-                    boardClueStateControls[thirtiesOnlyList[i]].InstantLighten();
-                }
+                foreach (int i in thirtiesOnlyList) { boardClueStateControls[i].InstantLighten(); }
+                currentList = thirtiesOnlyList;
                 break;
 
             case 5:
-                for (int i = 0; i < columnsThreeFour.Count; i++)
-                {
-                    boardClueStateControls[columnsThreeFour[i]].InstantLighten();
-                }
+                foreach (int i in columnsThreeFour) { boardClueStateControls[i].InstantLighten(); }
+                currentList = columnsThreeFour;
                 break;
 
             case 6:
-                for (int i = 0; i < fortiesOnlyList.Count; i++)
-                {
-                    boardClueStateControls[fortiesOnlyList[i]].InstantLighten();
-                }
+                foreach (int i in fortiesOnlyList) { boardClueStateControls[i].InstantLighten(); }
+                currentList = fortiesOnlyList;
                 break;
 
             case 7:
-                for (int i = 0; i < columnsTwoThree.Count; i++)
-                {
-                    boardClueStateControls[columnsTwoThree[i]].InstantLighten();
-                }
+                foreach (int i in columnsTwoThree) { boardClueStateControls[i].InstantLighten(); }
+                currentList = columnsTwoThree;
                 break;
 
             case 8:
-                for (int i = 0; i < fiftiesOnlyList.Count; i++)
-                {
-                    boardClueStateControls[fiftiesOnlyList[i]].InstantLighten();
-                }
+                foreach (int i in fiftiesOnlyList) { boardClueStateControls[i].InstantLighten(); }
+                currentList = fiftiesOnlyList;
                 break;
 
             case 9:
-                for (int i = 0; i < columnsOneFive.Count; i++)
-                {
-                    boardClueStateControls[columnsOneFive[i]].InstantLighten();
-                }
+                foreach (int i in columnsOneFive) { boardClueStateControls[i].InstantLighten(); }
+                currentList = columnsOneFive;
                 break;
 
             default:
-                for (int i = 0; i < wholeBoardList.Count; i++)
-                {
-                    boardClueStateControls[wholeBoardList[i]].InstantLighten();
-                }
+                foreach (int i in wholeBoardList) { boardClueStateControls[i].InstantLighten(); }
+                currentList = wholeBoardList;
                 break;
         }
-
     }
 
     public void ConfirmBoardSelection()
@@ -139,51 +121,6 @@ public class WheelSpinBoardSelections : MonoBehaviour
 
         yield return new WaitForSeconds(waitAfterFlash);
 
-        switch (currentSelectedSegment)
-        {
-            case 0:
-                gameManager.HideWheelAndReturnToBoard(tensOnlyList);
-                break;
-
-            case 1:
-                gameManager.HideWheelAndReturnToBoard(columnsFourFive);
-                break;
-
-            case 2:
-                gameManager.HideWheelAndReturnToBoard(twentiesOnlyList);
-                break;
-
-            case 3:
-                gameManager.HideWheelAndReturnToBoard(columnsOneTwo);
-                break;
-
-            case 4:
-                gameManager.HideWheelAndReturnToBoard(thirtiesOnlyList);
-                break;
-
-            case 5:
-                gameManager.HideWheelAndReturnToBoard(columnsThreeFour);
-                break;
-
-            case 6:
-                gameManager.HideWheelAndReturnToBoard(fortiesOnlyList);
-                break;
-
-            case 7:
-                gameManager.HideWheelAndReturnToBoard(columnsTwoThree);
-                break;
-
-            case 8:
-                gameManager.HideWheelAndReturnToBoard(fiftiesOnlyList);
-                break;
-
-            case 9:
-                gameManager.HideWheelAndReturnToBoard(columnsOneFive);
-                break;
-
-            default:
-                gameManager.HideWheelAndReturnToBoard(wholeBoardList);
-                break;
-        }
+        gameManager.HideWheelAndReturnToBoard(currentList);
     }
 }

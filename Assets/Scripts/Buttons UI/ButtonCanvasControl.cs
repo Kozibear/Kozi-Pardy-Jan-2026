@@ -4,15 +4,23 @@ using System.Collections.Generic;
 
 public class ButtonCanvasControl : MonoBehaviour
 {
+    [Header("UI Buttons")]
     [SerializeField] List<Button> boardButtons;
     [SerializeField] Button backButton;
     [SerializeField] GameObject gameManagerObject;
+
+    [Header("Board Clues")]
+    [SerializeField] List<BoardClueStateControl> boardClueStateControls;
+
 
     public void ActivateSpecificClues(List<int> buttonsToActivate)
     {
         foreach (int i in buttonsToActivate)
         {
-            
+            if (!boardClueStateControls[i].GetHasBeenClicked())
+            {
+                boardButtons[i].gameObject.SetActive(true);
+            }
         }
     }
     
@@ -29,6 +37,7 @@ public class ButtonCanvasControl : MonoBehaviour
 
     public void BackButtonBeenSelected()
     {
+        backButtonState(false);
         gameManagerObject.GetComponent<GlobalColorManager>().ChangeGlobalColor();
     }
 
