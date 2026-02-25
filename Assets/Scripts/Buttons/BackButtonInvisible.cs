@@ -19,6 +19,6 @@ public class BackButtonInvisible : ButtonSprite
     private void BackButtonClicked()
     {
         NotInteractable();
-        gameManager.BackButtonPressed();
+        //gameManager.BackButtonPressed();
     }
 }

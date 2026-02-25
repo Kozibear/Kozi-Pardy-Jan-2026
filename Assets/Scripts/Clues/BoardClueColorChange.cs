@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class BoardClueColorChange : MonoBehaviour
 {
+    public enum ColorChoices { BlueHighlight, OrangeHighlight, PurpleHighlight, BlueDarkened, OrangeDarkened, PurpleDarkened };
+
     [Header("Highlight Colors")]
     [SerializeField] Color blueHighlight;
     [SerializeField] Color orangeHighlight;
@@ -19,16 +21,17 @@ public class BoardClueColorChange : MonoBehaviour
     [SerializeField] float desiredDurationInSeconds = 2;
     private float elapsedTimeInSeconds = 0;
 
-    [Header("The Cube's Material")]
-    [SerializeField] Material clueCubeMaterial;
+    [Header("The Cube's Mesh Renderer")]
+    [SerializeField] MeshRenderer meshRenderer;
 
     private Color currentColor;
-    private bool canChangeColor = true;
+    private Color nextColor;
+    private bool canChangeColor = false;
 
     private void Start()
     {
-        clueCubeMaterial.color = blueDarkened;
-        currentColor = clueCubeMaterial.color;
+        currentColor = blueDarkened;
+        meshRenderer.material.color = currentColor;
     }
 
     void Update()
@@ -40,24 +43,78 @@ public class BoardClueColorChange : MonoBehaviour
             elapsedTimeInSeconds += Time.deltaTime;
             float percentageComplete = elapsedTimeInSeconds / desiredDurationInSeconds;
 
-            GradualColorChange(percentageComplete);
+            GradualColorChange(percentageComplete, nextColor);
         }
     }
 
-    public void GradualColorChange(float percentageComplete)
+    public void GradualColorChange(float percentageComplete, Color newColor)
     {
-        //clueCubeMaterial.color = Color.Lerp(currentColor, blueHighlight, percentageComplete);
+        meshRenderer.material.color = Color.Lerp(currentColor, newColor, percentageComplete);
     }
 
-    public void StartGradualColorChange()
+    public void StartGradualColorChange(ColorChoices colorChoice)
     {
+        switch (colorChoice)
+        {
+            case ColorChoices.BlueHighlight:
+                nextColor = blueHighlight;
+                break;
+            case ColorChoices.OrangeHighlight:
+                nextColor = orangeHighlight;
+                break;
+            case ColorChoices.PurpleHighlight:
+                nextColor = purpleHighlight;
+                break;
+            case ColorChoices.BlueDarkened:
+                nextColor = blueDarkened;
+                break;
+            case ColorChoices.OrangeDarkened:
+                nextColor = orangeDarkened;
+                break;
+            case ColorChoices.PurpleDarkened:
+                nextColor = purpleDarkened;
+                break;
+        }
+
+        currentColor = meshRenderer.material.color;
+
         elapsedTimeInSeconds = 0;
-        currentColor = clueCubeMaterial.color;
         canChangeColor = true;
     }
 
-    public void InstantColorChange()
+    public void InstantColorDarken()
     {
+        if (currentColor == blueHighlight)
+        {
+            meshRenderer.material.color = blueDarkened;
+        }
+        else if (currentColor == orangeHighlight)
+        {
+            meshRenderer.material.color = orangeDarkened;
+        }
+        else if (currentColor == purpleHighlight)
+        {
+            meshRenderer.material.color = purpleDarkened;
+        }
 
+        currentColor = meshRenderer.material.color;
+    }
+
+    public void InstantColorHighlight()
+    {
+        if (currentColor == blueDarkened)
+        {
+            meshRenderer.material.color = blueHighlight;
+        }
+        else if (currentColor == orangeDarkened)
+        {
+            meshRenderer.material.color = orangeHighlight;
+        }
+        else if (currentColor == purpleDarkened)
+        {
+            meshRenderer.material.color = purpleHighlight;
+        }
+
+        currentColor = meshRenderer.material.color;
     }
 }

@@ -6,22 +6,27 @@ public class ButtonCanvasControl : MonoBehaviour
 {
     [SerializeField] List<Button> boardButtons;
     [SerializeField] Button backButton;
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameObject gameManagerObject;
 
     public void ClueHasBeenSelected()
     {
         setAllBoardButtonsState(false);
     }
 
-    public void ClueIsUpFront()
+    public void ClueIsUpFront(int buttonToWhiteList)
     {
         backButtonState(true);
-        //code for darkening all the buttons
+        gameManagerObject.GetComponent<GlobalColorManager>().DarkenAllOtherBoardButtons(buttonToWhiteList);
+    }
+
+    public void BackButtonBeenSelected()
+    {
+        gameManagerObject.GetComponent<GlobalColorManager>().ChangeGlobalColor();
     }
 
     public void ClueIsBackHome()
     {
-        gameManager.BoardBeforeWheelSpin();
+        gameManagerObject.GetComponent<GameManager>().BoardBeforeWheelSpin();
     }
 
     public void backButtonState(bool state)

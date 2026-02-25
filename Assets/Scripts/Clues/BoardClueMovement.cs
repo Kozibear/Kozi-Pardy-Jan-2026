@@ -81,7 +81,7 @@ public class BoardClueMovement : MonoBehaviour
             isUpFront = true;
             GetComponent<BoardClueMediaManager>().HideFrontText();
 
-            buttonCanvasControl.ClueIsUpFront();
+            buttonCanvasControl.ClueIsUpFront(GetComponent<BoardClueStateControl>().GetNumber());
         }
         if (transform.localPosition == originalPosition)
         {

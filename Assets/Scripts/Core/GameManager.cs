@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -12,15 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] WheelSpinMovement wheelSpinMovement;
     [SerializeField] float waitBeforeBringingInWheel = 1f;
 
-    [Header("Board Buttons")]
-    [SerializeField] List<GameObject> boardButtons;
-
     [Header("ClueScreen")]
     [SerializeField] ClueScreen clueScreen;
-    private bool canShowClue = true;
-
-    [Header("Clues")]
-    ClueSO currentClue;
 
     [Header("Black Background Fade")]
     [SerializeField] SpriteFade blackBackgroundFade;
@@ -61,9 +53,5 @@ public class GameManager : MonoBehaviour
         blackBackgroundFade.FadeOut();
     }
 
-    public void OnClueSelected() { }
-
     public void HardDeActivationAndHidePointNumber() { }
-
-    public void BackButtonPressed() { }
 }

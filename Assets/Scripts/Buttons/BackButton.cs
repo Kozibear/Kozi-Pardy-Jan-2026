@@ -84,6 +84,6 @@ public class BackButton : ButtonSprite
         GetComponent<SpriteRenderer>().sprite = mouseDown;
 
         CanMoveArrowOut();
-        gameManager.BackButtonPressed();
+        //gameManager.BackButtonPressed();
     }
 }

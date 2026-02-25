@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 7740267323199798078}
   - component: {fileID: 3619615333490187651}
   - component: {fileID: 6650567186404439522}
-  - component: {fileID: 5040706974353697841}
   - component: {fileID: 4879514183250385833}
   m_Layer: 8
   m_Name: Cube
@@ -212,27 +211,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5040706974353697841
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2922398159664233416}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4879514183250385833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +231,7 @@ MonoBehaviour:
   purpleDarkened: {r: 0.40392157, g: 0, b: 0.6509804, a: 0}
   resetWhite: {r: 1, g: 1, b: 1, a: 0}
   desiredDurationInSeconds: 1
-  clueCubeMaterial: {fileID: 2100000, guid: 6d66d0ac3bd71ca43b564ce2e221beea, type: 2}
+  meshRenderer: {fileID: 6650567186404439522}
 --- !u!1 &5552672689618257138
 GameObject:
   m_ObjectHideFlags: 0
