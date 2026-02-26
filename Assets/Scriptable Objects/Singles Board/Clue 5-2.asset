@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: 'A roguelike shooter with bullet-hell elements developed by Finland''s
+    oldest video game developer '
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

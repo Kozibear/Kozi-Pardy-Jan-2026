@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: 'A launch game set within the backdrop of an alternate-history alien
+    invasion '
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

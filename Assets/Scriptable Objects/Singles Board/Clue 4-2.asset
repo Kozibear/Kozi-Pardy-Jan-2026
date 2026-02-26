@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 4-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: Mark Cerny was the director of this single-syllable platforming game
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}
