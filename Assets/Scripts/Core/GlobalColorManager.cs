@@ -1,65 +1,79 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GlobalColorManager : MonoBehaviour
+namespace KoziPardy.ColorManagement
 {
-    enum GlobalColorState { Blue, Orange, Purple };
-
-    [Header("Global Color State")]
-    [SerializeField] GlobalColorState globalColorState = GlobalColorState.Blue;
-
-    [Header("Board Buttons")]
-    [SerializeField] List<BoardClueStateControl> boardClueStateControls;
-
-    [Header("Category Buttons")]
-    [SerializeField] List<BoardClueColorChange> CategoryColorChanges;
-
-    [Header("The Board")]
-    [SerializeField] BoardSpriteColorChange boardSpriteColorChange;
-
-    [Header("The Wheel")]
-    [SerializeField] WheelColorChange wheelColorChange;
-
-    [Header("Background")]
-    [SerializeField] BackgroundColorChange backgroundColorChange;
-
-    public void ChangeGlobalColor()
+    public class GlobalColorManager : MonoBehaviour
     {
-        if (globalColorState == GlobalColorState.Blue)
-        {
+        [Header("Static Variables")]
+        public static GlobalColorState globalColorState = GlobalColorState.Blue;
+        public static readonly float desiredDurationInSeconds = 0.9f;
 
-            globalColorState = GlobalColorState.Orange;
-        }
-        else if (globalColorState == GlobalColorState.Orange)
-        {
+        [Header("Board Buttons")]
+        [SerializeField] List<BoardClueStateControl> boardClueStateControls;
 
-            globalColorState = GlobalColorState.Purple;
-        }
-        else if (globalColorState == GlobalColorState.Purple)
-        {
+        [Header("Category Buttons")]
+        [SerializeField] List<BoardClueColorChange> categoryColorChanges;
 
+        [Header("The Board")]
+        [SerializeField] BoardSpriteColorChange boardSpriteColorChange;
+
+        [Header("The Wheel")]
+        [SerializeField] WheelColorChange wheelColorChange;
+
+        [Header("Background")]
+        [SerializeField] BackgroundColorChange backgroundColorChange;
+
+        public void Start()
+        {
             globalColorState = GlobalColorState.Blue;
         }
-    }
 
-    public void BrightenSpecificBoardButtons(int buttonToBrighten)
-    {
-
-        //remember to also brighten associated cateogry headers
-    }
-
-    public void DarkenAllOtherBoardButtons(int buttonToWhiteList)
-    {
-        for (int i = 0; i < boardClueStateControls.Count; i++)
+        public void ChangeGlobalColor()
         {
-            if (i  == buttonToWhiteList) continue;
+            foreach (BoardClueStateControl clue in boardClueStateControls)
+            {
+                clue.StartGradualColorChange();
+            }
 
-            boardClueStateControls[i].InstantDarken();
+            foreach (BoardClueColorChange category in categoryColorChanges)
+            {
+                category.StartGradualColorChange();
+            }
+
+            boardSpriteColorChange.StartGradualColorChange();
+
+            backgroundColorChange.StartGradualColorChange();
+
+            if (globalColorState == GlobalColorState.Blue)
+            {
+                globalColorState = GlobalColorState.Orange;
+            }
+            else if (globalColorState == GlobalColorState.Orange)
+            {
+                globalColorState = GlobalColorState.Purple;
+            }
+            else if (globalColorState == GlobalColorState.Purple)
+            {
+                globalColorState = GlobalColorState.Blue;
+            }
         }
 
-        foreach (BoardClueColorChange categoryColorChange in CategoryColorChanges)
+        public void DarkenAllOtherBoardButtons(int buttonToWhiteList)
         {
-            categoryColorChange.InstantColorDarken();
+            for (int i = 0; i < boardClueStateControls.Count; i++)
+            {
+                if (i == buttonToWhiteList) continue;
+
+                boardClueStateControls[i].InstantDarken();
+            }
+
+            foreach (BoardClueColorChange categoryColorChange in categoryColorChanges)
+            {
+                categoryColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Dark);
+            }
         }
     }
+
+    public enum GlobalColorState { Blue, Orange, Purple };
 }

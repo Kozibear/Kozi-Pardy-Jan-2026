@@ -46,6 +46,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 550653d995fb93b4da7acf99d09db54c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundColorChange
+  darkBlueColor: {r: 0, g: 0.12941177, b: 0.34901962, a: 1}
+  darkOrangeColor: {r: 0.34901962, g: 0.0932813, b: 0, a: 1}
+  darkPurpleColor: {r: 0.16078432, g: 0, b: 0.34901962, a: 1}
+  backgroundColorSprite: {fileID: 2851015608097139989}
+  myParticleSystem: {fileID: 6428405551320575663}
+  lightBlueColor: {r: 0.5882353, g: 0.76447886, b: 1, a: 1}
+  lightOrangeColor: {r: 1, g: 0.7335751, b: 0.5882353, a: 1}
+  lightPurpleColor: {r: 0.88235295, g: 0.5882353, b: 1, a: 1}
 --- !u!1 &6452829755373613385
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,6 +88,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2851015608097139989
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -125,6 +134,7 @@ SpriteRenderer:
   m_SortingLayerID: 383825231
   m_SortingLayer: 1
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.16192955, g: 0, b: 0.3490566, a: 1}
   m_FlipX: 0
@@ -134,7 +144,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &3274009906100199042
 PrefabInstance:
@@ -196,5 +205,10 @@ PrefabInstance:
 --- !u!4 &1995972511547188372 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3953176157863590422, guid: ed9de0e99f5cd7a42bd03837cbf391e9, type: 3}
+  m_PrefabInstance: {fileID: 3274009906100199042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6428405551320575663 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8383967905954066477, guid: ed9de0e99f5cd7a42bd03837cbf391e9, type: 3}
   m_PrefabInstance: {fileID: 3274009906100199042}
   m_PrefabAsset: {fileID: 0}

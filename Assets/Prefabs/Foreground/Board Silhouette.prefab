@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7906056946882447680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Board Silhouette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7454286496705256606}
   - component: {fileID: 6380282942888057664}
   - component: {fileID: 4125607404289171145}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: White Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,6 +68,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6380282942888057664
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113,6 +114,7 @@ SpriteRenderer:
   m_SortingLayerID: 836355629
   m_SortingLayer: 7
   m_SortingOrder: 4
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
@@ -122,7 +124,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4125607404289171145
 MonoBehaviour:
@@ -154,7 +155,7 @@ GameObject:
   - component: {fileID: 2823286768703435767}
   - component: {fileID: 6126380172230682829}
   - component: {fileID: 1267605530306414093}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Board Black Silhouette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,13 +172,14 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.061699986, z: 0}
-  m_LocalScale: {x: 1.023, y: 1.023, z: 1.023}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.0939999, y: 1.0939999, z: 1.0939999}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7906056946882447680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6126380172230682829
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -223,6 +225,7 @@ SpriteRenderer:
   m_SortingLayerID: 315354869
   m_SortingLayer: 8
   m_SortingOrder: 5
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: f0f2e415f89169c43a2cffdebe7af8d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
@@ -232,7 +235,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1267605530306414093
 MonoBehaviour:

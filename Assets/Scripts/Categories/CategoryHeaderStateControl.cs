@@ -1,3 +1,4 @@
+using KoziPardy.ColorManagement;
 using UnityEngine;
 
 public class CategoryHeaderStateControl : MonoBehaviour
@@ -16,12 +17,12 @@ public class CategoryHeaderStateControl : MonoBehaviour
     public void InstantDarken()
     {   
         pointValueText.InstantDarken();
-        boardClueColorChange.InstantColorDarken();
+        boardClueColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Dark);
     }
 
     public void InstantLighten()
     {
         pointValueText.InstantBrighten();
-        boardClueColorChange.InstantColorHighlight();
+        boardClueColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Bright);
     }
 }

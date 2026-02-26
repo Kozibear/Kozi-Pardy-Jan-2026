@@ -1,120 +1,106 @@
 using UnityEngine;
 
-public class BoardClueColorChange : MonoBehaviour
+namespace KoziPardy.ColorManagement
 {
-    public enum ColorChoices { BlueHighlight, OrangeHighlight, PurpleHighlight, BlueDarkened, OrangeDarkened, PurpleDarkened };
-
-    [Header("Highlight Colors")]
-    [SerializeField] Color blueHighlight;
-    [SerializeField] Color orangeHighlight;
-    [SerializeField] Color purpleHighlight;
-
-    [Header("Darkened Colors")]
-    [SerializeField] Color blueDarkened;
-    [SerializeField] Color orangeDarkened;
-    [SerializeField] Color purpleDarkened;
-
-    [Header("Other Colors")]
-    [SerializeField] Color resetWhite;
-
-    [Header("Speed")]
-    [SerializeField] float desiredDurationInSeconds = 2;
-    private float elapsedTimeInSeconds = 0;
-
-    [Header("The Cube's Mesh Renderer")]
-    [SerializeField] MeshRenderer meshRenderer;
-
-    private Color currentColor;
-    private Color nextColor;
-    private bool canChangeColor = false;
-
-    private void Start()
+    public class BoardClueColorChange : MonoBehaviour
     {
-        currentColor = blueDarkened;
-        meshRenderer.material.color = currentColor;
-    }
+        public enum ColorValue { Bright, Dark };
 
-    void Update()
-    {
-        if (canChangeColor)
+        [Header("Highlight Colors")]
+        [SerializeField] Color blueHighlight;
+        [SerializeField] Color orangeHighlight;
+        [SerializeField] Color purpleHighlight;
+
+        [Header("Darkened Colors")]
+        [SerializeField] Color blueDarkened;
+        [SerializeField] Color orangeDarkened;
+        [SerializeField] Color purpleDarkened;
+
+        [Header("Other Colors")]
+        [SerializeField] Color resetWhite;
+
+        [Header("The Cube's Mesh Renderer")]
+        [SerializeField] MeshRenderer meshRenderer;
+
+        private float elapsedTimeInSeconds = 0;
+
+        private Color currentColor;
+        private Color nextColor;
+        private bool canChangeColor = false;
+
+        private void Start()
         {
-            //if the game is running at 30 fps, deltatime adds 1/30th of a second; if it's running at 60 fps it add 1/60 of a second, etc.
-            //this means that no matter what the framerate is, after one second, time.DeltaTime will have added exactly one second of time
-            elapsedTimeInSeconds += Time.deltaTime;
-            float percentageComplete = elapsedTimeInSeconds / desiredDurationInSeconds;
-
-            GradualColorChange(percentageComplete, nextColor);
-        }
-    }
-
-    public void GradualColorChange(float percentageComplete, Color newColor)
-    {
-        meshRenderer.material.color = Color.Lerp(currentColor, newColor, percentageComplete);
-    }
-
-    public void StartGradualColorChange(ColorChoices colorChoice)
-    {
-        switch (colorChoice)
-        {
-            case ColorChoices.BlueHighlight:
-                nextColor = blueHighlight;
-                break;
-            case ColorChoices.OrangeHighlight:
-                nextColor = orangeHighlight;
-                break;
-            case ColorChoices.PurpleHighlight:
-                nextColor = purpleHighlight;
-                break;
-            case ColorChoices.BlueDarkened:
-                nextColor = blueDarkened;
-                break;
-            case ColorChoices.OrangeDarkened:
-                nextColor = orangeDarkened;
-                break;
-            case ColorChoices.PurpleDarkened:
-                nextColor = purpleDarkened;
-                break;
+            currentColor = blueDarkened;
+            meshRenderer.material.color = currentColor;
         }
 
-        currentColor = meshRenderer.material.color;
+        void Update()
+        {
+            if (canChangeColor)
+            {
+                Debug.Log("test");
+                //if the game is running at 30 fps, deltatime adds 1/30th of a second; if it's running at 60 fps it add 1/60 of a second, etc.
+                //this means that no matter what the framerate is, after one second, time.DeltaTime will have added exactly one second of time
+                elapsedTimeInSeconds += Time.deltaTime;
+                float percentageComplete = elapsedTimeInSeconds / GlobalColorManager.desiredDurationInSeconds;
 
-        elapsedTimeInSeconds = 0;
-        canChangeColor = true;
-    }
+                GradualColorChange(percentageComplete, nextColor);
 
-    public void InstantColorDarken()
-    {
-        if (currentColor == blueHighlight)
-        {
-            meshRenderer.material.color = blueDarkened;
-        }
-        else if (currentColor == orangeHighlight)
-        {
-            meshRenderer.material.color = orangeDarkened;
-        }
-        else if (currentColor == purpleHighlight)
-        {
-            meshRenderer.material.color = purpleDarkened;
+                if (percentageComplete >= 1) canChangeColor = false;
+            }
         }
 
-        currentColor = meshRenderer.material.color;
-    }
-
-    public void InstantColorHighlight()
-    {
-        if (currentColor == blueDarkened)
+        public void GradualColorChange(float percentageComplete, Color newColor)
         {
-            meshRenderer.material.color = blueHighlight;
-        }
-        else if (currentColor == orangeDarkened)
-        {
-            meshRenderer.material.color = orangeHighlight;
-        }
-        else if (currentColor == purpleDarkened)
-        {
-            meshRenderer.material.color = purpleHighlight;
+            meshRenderer.material.color = Color.Lerp(currentColor, newColor, percentageComplete);
         }
 
-        currentColor = meshRenderer.material.color;
+        public void StartGradualColorChange()
+        {
+            switch (GlobalColorManager.globalColorState)
+            {
+                case GlobalColorState.Blue:
+                    nextColor = orangeDarkened;
+                    break;
+                case GlobalColorState.Orange:
+                    nextColor = purpleDarkened;
+                    break;
+                case GlobalColorState.Purple:
+                    nextColor = blueDarkened;
+                    break;
+            }
+
+            currentColor = meshRenderer.material.color;
+
+            elapsedTimeInSeconds = 0;
+            canChangeColor = true;
+        }
+
+        public void InstantColorChange(ColorValue colorValue)
+        {
+            switch (GlobalColorManager.globalColorState, colorValue)
+            {
+                case (GlobalColorState.Blue, ColorValue.Bright):
+                    meshRenderer.material.color = blueHighlight;
+                    break;
+                case (GlobalColorState.Blue, ColorValue.Dark):
+                    meshRenderer.material.color = blueDarkened;
+                    break;
+                case (GlobalColorState.Orange, ColorValue.Bright):
+                    meshRenderer.material.color = orangeHighlight;
+                    break;
+                case (GlobalColorState.Orange, ColorValue.Dark):
+                    meshRenderer.material.color = orangeDarkened;
+                    break;
+                case (GlobalColorState.Purple, ColorValue.Bright):
+                    meshRenderer.material.color = purpleHighlight;
+                    break;
+                case (GlobalColorState.Purple, ColorValue.Dark):
+                    meshRenderer.material.color = purpleDarkened;
+                    break;
+            }
+
+            currentColor = meshRenderer.material.color;
+        }
     }
 }

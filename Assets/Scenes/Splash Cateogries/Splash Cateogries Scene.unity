@@ -229,7 +229,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -676,6 +676,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Board Silhouette
       objectReference: {fileID: 0}
+    - target: {fileID: 1840396618710084977, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823286768703435767, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.094
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823286768703435767, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.094
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823286768703435767, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.094
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823286768703435767, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4125607404289171145, guid: aa104677e67065f47b7946dc7280853a, type: 3}
       propertyPath: fadeInSpeed
       value: 0.9
@@ -731,6 +751,14 @@ PrefabInstance:
     - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859732561107849281, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117269755163346637, guid: aa104677e67065f47b7946dc7280853a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

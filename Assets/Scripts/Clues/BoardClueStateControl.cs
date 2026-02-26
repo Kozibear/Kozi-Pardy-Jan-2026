@@ -1,3 +1,4 @@
+using KoziPardy.ColorManagement;
 using UnityEngine;
 
 public class BoardClueStateControl : MonoBehaviour
@@ -23,12 +24,17 @@ public class BoardClueStateControl : MonoBehaviour
         pointValueText.InstantDarkenToExactColor();
     }
 
+    public void StartGradualColorChange()
+    {
+        boardClueColorChange.StartGradualColorChange();
+    }
+
     public void InstantDarken()
     {
         if (!hasBeenClicked)
         {
             pointValueText.InstantDarkenToExactColor();
-            boardClueColorChange.InstantColorDarken();
+            boardClueColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Dark);
             thisCluesCategory.InstantDarken();
         }
     }
@@ -38,7 +44,7 @@ public class BoardClueStateControl : MonoBehaviour
         if (!hasBeenClicked)
         {
             pointValueText.InstantBrightenToExactColor();
-            boardClueColorChange.InstantColorHighlight();
+            boardClueColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Bright);
             thisCluesCategory.InstantLighten();
         }
     }
