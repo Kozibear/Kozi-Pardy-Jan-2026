@@ -7,7 +7,6 @@ public class WheelArrow : MonoBehaviour
 
     private bool canTriggerSelection = false;
 
-
     public void SetTriggerSelection(bool state) { canTriggerSelection = state; }
 
     private void OnTriggerEnter2D(Collider2D collision)

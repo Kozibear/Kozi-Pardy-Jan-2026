@@ -14,6 +14,7 @@ public class WheelSpinBoardSelections : MonoBehaviour
     [SerializeField] float waitBeforeFlash;
     [SerializeField] float waitAfterFlash;
 
+    [Header("Board References")]
     List<BoardClueStateControl> boardClueStateControls;
 
     private int currentSelectedSegment;

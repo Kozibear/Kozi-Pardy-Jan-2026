@@ -744,17 +744,6 @@ MonoBehaviour:
   - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
   - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
   - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
---- !u!114 &101983576 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5530360353299615236, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &112590483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,17 +1046,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
---- !u!114 &138758453 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 619372195056700055, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!114 &175607969 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5091022150092220674, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
@@ -1269,17 +1247,6 @@ MeshRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 3
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &199803658 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 375009348788358163, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &206170955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,17 +1782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
---- !u!114 &314951153 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4798018679854615583, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &323598555
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,17 +2091,6 @@ PolygonCollider2D:
       - {x: 0.54685485, y: -1.552021}
       - {x: 1.609126, y: 1.6194355}
   m_UseDelaunayMesh: 0
---- !u!114 &365546929 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2157435019588138132, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &377357166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,17 +2309,6 @@ MonoBehaviour:
   - {fileID: 3071554363623102951, guid: cc530f6728afe874faded0b4cf12ef9a, type: 3}
   - {fileID: 3071554363623102951, guid: 47e51316205812f468628ac879d43c18, type: 3}
   - {fileID: 3071554363623102951, guid: e4e52b3cdbd7ef543b926b42da81dc0f, type: 3}
---- !u!114 &395610077 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3465943884122238229, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &419720712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,17 +2599,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &422587051 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5748814927933705001, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &423960241
 GameObject:
   m_ObjectHideFlags: 0
@@ -3034,17 +2957,6 @@ MeshRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 3
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &447607417 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5027970620274238284, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4896,28 +4808,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 614123972}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &805773420 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 157059303719479833, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
---- !u!114 &817038756 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3532514360863528236, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &830062524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,50 +5210,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871001510}
   m_CullTransparentMesh: 1
---- !u!114 &886904656 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 245779366807477679, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
---- !u!114 &905927887 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5315081409606886744, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
---- !u!114 &927791346 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6184219101198210163, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
---- !u!114 &940381063 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1160878818958025276, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &971743068
 GameObject:
   m_ObjectHideFlags: 0
@@ -7333,17 +7179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
---- !u!114 &1117337081 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6379583013336880367, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1137406413
 GameObject:
   m_ObjectHideFlags: 0
@@ -7534,17 +7369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
---- !u!114 &1165348668 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9056153041078193239, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1170810757
 GameObject:
   m_ObjectHideFlags: 0
@@ -7595,6 +7419,7 @@ MonoBehaviour:
   waitBeforeBringingInWheel: 0.5
   buttonCanvasControl: {fileID: 44205209}
   blackBackgroundFade: {fileID: 2000171511}
+  cluesLeft: 25
 --- !u!114 &1170810760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7608,32 +7433,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GlobalColorManager
   globalColorState: 0
-  boardClueColorChanges:
-  - {fileID: 1793246074}
-  - {fileID: 138758453}
-  - {fileID: 199803658}
-  - {fileID: 817038756}
-  - {fileID: 1165348668}
-  - {fileID: 1340466939}
-  - {fileID: 1304649312}
-  - {fileID: 365546929}
-  - {fileID: 886904656}
-  - {fileID: 1718564562}
-  - {fileID: 447607417}
-  - {fileID: 940381063}
-  - {fileID: 1934664044}
-  - {fileID: 395610077}
-  - {fileID: 905927887}
-  - {fileID: 1117337081}
-  - {fileID: 805773420}
-  - {fileID: 927791346}
-  - {fileID: 1228619002}
-  - {fileID: 1289318053}
-  - {fileID: 422587051}
-  - {fileID: 314951153}
-  - {fileID: 2147297135}
-  - {fileID: 2104761582}
-  - {fileID: 101983576}
+  boardClueStateControls:
+  - {fileID: 338829540}
+  - {fileID: 131964471}
+  - {fileID: 1368536159}
+  - {fileID: 1403835498}
+  - {fileID: 1586348180}
+  - {fileID: 1657958680}
+  - {fileID: 2086410687}
+  - {fileID: 270991187}
+  - {fileID: 2060873007}
+  - {fileID: 997190908}
+  - {fileID: 1765128512}
+  - {fileID: 1878633623}
+  - {fileID: 2067970250}
+  - {fileID: 772592724}
+  - {fileID: 2144416171}
+  - {fileID: 1335221342}
+  - {fileID: 1050951837}
+  - {fileID: 175607970}
+  - {fileID: 2050892125}
+  - {fileID: 1114656410}
+  - {fileID: 1682726160}
+  - {fileID: 5043267}
+  - {fileID: 126658787}
+  - {fileID: 1283587796}
+  - {fileID: 791879384}
   CategoryColorChanges:
   - {fileID: 248612328}
   - {fileID: 1148596394}
@@ -7917,17 +7742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
---- !u!114 &1228619002 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5660325352540326832, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1251757159
 GameObject:
   m_ObjectHideFlags: 0
@@ -8129,17 +7943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
---- !u!114 &1289318053 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6711067155350198734, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1297398740
 GameObject:
   m_ObjectHideFlags: 0
@@ -8177,17 +7980,6 @@ Transform:
   - {fileID: 112590484}
   m_Father: {fileID: 1976345894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1304649312 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 254167764100108116, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1308923536
 GameObject:
   m_ObjectHideFlags: 0
@@ -8354,17 +8146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
---- !u!114 &1340466939 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1950897750445765900, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!114 &1368536158 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1603420185493352802, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
@@ -9442,17 +9223,6 @@ MonoBehaviour:
   backButton: {fileID: 0}
   backButtonInvisible: {fileID: 1733222668}
   wheelSpin: {fileID: 1661278015}
---- !u!114 &1718564562 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3625729795504649936, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!4 &1733222667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8598513256455294251, guid: 20bddcbea735c55449ecc317d8b75096, type: 3}
@@ -9844,17 +9614,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779636975}
   m_CullTransparentMesh: 1
---- !u!114 &1793246074 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2584980896794286021, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1838687114
 GameObject:
   m_ObjectHideFlags: 0
@@ -10796,17 +10555,6 @@ MeshRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 3
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1934664044 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6973834346841858046, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1976345893
 GameObject:
   m_ObjectHideFlags: 0
@@ -11151,17 +10899,6 @@ Transform:
   - {fileID: 1712354114}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2104761582 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3427631787620987995, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &2108841242
 GameObject:
   m_ObjectHideFlags: 0
@@ -11507,17 +11244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
---- !u!114 &2147297135 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 235294138478550796, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!212 &19239139993378678
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11593,6 +11319,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 4270476132666917285}
 --- !u!114 &36577410485188917
 MonoBehaviour:
@@ -11611,6 +11339,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5893131934584947237}
 --- !u!4 &71649466457890441
 Transform:
@@ -11661,6 +11391,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 4375505442881923357}
 --- !u!1 &161498651359984116
 GameObject:
@@ -12041,6 +11773,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 7124346009725005535}
 --- !u!114 &430684163281694486
 MonoBehaviour:
@@ -12059,6 +11793,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 4893062619848014095}
 --- !u!114 &444224793523780911
 MonoBehaviour:
@@ -12077,6 +11813,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5257672600446254177}
 --- !u!114 &454294545499022092
 MonoBehaviour:
@@ -12095,6 +11833,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6040032904253533077}
 --- !u!4 &465450555191424377
 Transform:
@@ -12217,6 +11957,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 3125683605108885391}
 --- !u!114 &663676436593089499
 MonoBehaviour:
@@ -12235,6 +11977,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1597580938521494286}
 --- !u!114 &743675831795188018
 MonoBehaviour:
@@ -12253,6 +11997,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 3724499393346113337}
 --- !u!1 &817067217234060855
 GameObject:
@@ -12399,6 +12145,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 2079695890789086382}
 --- !u!1 &961933514513183998
 GameObject:
@@ -12592,6 +12340,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6214164025554375733}
 --- !u!1 &1029000906403859742
 GameObject:
@@ -12747,6 +12497,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1938418701185566960}
 --- !u!1 &1159278479896862615
 GameObject:
@@ -13109,6 +12861,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 7415261520741520051}
 --- !u!212 &1465134052609867045
 SpriteRenderer:
@@ -13700,6 +13454,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 7909087434779300715}
 --- !u!1 &1733958431181817537
 GameObject:
@@ -13844,6 +13600,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 7703147152173061944}
 --- !u!114 &1786118975132762204
 MonoBehaviour:
@@ -14087,6 +13845,10 @@ PrefabInstance:
       propertyPath: number
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 210390832060341848, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941601}
     - target: {fileID: 245575987641327437, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: clueSO
       value: 
@@ -14103,18 +13865,34 @@ PrefabInstance:
       propertyPath: number
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 313497569055825183, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941600}
     - target: {fileID: 332376426759146823, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: number
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 332376426759146823, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941597}
     - target: {fileID: 339484475729743844, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: number
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 339484475729743844, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941600}
     - target: {fileID: 428621269568665682, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: number
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 428621269568665682, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941598}
     - target: {fileID: 441627171185808844, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14235,6 +14013,10 @@ PrefabInstance:
       propertyPath: number
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1100932085181602012, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941601}
     - target: {fileID: 1118192367188951055, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14347,6 +14129,10 @@ PrefabInstance:
       propertyPath: number
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1712350264696713335, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941599}
     - target: {fileID: 1800955218466994886, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: clueSO
       value: 
@@ -14363,6 +14149,10 @@ PrefabInstance:
       propertyPath: number
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1886876184722433759, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941600}
     - target: {fileID: 1894314840148320839, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14403,6 +14193,10 @@ PrefabInstance:
       propertyPath: number
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2075529915488413511, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941600}
     - target: {fileID: 2088338132569907456, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14479,6 +14273,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: number
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2482099350986172509, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: clueSO
       value: 
@@ -14523,6 +14321,10 @@ PrefabInstance:
       propertyPath: test
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2594225336436098446, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941601}
     - target: {fileID: 2608443036742531629, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14559,6 +14361,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: number
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2833861169918564514, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Name
       value: The Board (Variable Color 5x5)
@@ -14591,6 +14397,10 @@ PrefabInstance:
       propertyPath: number
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 2904360718620157456, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941597}
     - target: {fileID: 2923948000674154337, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14799,6 +14609,10 @@ PrefabInstance:
       propertyPath: number
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 3859046492909413531, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941600}
     - target: {fileID: 3898839567018801583, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Name
       value: Cube 4-5
@@ -14815,10 +14629,18 @@ PrefabInstance:
       propertyPath: number
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3952255313623844711, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941601}
     - target: {fileID: 4019103976414035806, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: number
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 4019103976414035806, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941599}
     - target: {fileID: 4106020076473546223, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: clueSO
       value: 
@@ -14862,6 +14684,22 @@ PrefabInstance:
     - target: {fileID: 4389219779180865931, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4482071467236787919, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
@@ -14927,6 +14765,10 @@ PrefabInstance:
       propertyPath: number
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4763059078991999239, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941599}
     - target: {fileID: 4767710922912485028, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14967,6 +14809,10 @@ PrefabInstance:
       propertyPath: number
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 4993019524516404820, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941597}
     - target: {fileID: 5026512729254419220, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14991,6 +14837,10 @@ PrefabInstance:
       propertyPath: number
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5195145073120778594, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941597}
     - target: {fileID: 5201604519929710637, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: clueSO
       value: 
@@ -15007,6 +14857,10 @@ PrefabInstance:
       propertyPath: number
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 5283491710905768443, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941598}
     - target: {fileID: 5300477479865301130, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -15023,6 +14877,10 @@ PrefabInstance:
       propertyPath: number
       value: 24
       objectReference: {fileID: 0}
+    - target: {fileID: 5431606323623779407, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941597}
     - target: {fileID: 5439920139898256407, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -15067,6 +14925,10 @@ PrefabInstance:
       propertyPath: number
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 5628881872800528147, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941599}
     - target: {fileID: 5644896170448659647, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: clueSO
       value: 
@@ -15111,6 +14973,10 @@ PrefabInstance:
       propertyPath: number
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 5912657712920217144, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941598}
     - target: {fileID: 5983179287391089172, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -15223,6 +15089,10 @@ PrefabInstance:
       propertyPath: number
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 6556599327991466885, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941598}
     - target: {fileID: 6566376289389710708, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Name
       value: Cube 3-4
@@ -15283,6 +15153,10 @@ PrefabInstance:
       propertyPath: number
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6870219996832728740, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941598}
     - target: {fileID: 6872452926148793858, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -15303,6 +15177,10 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
+    - target: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: number
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6946745399559788106, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -15375,6 +15253,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: number
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7304168003746567133, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -15411,6 +15293,10 @@ PrefabInstance:
       propertyPath: number
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 7428460258649099701, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941599}
     - target: {fileID: 7430976855385365754, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: clueSO
       value: 
@@ -15595,6 +15481,10 @@ PrefabInstance:
       propertyPath: number
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8823347068971359772, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: thisCluesCategory
+      value: 
+      objectReference: {fileID: 1987132743266941601}
     - target: {fileID: 8825617387319774906, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -15835,6 +15725,61 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+--- !u!114 &1987132743266941597 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CategoryHeaderStateControl
+--- !u!114 &1987132743266941598 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CategoryHeaderStateControl
+--- !u!114 &1987132743266941599 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CategoryHeaderStateControl
+--- !u!114 &1987132743266941600 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CategoryHeaderStateControl
+--- !u!114 &1987132743266941601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CategoryHeaderStateControl
 --- !u!4 &1992802769899916492
 Transform:
   m_ObjectHideFlags: 0
@@ -15925,6 +15870,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1052177051539839951}
 --- !u!212 &2079695890789086382
 SpriteRenderer:
@@ -16117,6 +16064,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1465134052609867045}
 --- !u!114 &2254153528105236952
 MonoBehaviour:
@@ -16135,6 +16084,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1202788397824409277}
 --- !u!4 &2255187572914361332
 Transform:
@@ -16170,6 +16121,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1689880310271714266}
 --- !u!4 &2263182892024230380
 Transform:
@@ -16350,6 +16303,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 301010358272613143}
 --- !u!1 &2534681462224765196
 GameObject:
@@ -16422,6 +16377,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6449414372265546584}
 --- !u!114 &2599829192721421786
 MonoBehaviour:
@@ -16697,6 +16654,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 8428276716425080262}
 --- !u!4 &2870570933871377578
 Transform:
@@ -16731,6 +16690,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5800831587991199474}
 --- !u!61 &2881147062936254563
 BoxCollider2D:
@@ -16876,6 +16837,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 172805922032104393}
 --- !u!1 &2969623930963093268
 GameObject:
@@ -16912,6 +16875,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5018664019117087250}
 --- !u!114 &2989627371605704626
 MonoBehaviour:
@@ -16930,6 +16895,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 926475489710844245}
 --- !u!4 &2991177699154272563
 Transform:
@@ -16981,6 +16948,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 4076117664933202494}
 --- !u!212 &3125683605108885391
 SpriteRenderer:
@@ -17057,6 +17026,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 7116192951460702074}
 --- !u!114 &3167891949082572292
 MonoBehaviour:
@@ -17119,6 +17090,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 3328249731966580588}
 --- !u!1 &3274242353222763619
 GameObject:
@@ -17157,6 +17130,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5266391943348223038}
 --- !u!61 &3281028812577701218
 BoxCollider2D:
@@ -17221,6 +17196,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 9113243709301807006}
 --- !u!212 &3328249731966580588
 SpriteRenderer:
@@ -17297,6 +17274,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 4770128848982564101}
 --- !u!114 &3374598625953062311
 MonoBehaviour:
@@ -17464,6 +17443,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6274147860943747282}
 --- !u!4 &3483400035090450862
 Transform:
@@ -17543,6 +17524,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1773866021645610445}
 --- !u!4 &3500230501813372095
 Transform:
@@ -17582,6 +17565,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 7278171394111743774}
 --- !u!1 &3510322963898725356
 GameObject:
@@ -17749,6 +17734,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1368052323894209958}
 --- !u!61 &3691422587053516541
 BoxCollider2D:
@@ -17813,6 +17800,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1866551467693675071}
 --- !u!114 &3712492938976056069
 MonoBehaviour:
@@ -17831,6 +17820,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1998231008347954997}
 --- !u!212 &3724499393346113337
 SpriteRenderer:
@@ -17922,6 +17913,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 9168267446239504119}
 --- !u!114 &3776164387453846196
 MonoBehaviour:
@@ -17940,6 +17933,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6569159807918079610}
 --- !u!1 &3812248073358430879
 GameObject:
@@ -17977,6 +17972,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 9003269366164408291}
 --- !u!114 &4013583476253186799
 MonoBehaviour:
@@ -17995,6 +17992,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 3523940501151915070}
 --- !u!114 &4024515037903680823
 MonoBehaviour:
@@ -18433,6 +18432,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 314935336566142228}
 --- !u!4 &4549511628537694806
 Transform:
@@ -19221,6 +19222,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5114044668964501638}
 --- !u!114 &5182936322641317478
 MonoBehaviour:
@@ -19239,6 +19242,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 4802488148264278876}
 --- !u!61 &5187423546770220464
 BoxCollider2D:
@@ -19303,6 +19308,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 8539610042116770355}
 --- !u!4 &5257579012423171224
 Transform:
@@ -19735,6 +19742,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 19239139993378678}
 --- !u!114 &5494403937316552162
 MonoBehaviour:
@@ -19753,6 +19762,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 8652338678782276876}
 --- !u!114 &5513311942191317991
 MonoBehaviour:
@@ -19771,6 +19782,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5365954660370193124}
 --- !u!212 &5561870480670412873
 SpriteRenderer:
@@ -19902,6 +19915,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 4884889816411874131}
 --- !u!1 &5614060290085079251
 GameObject:
@@ -20519,6 +20534,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6004518838496222950}
 --- !u!114 &6076748228044753084
 MonoBehaviour:
@@ -20537,6 +20554,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 2161163331089613553}
 --- !u!212 &6084867299101622573
 SpriteRenderer:
@@ -20843,6 +20862,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6286381122042703509}
 --- !u!212 &6274147860943747282
 SpriteRenderer:
@@ -20919,6 +20940,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5561870480670412873}
 --- !u!212 &6286381122042703509
 SpriteRenderer:
@@ -21613,6 +21636,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5983093811014600930}
 --- !u!61 &6942256290265465817
 BoxCollider2D:
@@ -21677,6 +21702,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5001868380934536370}
 --- !u!4 &7047465153751518254
 Transform:
@@ -22131,6 +22158,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 8890003248260279500}
 --- !u!114 &7334413482135603919
 MonoBehaviour:
@@ -22304,6 +22333,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6540745390017958106}
 --- !u!61 &7444406846209512287
 BoxCollider2D:
@@ -22368,6 +22399,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 4097531864124211424}
 --- !u!4 &7455898077153002194
 Transform:
@@ -22402,6 +22435,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1017490000998167139}
 --- !u!1 &7518932470922136092
 GameObject:
@@ -22540,6 +22575,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 7098013343892298666}
 --- !u!114 &7768501216808813099
 MonoBehaviour:
@@ -22582,6 +22619,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 8788861894978301813}
 --- !u!1 &7777620485185175823
 GameObject:
@@ -22803,6 +22842,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 2173850199813819056}
 --- !u!114 &7987520069487134847
 MonoBehaviour:
@@ -22821,6 +22862,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5937356956912105886}
 --- !u!114 &8002732934895204653
 MonoBehaviour:
@@ -22839,6 +22882,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6084867299101622573}
 --- !u!114 &8010955792557189358
 MonoBehaviour:
@@ -23273,6 +23318,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1471179995348887014}
 --- !u!212 &8539610042116770355
 SpriteRenderer:
@@ -23522,6 +23569,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1625505327620404646}
 --- !u!114 &8697504960117890812
 MonoBehaviour:
@@ -23713,6 +23762,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 967539231367469117}
 --- !u!212 &8890003248260279500
 SpriteRenderer:
@@ -23789,6 +23840,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 1305371266425630285}
 --- !u!4 &8919725965604059394
 Transform:
@@ -23895,6 +23948,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 5406340969836493770}
 --- !u!4 &9051451563361412654
 Transform:
@@ -24137,6 +24192,8 @@ MonoBehaviour:
   fadeOutSpeed: 2
   fadeInThreshold: 1
   fadeOutThreshold: 0.5
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6573802964692574588}
 --- !u!1 &9217468708652131881
 GameObject:

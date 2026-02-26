@@ -17,9 +17,5 @@ public class Persistence : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            SceneManager.LoadScene(3);
-        }
     }
 }

@@ -7,8 +7,8 @@ public abstract class ColorFade : MonoBehaviour
     [SerializeField] Color tempColor;
 
     [Header("Fade Speeds")]
-    [SerializeField] float fadeInSpeed;
-    [SerializeField] float fadeOutSpeed;
+    [SerializeField] float fadeInSpeed = 1;
+    [SerializeField] float fadeOutSpeed = 1;
 
     [Header("Fade Thresholds")]
     public float fadeInThreshold = 1;
@@ -17,6 +17,10 @@ public abstract class ColorFade : MonoBehaviour
     private bool fadeInBool = false;
     private bool fadeOutBool = false;
     private bool inTheMiddleOfFading = false;
+
+    [Header("Exact Colors")]
+    [SerializeField] Color exactDarkenColor;
+    [SerializeField] Color exactBrightenColor;
 
     void Start()
     {
@@ -91,6 +95,14 @@ public abstract class ColorFade : MonoBehaviour
         }
     }
 
+    public void InstantBrightenToExactColor()
+    {
+        if (!inTheMiddleOfFading)
+        {
+            SetColor(exactBrightenColor);
+        }
+    }
+
     public void Darken()
     {
         if (!inTheMiddleOfFading)
@@ -107,6 +119,14 @@ public abstract class ColorFade : MonoBehaviour
         {
             Color color = new Color(fadeOutThreshold, fadeOutThreshold, fadeOutThreshold, 1f);
             SetColor(color);
+        }
+    }
+
+    public void InstantDarkenToExactColor()
+    {
+        if (!inTheMiddleOfFading)
+        {
+            SetColor(exactDarkenColor);
         }
     }
 

@@ -19,12 +19,19 @@ public class GameManager : MonoBehaviour
 
     private List<int> storedButtonsToActivate;
 
+    [Header("Clues Left")]
+    [SerializeField] float cluesLeft = 25;
+
     //[Header("Game State Enum")]
     //[SerializeField] GameState gameState = GameState.Singleboard;
 
     public void BoardBeforeWheelSpin()
     {
-        StartCoroutine(WheelSpinSetup());
+        cluesLeft--;
+        if (cluesLeft > 0)
+        {
+            StartCoroutine(WheelSpinSetup());
+        }
     }
 
     private IEnumerator WheelSpinSetup()

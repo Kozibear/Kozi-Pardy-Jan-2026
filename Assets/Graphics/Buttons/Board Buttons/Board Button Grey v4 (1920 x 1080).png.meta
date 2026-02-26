@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9780d658b9227e24ca503c299a818758
+guid: cdb18678310936c47b3de57e71f5c5ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1134440085437771571
-    second: Board Button Grey v3_0
+      213: 2970985874538422588
+    second: Board Button Grey v4 (1920 x 1080)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 1
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Board Button Grey v3_0
+      name: Board Button Grey v4 (1920 x 1080)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 224
-        height: 126
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc09488b0c8a140f0800000000000000
-      internalID: -1134440085437771571
+      spriteID: c31e09479ef0b3920800000000000000
+      internalID: 2970985874538422588
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Board Button Grey v3_0: -1134440085437771571
+      Board Button Grey v4 (1920 x 1080)_0: 2970985874538422588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

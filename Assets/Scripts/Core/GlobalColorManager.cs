@@ -9,7 +9,7 @@ public class GlobalColorManager : MonoBehaviour
     [SerializeField] GlobalColorState globalColorState = GlobalColorState.Blue;
 
     [Header("Board Buttons")]
-    [SerializeField] List<BoardClueColorChange> boardClueColorChanges;
+    [SerializeField] List<BoardClueStateControl> boardClueStateControls;
 
     [Header("Category Buttons")]
     [SerializeField] List<BoardClueColorChange> CategoryColorChanges;
@@ -50,10 +50,11 @@ public class GlobalColorManager : MonoBehaviour
 
     public void DarkenAllOtherBoardButtons(int buttonToWhiteList)
     {
-        for (int i = 0; i < boardClueColorChanges.Count; i++)
+        for (int i = 0; i < boardClueStateControls.Count; i++)
         {
             if (i  == buttonToWhiteList) continue;
-            boardClueColorChanges[i].InstantColorDarken();
+
+            boardClueStateControls[i].InstantDarken();
         }
 
         foreach (BoardClueColorChange categoryColorChange in CategoryColorChanges)

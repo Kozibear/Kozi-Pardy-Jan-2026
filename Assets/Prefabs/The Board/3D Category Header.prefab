@@ -42,6 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3929078795076124414}
+  - component: {fileID: 3183130684515857393}
   m_Layer: 8
   m_Name: 3D Category Header
   m_TagString: Untagged
@@ -67,6 +68,21 @@ Transform:
   - {fileID: 4556510529390354067}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3183130684515857393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865742752246126567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CategoryHeaderStateControl
+  number: 0
+  boardClueColorChange: {fileID: 5832460065354159868}
+  pointValueText: {fileID: 4447427798195595925}
 --- !u!1 &2821084408357469172
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +454,7 @@ GameObject:
   - component: {fileID: 278202508280692478}
   - component: {fileID: 2018496545129384592}
   - component: {fileID: 3569813861808101514}
+  - component: {fileID: 4447427798195595925}
   m_Layer: 8
   m_Name: Category Text
   m_TagString: Untagged
@@ -606,6 +623,24 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2018496545129384592}
   m_maskType: 0
+--- !u!114 &4447427798195595925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4826144391380459414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735c2741a031fa8429fc95d42d46eaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextColorFade
+  tempColor: {r: 1, g: 0.9333334, b: 0.654902, a: 0}
+  fadeInSpeed: 1
+  fadeOutSpeed: 1
+  fadeInThreshold: 1
+  fadeOutThreshold: 0.65
+  textMeshPro: {fileID: 3569813861808101514}
 --- !u!1 &7998276084265402164
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +749,6 @@ MonoBehaviour:
   blueDarkened: {r: 0, g: 0.24176821, b: 0.65, a: 0}
   orangeDarkened: {r: 0.6392157, g: 0.2509804, b: 0, a: 0}
   purpleDarkened: {r: 0.40392157, g: 0, b: 0.6509804, a: 0}
-  resetWhite: {r: 1, g: 1, b: 1, a: 0}
+  resetWhite: {r: 0.49803925, g: 0.49803925, b: 0.49803925, a: 0}
   desiredDurationInSeconds: 1
   meshRenderer: {fileID: 6793582085208796340}

@@ -60,6 +60,18 @@ PrefabInstance:
       propertyPath: m_text
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 4879514183250385833, guid: 86f10a370926ac44eae3dc655def2dd9, type: 3}
+      propertyPath: resetWhite.b
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879514183250385833, guid: 86f10a370926ac44eae3dc655def2dd9, type: 3}
+      propertyPath: resetWhite.g
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879514183250385833, guid: 86f10a370926ac44eae3dc655def2dd9, type: 3}
+      propertyPath: resetWhite.r
+      value: 0.5882353
+      objectReference: {fileID: 0}
     - target: {fileID: 5139509028212007403, guid: 86f10a370926ac44eae3dc655def2dd9, type: 3}
       propertyPath: m_text
       value: 40
