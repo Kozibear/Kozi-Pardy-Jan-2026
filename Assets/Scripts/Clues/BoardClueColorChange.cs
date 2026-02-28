@@ -23,10 +23,13 @@ namespace KoziPardy.ColorManagement
         [SerializeField] MeshRenderer meshRenderer;
 
         private float elapsedTimeInSeconds = 0;
+        private float desiredDurationForOldClue = 0.6f;
+        float percentageComplete = 0;
 
         private Color currentColor;
         private Color nextColor;
         private bool canChangeColor = false;
+        private bool oldClueFading = false;
 
         private void Start()
         {
@@ -38,15 +41,20 @@ namespace KoziPardy.ColorManagement
         {
             if (canChangeColor)
             {
-                Debug.Log("test");
                 //if the game is running at 30 fps, deltatime adds 1/30th of a second; if it's running at 60 fps it add 1/60 of a second, etc.
                 //this means that no matter what the framerate is, after one second, time.DeltaTime will have added exactly one second of time
                 elapsedTimeInSeconds += Time.deltaTime;
-                float percentageComplete = elapsedTimeInSeconds / GlobalColorManager.desiredDurationInSeconds;
+
+                if (!oldClueFading) percentageComplete = elapsedTimeInSeconds / GlobalColorManager.desiredDurationInSeconds;
+                else percentageComplete = elapsedTimeInSeconds / desiredDurationForOldClue;
 
                 GradualColorChange(percentageComplete, nextColor);
 
-                if (percentageComplete >= 1) canChangeColor = false;
+                if (percentageComplete >= 1)
+                {
+                    canChangeColor = false;
+                    oldClueFading = false;
+                }
             }
         }
 
@@ -55,7 +63,7 @@ namespace KoziPardy.ColorManagement
             meshRenderer.material.color = Color.Lerp(currentColor, newColor, percentageComplete);
         }
 
-        public void StartGradualColorChange()
+        public void StartNexColorShift()
         {
             switch (GlobalColorManager.globalColorState)
             {
@@ -76,31 +84,45 @@ namespace KoziPardy.ColorManagement
             canChangeColor = true;
         }
 
-        public void InstantColorChange(ColorValue colorValue)
+        public void ColorBrightenDarken(ColorValue colorValue, bool gradual, bool isOld)
         {
             switch (GlobalColorManager.globalColorState, colorValue)
             {
                 case (GlobalColorState.Blue, ColorValue.Bright):
-                    meshRenderer.material.color = blueHighlight;
+                    if (gradual) nextColor = blueHighlight;
+                    else meshRenderer.material.color = blueHighlight;
                     break;
                 case (GlobalColorState.Blue, ColorValue.Dark):
-                    meshRenderer.material.color = blueDarkened;
+                    if (gradual) nextColor = blueDarkened;
+                    else meshRenderer.material.color = blueDarkened;
                     break;
                 case (GlobalColorState.Orange, ColorValue.Bright):
-                    meshRenderer.material.color = orangeHighlight;
+                    if (gradual) nextColor = orangeHighlight;
+                    else meshRenderer.material.color = orangeHighlight;
                     break;
                 case (GlobalColorState.Orange, ColorValue.Dark):
-                    meshRenderer.material.color = orangeDarkened;
+                    if (gradual) nextColor = orangeDarkened;
+                    else meshRenderer.material.color = orangeDarkened;
                     break;
                 case (GlobalColorState.Purple, ColorValue.Bright):
-                    meshRenderer.material.color = purpleHighlight;
+                    if (gradual) nextColor = purpleHighlight;
+                    else meshRenderer.material.color = purpleHighlight;
                     break;
                 case (GlobalColorState.Purple, ColorValue.Dark):
-                    meshRenderer.material.color = purpleDarkened;
+                    if (gradual) nextColor = purpleDarkened;
+                    else meshRenderer.material.color = purpleDarkened;
                     break;
             }
 
             currentColor = meshRenderer.material.color;
+
+            if (isOld) oldClueFading = true;
+
+            if (gradual)
+            {
+                elapsedTimeInSeconds = 0;
+                canChangeColor = true;
+            }
         }
     }
 }

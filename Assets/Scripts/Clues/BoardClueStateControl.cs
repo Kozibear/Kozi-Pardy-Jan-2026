@@ -24,9 +24,9 @@ public class BoardClueStateControl : MonoBehaviour
         pointValueText.InstantDarkenToExactColor();
     }
 
-    public void StartGradualColorChange()
+    public void StartNextColorShift()
     {
-        boardClueColorChange.StartGradualColorChange();
+        boardClueColorChange.StartNexColorShift();
     }
 
     public void InstantDarken()
@@ -34,8 +34,16 @@ public class BoardClueStateControl : MonoBehaviour
         if (!hasBeenClicked)
         {
             pointValueText.InstantDarkenToExactColor();
-            boardClueColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Dark);
+            boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Dark, false, false);
             thisCluesCategory.InstantDarken();
+        }
+    }
+
+    public void GradualDarkenIfOld()
+    {
+        if (hasBeenClicked)
+        {
+            boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Dark, true, true);
         }
     }
 
@@ -44,8 +52,16 @@ public class BoardClueStateControl : MonoBehaviour
         if (!hasBeenClicked)
         {
             pointValueText.InstantBrightenToExactColor();
-            boardClueColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Bright);
+            boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Bright, false, false);
             thisCluesCategory.InstantLighten();
+        }
+    }
+
+    public void GradualBrightenIfOld()
+    {
+        if (hasBeenClicked)
+        {
+            boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Bright, true, true);
         }
     }
 }

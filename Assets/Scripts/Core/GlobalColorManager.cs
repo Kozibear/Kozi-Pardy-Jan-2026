@@ -7,7 +7,7 @@ namespace KoziPardy.ColorManagement
     {
         [Header("Static Variables")]
         public static GlobalColorState globalColorState = GlobalColorState.Blue;
-        public static readonly float desiredDurationInSeconds = 0.9f;
+        public static readonly float desiredDurationInSeconds = 0.85f;
 
         [Header("Board Buttons")]
         [SerializeField] List<BoardClueStateControl> boardClueStateControls;
@@ -33,12 +33,12 @@ namespace KoziPardy.ColorManagement
         {
             foreach (BoardClueStateControl clue in boardClueStateControls)
             {
-                clue.StartGradualColorChange();
+                clue.StartNextColorShift();
             }
 
             foreach (BoardClueColorChange category in categoryColorChanges)
             {
-                category.StartGradualColorChange();
+                category.StartNexColorShift();
             }
 
             boardSpriteColorChange.StartGradualColorChange();
@@ -70,7 +70,7 @@ namespace KoziPardy.ColorManagement
 
             foreach (BoardClueColorChange categoryColorChange in categoryColorChanges)
             {
-                categoryColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Dark);
+                categoryColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Dark, false, false);
             }
         }
     }

@@ -17,12 +17,12 @@ public class CategoryHeaderStateControl : MonoBehaviour
     public void InstantDarken()
     {   
         pointValueText.InstantDarken();
-        boardClueColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Dark);
+        boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Dark, false, false);
     }
 
     public void InstantLighten()
     {
         pointValueText.InstantBrighten();
-        boardClueColorChange.InstantColorChange(BoardClueColorChange.ColorValue.Bright);
+        boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Bright, false, false);
     }
 }

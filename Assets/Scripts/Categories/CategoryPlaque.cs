@@ -25,14 +25,16 @@ public class CategoryPlaque : MonoBehaviour
     {
         float step = Time.deltaTime * moveSpeed;
 
-        if (canMove && transform.localPosition != currentDestination)
+        if (canMove)
         {
-            MoveToDestination(step);
-        }
-
-        if (canMove && transform.localPosition == currentDestination)
-        {
-            ArrivedAtDestination();
+            if (transform.localPosition != currentDestination)
+            {
+                MoveToDestination(step);
+            }
+            else
+            {
+                ArrivedAtDestination();
+            }
         }
     }
 

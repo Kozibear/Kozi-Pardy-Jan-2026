@@ -16,7 +16,6 @@ public class BoardClueMovement : MonoBehaviour
 
     [Header("Speeds")]
     [SerializeField] float positionMoveSpeed = 1;
-    [SerializeField] float rotationMoveSpeed = 1;
 
     [Header("Wait Times")]
     [SerializeField] float waitBeforeRotateIn = 0.05f;
@@ -81,7 +80,9 @@ public class BoardClueMovement : MonoBehaviour
             isUpFront = true;
             GetComponent<BoardClueMediaManager>().HideFrontText();
 
-            buttonCanvasControl.ClueIsUpFront(GetComponent<BoardClueStateControl>().GetNumber());
+            buttonCanvasControl.ClueIsUpFront(GetComponent<BoardClueStateControl>().GetNumber(), GetComponent<BoardClueStateControl>().GetHasBeenClicked());
+
+            GetComponent<BoardClueStateControl>().SetHasBeenClicked(true); //this must come after the line above, as otherwise it'll get marked as an old question even if it's not
         }
         if (transform.localPosition == originalPosition)
         {
@@ -102,7 +103,7 @@ public class BoardClueMovement : MonoBehaviour
             StartCoroutine(RotateToDestination(frontRotation, waitBeforeRotateIn));
 
             GetComponent<BoardClueMediaManager>().CluePrep();
-            GetComponent<BoardClueStateControl>().SetHasBeenClicked(true);
+            GetComponent<BoardClueStateControl>().GradualBrightenIfOld();
         }
     }
 
@@ -114,6 +115,8 @@ public class BoardClueMovement : MonoBehaviour
             canMoveClue = true;
 
             StartCoroutine(RotateToDestination(originalRotation, waitBeforeRotateOut));
+
+            GetComponent<BoardClueStateControl>().GradualDarkenIfOld();
         }
     }
 }

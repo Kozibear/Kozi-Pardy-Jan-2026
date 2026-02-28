@@ -17,10 +17,12 @@ public class GameManager : MonoBehaviour
     [Header("Black Background Fade")]
     [SerializeField] SpriteFade blackBackgroundFade;
 
-    private List<int> storedButtonsToActivate;
-
     [Header("Clues Left")]
     [SerializeField] float cluesLeft = 25;
+
+    private List<int> storedButtonsToActivate;
+    private bool automaticWheelspins = false;
+    private bool wheelIsActive = false;
 
     //[Header("Game State Enum")]
     //[SerializeField] GameState gameState = GameState.Singleboard;
@@ -28,9 +30,11 @@ public class GameManager : MonoBehaviour
     public void BoardBeforeWheelSpin()
     {
         cluesLeft--;
+
         if (cluesLeft > 0)
         {
-            StartCoroutine(WheelSpinSetup());
+            if (automaticWheelspins) StartCoroutine(WheelSpinSetup());
+            else buttonCanvasControl.ActivateWheelSpinButton();
         }
     }
 
@@ -42,6 +46,10 @@ public class GameManager : MonoBehaviour
 
     public void ShowWheel()
     {
+        buttonCanvasControl.ResetEverything();
+
+        wheelIsActive = true;
+
         cameraMovement.MoveForWheelSpin();
         wheelSpinMovement.StartWheelSpin();
 
@@ -61,8 +69,17 @@ public class GameManager : MonoBehaviour
 
     public void ActivateBoardClues()
     {
-        buttonCanvasControl.ActivateSpecificClues(storedButtonsToActivate);
+        wheelIsActive = false;
+
+        buttonCanvasControl.ActivateSpecificNewCluesAndOldClues(storedButtonsToActivate);
     }
 
-    public void HardDeActivationAndHidePointNumber() { }
+    public void ToggleAutoWheelSpins(bool value)
+    {
+        automaticWheelspins = value;
+    }
+
+    public bool GetWheelIsAuto() { return automaticWheelspins; }
+
+    public bool GetWheelIsActive() { return wheelIsActive; }
 }

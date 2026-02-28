@@ -47,7 +47,7 @@ public class ClueScreen : MonoBehaviour
 
         if (transform.localPosition == moveInPosition)
         {
-            gameManager.HardDeActivationAndHidePointNumber();
+            //gameManager.HardDeActivationAndHidePointNumber();
 
             backButtonInvisible.Interactable();
             //backButton.CanMoveArrowIn();

@@ -35,6 +35,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6466164745407707292
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -80,6 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: -1482331465
   m_SortingLayer: 11
   m_SortingOrder: 4
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: aa8ce811860d89249bbbd0890d92e7de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -89,7 +91,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &384948503885622298
 MonoBehaviour:
@@ -104,8 +105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempColor: {r: 0, g: 0, b: 0, a: 0}
-  fadeInSpeed: 3.2
-  fadeOutSpeed: 3.2
+  fadeInSpeed: 2.65
+  fadeOutSpeed: 2.65
   fadeInThreshold: 1
   fadeOutThreshold: 0
   fadeListenerImplementer: {fileID: 0}
@@ -144,6 +145,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5191002695525361070
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -189,6 +191,7 @@ SpriteRenderer:
   m_SortingLayerID: -1482331465
   m_SortingLayer: 11
   m_SortingOrder: 1
+  m_MaskInteraction: 0
   m_Sprite: {fileID: -2411708168223944, guid: bc68ea1009735284594a6561d4084747, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -198,7 +201,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3264287344944977967
 GameObject:
@@ -319,6 +321,7 @@ MeshRenderer:
   m_SortingLayerID: -1482331465
   m_SortingLayer: 11
   m_SortingOrder: 3
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2077185104202117572
 MonoBehaviour:
@@ -378,6 +381,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -464,7 +468,7 @@ MonoBehaviour:
   categoryTextShadow: {fileID: 4217720525613347805}
   centerScreenPosition: {x: -18, y: 0, z: 0}
   offScreenPosition: {x: -36, y: 0, z: 0}
-  moveSpeed: 31
+  moveSpeed: 41
 --- !u!1 &7316158246963059192
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +553,7 @@ MeshRenderer:
   m_SortingLayerID: -1482331465
   m_SortingLayer: 11
   m_SortingOrder: 2
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4217720525613347805
 MonoBehaviour:
@@ -608,6 +613,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0

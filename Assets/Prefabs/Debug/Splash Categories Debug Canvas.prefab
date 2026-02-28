@@ -1,49 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4589352033410080160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8643923884114355423}
-  - component: {fileID: 1771680192255687120}
-  m_Layer: 0
-  m_Name: DebugToGameBoard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8643923884114355423
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4589352033410080160}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 639.9189, y: 343.27667, z: 0}
-  m_LocalScale: {x: 5.0659633, y: 5.0659633, z: 5.0659633}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5659905253179536561}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1771680192255687120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4589352033410080160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3954e03d5b97e014eaf377a9a5adb774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DebugToGameBoard
 --- !u!1 &6169858317178894172
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,6 +103,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -194,7 +151,7 @@ GameObject:
   - component: {fileID: 1753170548463659092}
   - component: {fileID: 3768913731211097350}
   m_Layer: 5
-  m_Name: Debug To Game Board Button
+  m_Name: 'Debug Button 1: To Game Board'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,6 +271,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6045627050198693154}
+        m_TargetAssemblyTypeName: DebugOptionsShow, Assembly-CSharp
+        m_MethodName: ToggleButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3768913731211097350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,6 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3954e03d5b97e014eaf377a9a5adb774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DebugToGameBoard
+  sceneIndex: 1
 --- !u!1 &7027269341408210049
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +328,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 438080390226357253}
-  - {fileID: 8643923884114355423}
   - {fileID: 7189690795497340030}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -552,3 +521,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2347480274713272267, guid: ed3ab6189c7568c4698388dae31e258f, type: 3}
   m_PrefabInstance: {fileID: 2776384595539850190}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6045627050198693154 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8458273370445776620, guid: ed3ab6189c7568c4698388dae31e258f, type: 3}
+  m_PrefabInstance: {fileID: 2776384595539850190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14a08b695c48f945a5be40be528a0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DebugOptionsShow
