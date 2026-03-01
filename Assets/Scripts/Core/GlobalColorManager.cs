@@ -12,8 +12,8 @@ namespace KoziPardy.ColorManagement
         [Header("Board Buttons")]
         [SerializeField] List<BoardClueStateControl> boardClueStateControls;
 
-        [Header("Category Buttons")]
-        [SerializeField] List<BoardClueColorChange> categoryColorChanges;
+        [Header("The Categories")]
+        [SerializeField] List<GameObject> categories;
 
         [Header("The Board")]
         [SerializeField] BoardSpriteColorChange boardSpriteColorChange;
@@ -36,9 +36,9 @@ namespace KoziPardy.ColorManagement
                 clue.StartNextColorShift();
             }
 
-            foreach (BoardClueColorChange category in categoryColorChanges)
+            foreach (GameObject category in categories)
             {
-                category.StartNexColorShift();
+                category.GetComponent<BoardClueColorChange>().StartNexColorShift();
             }
 
             boardSpriteColorChange.StartGradualColorChange();
@@ -68,9 +68,10 @@ namespace KoziPardy.ColorManagement
                 boardClueStateControls[i].InstantDarken();
             }
 
-            foreach (BoardClueColorChange categoryColorChange in categoryColorChanges)
+            foreach (GameObject category in categories)
             {
-                categoryColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Dark, false, false);
+                category.GetComponent<CategoryHeaderStateControl>().DarkenJustCategoryName();
+                category.GetComponent<BoardClueColorChange>().ColorBrightenDarken(BoardClueColorChange.ColorValue.Dark, false, false);
             }
         }
     }

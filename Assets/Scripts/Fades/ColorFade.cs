@@ -4,11 +4,13 @@ using UnityEngine;
 public abstract class ColorFade : MonoBehaviour
 {
     [Header("Color")]
-    [SerializeField] Color tempColor;
+    [SerializeField] Color currentColor;
+    [SerializeField] Color destinationColor;
 
     [Header("Fade Speeds")]
     [SerializeField] float fadeInSpeed = 1;
     [SerializeField] float fadeOutSpeed = 1;
+    float percentageComplete = 0;
 
     [Header("Fade Thresholds")]
     public float fadeInThreshold = 1;
@@ -16,6 +18,7 @@ public abstract class ColorFade : MonoBehaviour
 
     private bool fadeInBool = false;
     private bool fadeOutBool = false;
+    private bool fadeToExactColorBool = false;
     private bool inTheMiddleOfFading = false;
 
     [Header("Exact Colors")]
@@ -24,7 +27,7 @@ public abstract class ColorFade : MonoBehaviour
 
     void Start()
     {
-        tempColor = GetColor();
+        currentColor = GetColor();
     }
 
     void Update()
@@ -34,21 +37,26 @@ public abstract class ColorFade : MonoBehaviour
             FadeInColor();
         }
 
-        if (fadeOutBool && tempColor.r > fadeOutThreshold)
+        if (fadeOutBool && currentColor.r > fadeOutThreshold)
         {
             FadeOutColor();
+        }
+
+        if (fadeToExactColorBool)
+        {
+            FadeToExactColor();
         }
     }
 
     private void FadeOutColor()
     {
-        tempColor.r -= Time.deltaTime * fadeOutSpeed;
-        tempColor.g -= Time.deltaTime * fadeOutSpeed;
-        tempColor.b -= Time.deltaTime * fadeOutSpeed;
+        currentColor.r -= Time.deltaTime * fadeOutSpeed;
+        currentColor.g -= Time.deltaTime * fadeOutSpeed;
+        currentColor.b -= Time.deltaTime * fadeOutSpeed;
 
-        SetColor(tempColor);
+        SetColor(currentColor);
 
-        if (tempColor.r <= fadeOutThreshold)
+        if (currentColor.r <= fadeOutThreshold)
         {
             Color color = new Color(fadeOutThreshold, fadeOutThreshold, fadeOutThreshold, 1f);
             SetColor(color);
@@ -60,13 +68,28 @@ public abstract class ColorFade : MonoBehaviour
 
     private void FadeInColor()
     {
-        tempColor.r += Time.deltaTime * fadeInSpeed;
-        tempColor.g += Time.deltaTime * fadeInSpeed;
-        tempColor.b += Time.deltaTime * fadeInSpeed;
+        currentColor.r += Time.deltaTime * fadeInSpeed;
+        currentColor.g += Time.deltaTime * fadeInSpeed;
+        currentColor.b += Time.deltaTime * fadeInSpeed;
+        SetColor(currentColor);
 
-        SetColor(tempColor);
+        if (currentColor.r >= fadeInThreshold)
+        {
+            Color color = new Color(fadeInThreshold, fadeInThreshold, fadeInThreshold, 1f);
+            SetColor(color);
 
-        if (tempColor.r >= fadeInThreshold)
+            inTheMiddleOfFading = false;
+            fadeInBool = false;
+        }
+    }
+
+    private void FadeToExactColor()
+    {
+        percentageComplete += Time.deltaTime * fadeInSpeed;
+        Color newColor = Color.Lerp(currentColor, destinationColor, percentageComplete);
+        SetColor(newColor);
+
+        if (currentColor.r >= fadeInThreshold)
         {
             Color color = new Color(fadeInThreshold, fadeInThreshold, fadeInThreshold, 1f);
             SetColor(color);
@@ -81,7 +104,7 @@ public abstract class ColorFade : MonoBehaviour
         if (!inTheMiddleOfFading)
         {
             inTheMiddleOfFading = true;
-            tempColor = GetColor();
+            currentColor = GetColor();
             fadeInBool = true;
         }
     }
@@ -103,12 +126,23 @@ public abstract class ColorFade : MonoBehaviour
         }
     }
 
+    public void GradualBrightenToExactColor()
+    {
+        if (!inTheMiddleOfFading)
+        {
+            inTheMiddleOfFading = true;
+            currentColor = GetColor();
+            destinationColor = exactBrightenColor;
+            fadeToExactColorBool = true;
+        }
+    }
+
     public void Darken()
     {
         if (!inTheMiddleOfFading)
         {
             inTheMiddleOfFading = true;
-            tempColor = GetColor();
+            currentColor = GetColor();
             fadeOutBool = true;
         }
     }

@@ -612,6 +612,14 @@ PrefabInstance:
       propertyPath: m_text
       value: PS4
       objectReference: {fileID: 0}
+    - target: {fileID: 3183130684515857393, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+      propertyPath: number
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183130684515857393, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+      propertyPath: categoryNameText
+      value: 
+      objectReference: {fileID: 3952470361644632498}
     - target: {fileID: 3336932452191140849, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -673,6 +681,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+--- !u!114 &3952470361644632498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4447427798195595925, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+  m_PrefabInstance: {fileID: 820093693585515303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735c2741a031fa8429fc95d42d46eaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextColorFade
 --- !u!4 &4460651081230966233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3929078795076124414, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
@@ -706,6 +725,10 @@ PrefabInstance:
       propertyPath: m_text
       value: PS1
       objectReference: {fileID: 0}
+    - target: {fileID: 3183130684515857393, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+      propertyPath: categoryNameText
+      value: 
+      objectReference: {fileID: 3515289491136589345}
     - target: {fileID: 3336932452191140849, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -767,6 +790,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+--- !u!114 &3515289491136589345 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4447427798195595925, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+  m_PrefabInstance: {fileID: 968451138866726068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735c2741a031fa8429fc95d42d46eaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextColorFade
 --- !u!4 &4320717269130902090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3929078795076124414, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
@@ -800,6 +834,14 @@ PrefabInstance:
       propertyPath: m_text
       value: PS5
       objectReference: {fileID: 0}
+    - target: {fileID: 3183130684515857393, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+      propertyPath: number
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183130684515857393, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+      propertyPath: categoryNameText
+      value: 
+      objectReference: {fileID: 3723061512188063430}
     - target: {fileID: 3336932452191140849, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -861,6 +903,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+--- !u!114 &3723061512188063430 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4447427798195595925, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+  m_PrefabInstance: {fileID: 1014023210993222739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735c2741a031fa8429fc95d42d46eaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextColorFade
 --- !u!4 &4077003290096220845 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3929078795076124414, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
@@ -1964,6 +2017,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3183130684515857393, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+      propertyPath: number
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183130684515857393, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+      propertyPath: categoryNameText
+      value: 
+      objectReference: {fileID: 8462736304541013516}
     - target: {fileID: 3336932452191140849, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -2021,6 +2082,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+--- !u!114 &8462736304541013516 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4447427798195595925, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+  m_PrefabInstance: {fileID: 5244967126478716057}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735c2741a031fa8429fc95d42d46eaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextColorFade
 --- !u!4 &9101556631762977383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3929078795076124414, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
@@ -3022,6 +3094,14 @@ PrefabInstance:
       propertyPath: m_text
       value: PS2
       objectReference: {fileID: 0}
+    - target: {fileID: 3183130684515857393, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+      propertyPath: number
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183130684515857393, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+      propertyPath: categoryNameText
+      value: 
+      objectReference: {fileID: 5649621752802510765}
     - target: {fileID: 3336932452191140849, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -3088,6 +3168,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3929078795076124414, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
   m_PrefabInstance: {fileID: 8349406569707367736}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5649621752802510765 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4447427798195595925, guid: 9232314880aec5f41b4b75ae703f6566, type: 3}
+  m_PrefabInstance: {fileID: 8349406569707367736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735c2741a031fa8429fc95d42d46eaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextColorFade
 --- !u!1001 &8585139743249708692
 PrefabInstance:
   m_ObjectHideFlags: 0

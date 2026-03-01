@@ -35,15 +35,7 @@ public class BoardClueStateControl : MonoBehaviour
         {
             pointValueText.InstantDarkenToExactColor();
             boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Dark, false, false);
-            thisCluesCategory.InstantDarken();
-        }
-    }
-
-    public void GradualDarkenIfOld()
-    {
-        if (hasBeenClicked)
-        {
-            boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Dark, true, true);
+            thisCluesCategory.InstantDarken(); //<-- must implement this again
         }
     }
 
@@ -57,11 +49,25 @@ public class BoardClueStateControl : MonoBehaviour
         }
     }
 
+    public void GradualDarkenIfOld()
+    {
+        if (hasBeenClicked)
+        {
+            boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Dark, true, true);
+        }
+    }
+
     public void GradualBrightenIfOld()
     {
         if (hasBeenClicked)
         {
             boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Bright, true, true);
         }
+    }
+
+    public void GradualBrightenIfFinal()
+    {
+        pointValueText.GradualBrightenToExactColor();
+        boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Bright, true, false);
     }
 }

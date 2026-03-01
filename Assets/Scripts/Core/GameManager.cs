@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] SpriteFade blackBackgroundFade;
 
     [Header("Clues Left")]
-    [SerializeField] float cluesLeft = 25;
+    [SerializeField] int cluesLeft = 25;
 
     private List<int> storedButtonsToActivate;
     private bool automaticWheelspins = false;
@@ -31,10 +31,18 @@ public class GameManager : MonoBehaviour
     {
         cluesLeft--;
 
-        if (cluesLeft > 0)
+        if (cluesLeft > 1)
         {
             if (automaticWheelspins) StartCoroutine(WheelSpinSetup());
             else buttonCanvasControl.ActivateWheelSpinButton();
+        }
+        else if (cluesLeft == 1)
+        {
+            buttonCanvasControl.FinalButtonActivation();
+        }
+        else if (cluesLeft <= 0)
+        {
+            EndState();
         }
     }
 
@@ -79,7 +87,15 @@ public class GameManager : MonoBehaviour
         automaticWheelspins = value;
     }
 
+    void EndState()
+    {
+        buttonCanvasControl.ResetEverything();
+
+    }
+
     public bool GetWheelIsAuto() { return automaticWheelspins; }
 
     public bool GetWheelIsActive() { return wheelIsActive; }
+
+    public int GetCluesLeft() { return cluesLeft; }
 }

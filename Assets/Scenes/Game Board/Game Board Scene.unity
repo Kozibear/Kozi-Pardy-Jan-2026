@@ -626,17 +626,6 @@ MonoBehaviour:
   - {fileID: 126658787}
   - {fileID: 1283587796}
   - {fileID: 791879384}
---- !u!114 &58288542 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6597915675810199003, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &80858781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,17 +1571,6 @@ MeshRenderer:
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &248612328 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6737858558805627464, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &253963228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +1752,11 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 253963230}
   m_maskType: 0
+--- !u!1 &268610329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 104459498340914003, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &270991186 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1046115587643099621, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
@@ -2979,6 +2962,17 @@ MeshRenderer:
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &430309315 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3515289491136589345, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735c2741a031fa8429fc95d42d46eaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextColorFade
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4062,6 +4056,11 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 679273423}
   m_maskType: 0
+--- !u!1 &679451902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 532043423365739712, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &720726631
 GameObject:
   m_ObjectHideFlags: 0
@@ -7405,17 +7404,6 @@ MeshRenderer:
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1148596394 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2534966452833647556, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1170810757
 GameObject:
   m_ObjectHideFlags: 0
@@ -7505,26 +7493,15 @@ MonoBehaviour:
   - {fileID: 126658787}
   - {fileID: 1283587796}
   - {fileID: 791879384}
-  categoryColorChanges:
-  - {fileID: 248612328}
-  - {fileID: 1148596394}
-  - {fileID: 1227639036}
-  - {fileID: 58288542}
-  - {fileID: 1183416411}
+  categories:
+  - {fileID: 268610329}
+  - {fileID: 1873711245}
+  - {fileID: 1921962480}
+  - {fileID: 679451902}
+  - {fileID: 1966716965}
   boardSpriteColorChange: {fileID: 1091052799}
   wheelColorChange: {fileID: 842536996}
   backgroundColorChange: {fileID: 1578960658}
---- !u!114 &1183416411 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6837457351035228847, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1183456566
 GameObject:
   m_ObjectHideFlags: 0
@@ -7777,17 +7754,6 @@ PolygonCollider2D:
       - {x: 0.4977396, y: -1.5385898}
       - {x: 1.5498261, y: 1.6439278}
   m_UseDelaunayMesh: 0
---- !u!114 &1227639036 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1745376127151204965, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-  m_PrefabInstance: {fileID: 1987132743266941596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
 --- !u!1 &1251757159
 GameObject:
   m_ObjectHideFlags: 0
@@ -9897,6 +9863,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846118870}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1873711245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9213434083806788319, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1876144842
 GameObject:
   m_ObjectHideFlags: 0
@@ -10427,6 +10398,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912095520}
   m_CullTransparentMesh: 1
+--- !u!1 &1921962480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4956881689329707902, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1933174790
 GameObject:
   m_ObjectHideFlags: 0
@@ -10609,6 +10585,11 @@ MeshRenderer:
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1966716965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148958325726204852, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+  m_PrefabInstance: {fileID: 1987132743266941596}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1976345893
 GameObject:
   m_ObjectHideFlags: 0
@@ -11748,6 +11729,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: categoryNameText
+      value: 
+      objectReference: {fileID: 430309315}
     - target: {fileID: 2410776618578580737, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13233,7 +13218,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
   m_PrefabInstance: {fileID: 1987132743266941596}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1966716965}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
@@ -13244,7 +13229,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
   m_PrefabInstance: {fileID: 1987132743266941596}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 679451902}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
@@ -13255,7 +13240,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
   m_PrefabInstance: {fileID: 1987132743266941596}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1921962480}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
@@ -13266,7 +13251,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
   m_PrefabInstance: {fileID: 1987132743266941596}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1873711245}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
@@ -13277,7 +13262,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
   m_PrefabInstance: {fileID: 1987132743266941596}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 268610329}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}

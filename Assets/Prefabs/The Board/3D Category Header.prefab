@@ -43,6 +43,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3929078795076124414}
   - component: {fileID: 3183130684515857393}
+  - component: {fileID: 4176145315664469745}
   m_Layer: 8
   m_Name: 3D Category Header
   m_TagString: Untagged
@@ -81,8 +82,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CategoryHeaderStateControl
   number: 0
-  boardClueColorChange: {fileID: 5832460065354159868}
-  pointValueText: {fileID: 4447427798195595925}
+  categoryColorChange: {fileID: 4176145315664469745}
+  categoryNameText: {fileID: 0}
+--- !u!114 &4176145315664469745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865742752246126567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
+  blueHighlight: {r: 0, g: 0.37254903, b: 1, a: 0}
+  orangeHighlight: {r: 1, g: 0.3882353, b: 0, a: 0}
+  purpleHighlight: {r: 0.61960787, g: 0, b: 1, a: 0}
+  blueDarkened: {r: 0, g: 0.24176821, b: 0.65, a: 0}
+  orangeDarkened: {r: 0.6392157, g: 0.2509804, b: 0, a: 0}
+  purpleDarkened: {r: 0.40392157, g: 0, b: 0.6509804, a: 0}
+  resetWhite: {r: 0.49803925, g: 0.49803925, b: 0.49803925, a: 0}
+  meshRenderer: {fileID: 6793582085208796340}
 --- !u!1 &2821084408357469172
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +188,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &332490061182569296
 MonoBehaviour:
@@ -228,6 +250,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -348,6 +371,7 @@ MeshRenderer:
   m_SortingLayerID: 88982989
   m_SortingLayer: 2
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2990899718057546360
 MonoBehaviour:
@@ -407,6 +431,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -528,6 +553,7 @@ MeshRenderer:
   m_SortingLayerID: 88982989
   m_SortingLayer: 2
   m_SortingOrder: 1
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3569813861808101514
 MonoBehaviour:
@@ -587,6 +613,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -640,6 +667,8 @@ MonoBehaviour:
   fadeOutSpeed: 1
   fadeInThreshold: 1
   fadeOutThreshold: 0.65
+  exactDarkenColor: {r: 0, g: 0, b: 0, a: 0}
+  exactBrightenColor: {r: 0, g: 0, b: 0, a: 0}
   textMeshPro: {fileID: 3569813861808101514}
 --- !u!1 &7998276084265402164
 GameObject:
@@ -652,7 +681,6 @@ GameObject:
   - component: {fileID: 4556510529390354067}
   - component: {fileID: 5612490685238073757}
   - component: {fileID: 6793582085208796340}
-  - component: {fileID: 5832460065354159868}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
@@ -730,25 +758,5 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5832460065354159868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7998276084265402164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc97d19d0de39bd4bb24839d5d39fef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoardClueColorChange
-  blueHighlight: {r: 0, g: 0.37254903, b: 1, a: 0}
-  orangeHighlight: {r: 1, g: 0.3882353, b: 0, a: 0}
-  purpleHighlight: {r: 0.61960787, g: 0, b: 1, a: 0}
-  blueDarkened: {r: 0, g: 0.24176821, b: 0.65, a: 0}
-  orangeDarkened: {r: 0.6392157, g: 0.2509804, b: 0, a: 0}
-  purpleDarkened: {r: 0.40392157, g: 0, b: 0.6509804, a: 0}
-  resetWhite: {r: 0.49803925, g: 0.49803925, b: 0.49803925, a: 0}
-  desiredDurationInSeconds: 1
-  meshRenderer: {fileID: 6793582085208796340}

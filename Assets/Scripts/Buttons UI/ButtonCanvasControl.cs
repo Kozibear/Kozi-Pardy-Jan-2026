@@ -10,6 +10,8 @@ public class ButtonCanvasControl : MonoBehaviour
     [SerializeField] Button backButton;
     [SerializeField] Button wheelSpinButton;
     [SerializeField] GameObject gameManagerObject;
+    GameManager gameManager;
+    GlobalColorManager globalColorManager;
 
     [Header("Board Clues")]
     [SerializeField] List<BoardClueStateControl> boardClueStateControls;
@@ -18,6 +20,13 @@ public class ButtonCanvasControl : MonoBehaviour
     private bool oldClueIsBeingShown = false;
     private bool newClueHasBeenShownThisTurn = false;
     private bool readyForNextTurn = false;
+    private bool finalClue = false;
+
+    private void Start()
+    {
+        gameManager = gameManagerObject.GetComponent<GameManager>();
+        globalColorManager = gameManagerObject.GetComponent<GlobalColorManager>();
+    }
 
     public void ActivateSpecificNewCluesAndOldClues(List<int> buttonsToActivate)
     {
@@ -31,6 +40,23 @@ public class ButtonCanvasControl : MonoBehaviour
             }
         }
 
+        ActivateJustOldClues();
+    }
+
+    public void FinalButtonActivation()
+    {
+        ResetEverything();
+
+        foreach (BoardClueStateControl clueStateControl in boardClueStateControls)
+        {
+            if (!clueStateControl.GetHasBeenClicked())
+            {
+                boardButtons[clueStateControl.GetNumber()].gameObject.SetActive(true);
+                clueStateControl.GradualBrightenIfFinal();
+            }
+        }
+
+        finalClue = true;
         ActivateJustOldClues();
     }
 
@@ -62,15 +88,15 @@ public class ButtonCanvasControl : MonoBehaviour
         else
         {
             newClueHasBeenShownThisTurn = true;
-            gameManagerObject.GetComponent<GlobalColorManager>().DarkenAllOtherBoardButtons(buttonToWhiteList);
+            globalColorManager.DarkenAllOtherBoardButtons(buttonToWhiteList);
         }
     }
 
     public void BackButtonBeenSelected()
     {
-        if (!oldClueIsBeingShown)
+        if (!oldClueIsBeingShown && !finalClue)
         {
-            gameManagerObject.GetComponent<GlobalColorManager>().ChangeGlobalColor();
+            globalColorManager.ChangeGlobalColor();
         }
     }
 
@@ -82,24 +108,32 @@ public class ButtonCanvasControl : MonoBehaviour
             {
                 ActivateJustOldClues();
             }
-            else
+            else //we need to make sure the new clue(s) are reactivated
             {
-                ActivateSpecificNewCluesAndOldClues(currentActivatedButtons);
+                if (finalClue)
+                {
+                    FinalButtonActivation();
+                }
+                else
+                {
+                    ActivateSpecificNewCluesAndOldClues(currentActivatedButtons);
+                }
             }
 
             oldClueIsBeingShown = false;
         }
-        else //i.e. if a new clue was just being shown
+
+        else //i.e. if a new clue was just shown
         {
-            //we don't want any issues from calling an old clue onscreen while the wheel is in auto mode
-            //so if the wheel is in auto mode, we aren't allowed to activate old clues, or activate the wheelspin button
-            if (!gameManagerObject.GetComponent<GameManager>().GetWheelIsAuto())
+            //we don't want any issues from calling an old clue onscreen while the wheel is in auto mode, OR when we have 1 or fewer clues left
+            //So in either case, we aren't allowed to activate old clues, or activate the wheelspin button
+            if (!gameManager.GetWheelIsAuto() || gameManager.GetCluesLeft() <= 2)
             {
                 readyForNextTurn = true;
                 ActivateJustOldClues();
             }
 
-            gameManagerObject.GetComponent<GameManager>().BoardBeforeWheelSpin();
+            gameManager.BoardBeforeWheelSpin();
         }
 
         if (readyForNextTurn)
