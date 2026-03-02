@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     enum GameState { Singleboard, DoubleBoard, FinalBoard };
 
     [Header("Wheel Spin")]
-    [SerializeField] CameraMovement cameraMovement;
+    [SerializeField] List<CameraMovement> cameraMovements;
     [SerializeField] WheelSpinMovement wheelSpinMovement;
     [SerializeField] float waitBeforeBringingInWheel = 1f;
 
@@ -58,21 +58,22 @@ public class GameManager : MonoBehaviour
 
         wheelIsActive = true;
 
-        cameraMovement.MoveForWheelSpin();
+        foreach (CameraMovement camera in cameraMovements) { camera.MoveForWheelSpin(); }
         wheelSpinMovement.StartWheelSpin();
 
-        blackBackgroundFade.SetFadeInThreshold(0.4f);
-        blackBackgroundFade.SetFadeSpeeds(2.8f);
-        blackBackgroundFade.FadeIn();
+        //blackBackgroundFade.SetFadeInThreshold(0.4f);
+        //blackBackgroundFade.SetFadeSpeeds(2.8f);
+        //blackBackgroundFade.FadeIn();
     }
 
     public void HideWheelAndReturnToBoard(List<int> buttonsToActivate)
     {
         storedButtonsToActivate = buttonsToActivate;
 
-        cameraMovement.MoveBackToNormal();
+        foreach (CameraMovement camera in cameraMovements) { camera.MoveBackToNormal(); }
         wheelSpinMovement.MoveOutWheelSpin();
-        blackBackgroundFade.FadeOut();
+
+        //blackBackgroundFade.FadeOut();
     }
 
     public void ActivateBoardClues()

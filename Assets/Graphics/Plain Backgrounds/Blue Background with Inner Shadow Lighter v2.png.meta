@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc68ea1009735284594a6561d4084747
+guid: 668484fe9cb481b498b4b5a58513c5de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2411708168223944
-    second: Blue Background with Inner Shadow Lighter_0
+      213: 7130222054723062073
+    second: Blue Background with Inner Shadow Lighter v2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blue Background with Inner Shadow Lighter_0
+      name: Blue Background with Inner Shadow Lighter v2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 833c45f609e67fff0800000000000000
-      internalID: -2411708168223944
+      spriteID: 9398c656e23a3f260800000000000000
+      internalID: 7130222054723062073
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Blue Background with Inner Shadow Lighter_0: -2411708168223944
+      Blue Background with Inner Shadow Lighter v2_0: 7130222054723062073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

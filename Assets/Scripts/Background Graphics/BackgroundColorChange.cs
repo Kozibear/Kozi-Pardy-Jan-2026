@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 namespace KoziPardy.ColorManagement
@@ -13,21 +14,43 @@ namespace KoziPardy.ColorManagement
         [SerializeField] SpriteRenderer backgroundColorSprite;
 
         [Header("Background Particle System")]
-        [SerializeField] ParticleSystem myParticleSystem;
-        ParticleSystem.ColorOverLifetimeModule colorModule;
+        [SerializeField] ParticleSystem streaksParticleSystem;
+        ParticleSystem.MainModule streaksMainModule;
+        ParticleSystem.ColorOverLifetimeModule streaksLifeTimeModule;
 
-        [Header("Particle System Colors")]
-        [SerializeField] Color lightBlueColor;
-        [SerializeField] Color lightOrangeColor;
-        [SerializeField] Color lightPurpleColor;
+        [SerializeField] ParticleSystem smokeParticleSystem;
+        ParticleSystem.MainModule smokeMainModule;
+        ParticleSystem.ColorOverLifetimeModule smokeLifeTimeModule;
+
+        [Header("Streaks Colors")]
+        [SerializeField] Color streaksBlueColor;
+        [SerializeField] Color streaksOrangeColor;
+        [SerializeField] Color streaksPurpleColor;
+
+        [Header("Streaks Over Lifetime Gradients")]
+        [SerializeField] Gradient streaksBlueGradient;
+        [SerializeField] Gradient streaksOrangeGradient;
+        [SerializeField] Gradient streaksPurpleGradient;
+
+        [Header("Smoke Colors")]
+        [SerializeField] Color smokeBlueColor;
+        [SerializeField] Color smokeOrangeColor;
+        [SerializeField] Color smokePurpleColor;
+
+        [Header("Smoke Over Lifetime Gradients")]
+        [SerializeField] Gradient smokeBlueGradient;
+        [SerializeField] Gradient smokeOrangeGradient;
+        [SerializeField] Gradient smokePurpleGradient;
 
         private float elapsedTimeInSeconds = 0;
 
         private Color currentSpriteColor;
-        private Color currentParticleSysColor;
+        private Color currentStreakColor;
+        private Color currentSmokeColor;
 
         private Color nextSpriteColor;
-        private Color nextParticleSysColor;
+        private Color nextStreakColor;
+        private Color nextSmokeColor;
 
         private bool canChangeColor = false;
 
@@ -36,28 +59,35 @@ namespace KoziPardy.ColorManagement
             backgroundColorSprite.color = darkBlueColor;
             currentSpriteColor = darkBlueColor;
 
-            colorModule = myParticleSystem.colorOverLifetime;
-            colorModule.color = lightBlueColor;
-            currentParticleSysColor = lightBlueColor;
+            streaksMainModule = streaksParticleSystem.main;
+            streaksMainModule.startColor = streaksBlueColor;
+            streaksLifeTimeModule = streaksParticleSystem.colorOverLifetime;
+            streaksLifeTimeModule.color = streaksBlueGradient;
+            currentStreakColor = streaksBlueColor;
+
+            smokeMainModule = smokeParticleSystem.main;
+            smokeMainModule.startColor = smokeBlueColor;
+            smokeLifeTimeModule = smokeParticleSystem.colorOverLifetime;
+            smokeLifeTimeModule.color = smokeBlueGradient;
+            currentSmokeColor = smokeBlueColor;
         }
 
         void Update()
         {
             if (canChangeColor)
             {
-                elapsedTimeInSeconds += Time.deltaTime;
+                elapsedTimeInSeconds += Time.deltaTime * 1.2f;
                 float percentageComplete = elapsedTimeInSeconds / GlobalColorManager.desiredDurationInSeconds;
 
-                GradualColorChange(percentageComplete, nextSpriteColor, nextParticleSysColor);
+                GradualColorChange(percentageComplete, nextSpriteColor);
 
                 if (percentageComplete >= 1) canChangeColor = false;
             }
         }
 
-        public void GradualColorChange(float percentageComplete, Color newSpriteColor, Color newParticleSysColor)
+        public void GradualColorChange(float percentageComplete, Color newSpriteColor)
         {
             backgroundColorSprite.color = Color.Lerp(currentSpriteColor, newSpriteColor, percentageComplete);
-            colorModule.color = Color.Lerp(currentParticleSysColor, newParticleSysColor, percentageComplete);
         }
 
         public void StartGradualColorChange()
@@ -66,20 +96,31 @@ namespace KoziPardy.ColorManagement
             {
                 case GlobalColorState.Blue:
                     nextSpriteColor = darkOrangeColor;
-                    nextParticleSysColor = lightOrangeColor;
+
+                    streaksMainModule.startColor = streaksOrangeColor;
+                    smokeMainModule.startColor = smokeOrangeColor;
+                    streaksLifeTimeModule.color = streaksOrangeGradient;
+                    smokeLifeTimeModule.color = smokeOrangeGradient;
                     break;
                 case GlobalColorState.Orange:
                     nextSpriteColor = darkPurpleColor;
-                    nextParticleSysColor = lightPurpleColor;
+
+                    streaksMainModule.startColor = streaksPurpleColor;
+                    smokeMainModule.startColor = smokePurpleColor;
+                    streaksLifeTimeModule.color = streaksPurpleGradient;
+                    smokeLifeTimeModule.color = smokePurpleGradient;
                     break;
                 case GlobalColorState.Purple:
                     nextSpriteColor = darkBlueColor;
-                    nextParticleSysColor = lightBlueColor;
+
+                    streaksMainModule.startColor = streaksBlueColor;
+                    smokeMainModule.startColor = smokeBlueColor;
+                    streaksLifeTimeModule.color = streaksBlueGradient;
+                    smokeLifeTimeModule.color = smokeBlueGradient;
                     break;
             }
 
             currentSpriteColor = backgroundColorSprite.color;
-            currentParticleSysColor = colorModule.color.color;
 
             elapsedTimeInSeconds = 0;
             canChangeColor = true;
