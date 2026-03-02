@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7500264202647406532
 Transform:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5337438136914121663, guid: 4b822cc914b137f43b89c6213e68decb, type: 2}
+  - {fileID: -5726685030890006004, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -345,8 +345,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAYSTATION 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b822cc914b137f43b89c6213e68decb, type: 2}
-  m_sharedMaterial: {fileID: 5337438136914121663, guid: 4b822cc914b137f43b89c6213e68decb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
+  m_sharedMaterial: {fileID: -5726685030890006004, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -531,7 +531,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5337438136914121663, guid: 4b822cc914b137f43b89c6213e68decb, type: 2}
+  - {fileID: -5726685030890006004, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -577,8 +577,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAYSTATION 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b822cc914b137f43b89c6213e68decb, type: 2}
-  m_sharedMaterial: {fileID: 5337438136914121663, guid: 4b822cc914b137f43b89c6213e68decb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
+  m_sharedMaterial: {fileID: -5726685030890006004, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
