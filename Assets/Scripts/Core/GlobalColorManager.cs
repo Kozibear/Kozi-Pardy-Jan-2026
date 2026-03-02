@@ -18,9 +18,6 @@ namespace KoziPardy.ColorManagement
         [Header("The Board")]
         [SerializeField] BoardSpriteColorChange boardSpriteColorChange;
 
-        [Header("The Wheel")]
-        [SerializeField] WheelColorChange wheelColorChange;
-
         [Header("Background")]
         [SerializeField] BackgroundColorChange backgroundColorChange;
 

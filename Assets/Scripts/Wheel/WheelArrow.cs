@@ -9,11 +9,13 @@ public class WheelArrow : MonoBehaviour
 
     public void SetTriggerSelection(bool state) { canTriggerSelection = state; }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (canTriggerSelection)
         {
-            wheelSpinBoardSelections.LightUpBoardParts(collision.GetComponent<WheelSegment>().GetCurrentSegment());
+            collision.GetComponent<SpriteFade>().InstantPulseOut();
+            wheelSpinBoardSelections.LightUpBoardParts(collision.GetComponent<WheelSegment>().GetCurrentSegment(), collision.GetComponent<WheelSegment>().GetPartNumber());
         }
     }
+
 }

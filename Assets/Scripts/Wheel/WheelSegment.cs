@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WheelSegment : MonoBehaviour
 {
+    [SerializeField] int partNumber;
+
     [SerializeField] List<GameObject> segmentNames;
 
     private int currentSegment;
@@ -16,6 +18,11 @@ public class WheelSegment : MonoBehaviour
     public void SetCurrentSegment(int segmentIndex)
     {
         currentSegment = segmentIndex;
+    }
+
+    public int GetPartNumber()
+    {
+        return partNumber;
     }
 
     public int GetCurrentSegment()

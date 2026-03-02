@@ -95,6 +95,16 @@ public abstract class Fade : MonoBehaviour
         pulses = pulsesAmount;
     }
 
+    public void InstantPulseOut()
+    {
+        tempColor = GetColor();
+        tempColor.a = 1;
+        SetColor(tempColor);
+
+        tempColor = GetColor();
+        fadeOutBool = true;
+    }
+
     public void SetFadeInThreshold(float newThreshold)
     {
         fadeInThreshold = newThreshold;

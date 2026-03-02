@@ -39,10 +39,11 @@ public class WheelSpinBoardSelections : MonoBehaviour
 
     private void Start()
     {
+
         boardClueStateControls = GetComponent<WheelSpinSegmentControl>().GetboardClueStateControls();
     }
 
-    public void LightUpBoardParts(int selectedSegment)
+    public void LightUpBoardParts(int selectedSegment, int partNumber)
     {
         currentSelectedSegment = selectedSegment;
 
@@ -118,6 +119,7 @@ public class WheelSpinBoardSelections : MonoBehaviour
     IEnumerator TellGameManagerButtonsToActivate()
     {
         yield return new WaitForSeconds(waitBeforeFlash);
+
         whiteFlash.Pulse(1);
 
         yield return new WaitForSeconds(waitAfterFlash);

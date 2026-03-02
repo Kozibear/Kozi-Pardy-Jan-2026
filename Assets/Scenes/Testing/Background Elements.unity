@@ -465,6 +465,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5005799127991455859, guid: 34600d8a09a0f83419257edb94c94174, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5906766237581878088, guid: 34600d8a09a0f83419257edb94c94174, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -508,6 +512,10 @@ PrefabInstance:
     - target: {fileID: 5955160630040452526, guid: 34600d8a09a0f83419257edb94c94174, type: 3}
       propertyPath: m_Name
       value: Warp Drive Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955160630040452526, guid: 34600d8a09a0f83419257edb94c94174, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
