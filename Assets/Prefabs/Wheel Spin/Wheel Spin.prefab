@@ -863,9 +863,8 @@ MonoBehaviour:
   moveOutPosition: {x: -8.42, y: -23.5, z: -3.08}
   moveInSpeed: 30
   moveOutSpeed: 35
-  rotationSpeed: 4.5
-  rotationSubtractionFactor: 2
-  rotationSlowFactor: 0.004
+  desiredDurationInSeconds: 5.5
+  startingRotationSpeed: 5
 --- !u!114 &8715743453352380603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,7 +928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WheelSpinBoardLightUps
   gameManager: {fileID: 0}
   whiteFlash: {fileID: 0}
-  waitBeforeFlash: 0.38
+  waitBeforeFlash: 0.15
   waitAfterFlash: 0.75
 --- !u!1 &3531781125239079062
 GameObject:

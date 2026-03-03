@@ -90,7 +90,7 @@ MonoBehaviour:
   - N/A
   - N/A
   - N/A
-  waitBeforeNextCategory: 3
+  waitBeforeNextCategory: 2.6
   waitBeforeChangingScene: 0.2
   blackPreground: {fileID: 0}
   boardSilhouette: {fileID: 0}

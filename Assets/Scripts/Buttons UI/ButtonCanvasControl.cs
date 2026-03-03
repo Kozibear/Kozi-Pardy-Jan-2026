@@ -16,6 +16,10 @@ public class ButtonCanvasControl : MonoBehaviour
     [Header("Board Clues")]
     [SerializeField] List<BoardClueStateControl> boardClueStateControls;
 
+    [Header("Vignette Fader")]
+    [SerializeField] VignetteFader vignetteFader;
+
+
     private List<int> currentActivatedButtons;
     private bool oldClueIsBeingShown = false;
     private bool newClueHasBeenShownThisTurn = false;
@@ -75,6 +79,8 @@ public class ButtonCanvasControl : MonoBehaviour
     {
         setAllBoardButtonsState(false);
         wheelSpinButton.gameObject.SetActive(false);
+
+        vignetteFader.StartVigentteFadeIn();
     }
 
     public void ClueIsUpFront(int buttonToWhiteList, bool hasClueBeenClicked)
@@ -98,6 +104,8 @@ public class ButtonCanvasControl : MonoBehaviour
         {
             globalColorManager.ChangeGlobalColor();
         }
+
+        vignetteFader.StartVigentteFadeOut();
     }
 
     public void ClueIsBackHome()

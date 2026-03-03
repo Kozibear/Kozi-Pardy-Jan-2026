@@ -695,6 +695,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faefa2773f50a24495bdc0ad0a3a9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueStateControl
+--- !u!114 &1823263714 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1541249777663656058, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
+  m_PrefabInstance: {fileID: 1325772868822460122}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b55f52edf304b47ad76d04786517c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VignetteFader
 --- !u!1 &1873711245 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9213434083806788319, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
@@ -1130,6 +1141,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 270991186}
     - target: {fileID: 8258938446430065604, guid: abdf72a38bef1a14c8442f25c868b197, type: 3}
+      propertyPath: vignetteFader
+      value: 
+      objectReference: {fileID: 1823263714}
+    - target: {fileID: 8258938446430065604, guid: abdf72a38bef1a14c8442f25c868b197, type: 3}
       propertyPath: gameManagerObject
       value: 
       objectReference: {fileID: 1170810757}
@@ -1274,30 +1289,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1170810759}
-    - target: {fileID: 2779897751231859647, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_CameraType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779897751231859647, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_RendererIndex
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779897751231859647, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779897751231859647, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_RequiresDepthTextureOption
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779897751231859647, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_VolumeFrameworkUpdateModeOption
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4412458832391882522, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.16
-      objectReference: {fileID: 0}
     - target: {fileID: 7348324381903806916, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1338,33 +1329,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7786482895611892099, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786482895611892099, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786482895611892099, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786482895611892099, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_LightType
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 8068605104103988406, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
       propertyPath: m_Name
       value: Cameras - Game Board
-      objectReference: {fileID: 0}
-    - target: {fileID: 8771513622840831997, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: orthographic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8771513622840831997, guid: 31aca1f4e0ab40b41bf8f14e26809902, type: 3}
-      propertyPath: m_OcclusionCulling
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1616,6 +1583,10 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
+    - target: {fileID: 1257492515711553060, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2907963846830440594, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
     - target: {fileID: 1603420185493352802, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 
@@ -1688,6 +1659,18 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
+    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
+    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2907963846830440594, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
+    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5091022150092220674, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 
@@ -2058,10 +2041,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1170810759}
-    - target: {fileID: 260729069858210596, guid: 915d6d717bbcb0846a909488e70774ca, type: 3}
-      propertyPath: waitBeforeFlash
-      value: 0.38
-      objectReference: {fileID: 0}
     - target: {fileID: 2935589488134240324, guid: 915d6d717bbcb0846a909488e70774ca, type: 3}
       propertyPath: m_Name
       value: Wheel Spin

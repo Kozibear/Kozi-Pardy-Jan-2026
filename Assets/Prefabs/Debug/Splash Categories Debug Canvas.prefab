@@ -146,15 +146,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: GAME BOARD
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b822cc914b137f43b89c6213e68decb, type: 2}
-  m_sharedMaterial: {fileID: 5337438136914121663, guid: 4b822cc914b137f43b89c6213e68decb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
+  m_sharedMaterial: {fileID: 2907963846830440594, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279637526
-  m_fontColor: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -171,8 +171,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

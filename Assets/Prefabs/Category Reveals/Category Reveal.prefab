@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 7500264202647406532}
   - component: {fileID: 6466164745407707292}
   - component: {fileID: 384948503885622298}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Category Reveal Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7500264202647406532
 Transform:
   m_ObjectHideFlags: 0
@@ -105,8 +105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempColor: {r: 0, g: 0, b: 0, a: 0}
-  fadeInSpeed: 2.65
-  fadeOutSpeed: 2.65
+  fadeInSpeed: 2.55
+  fadeOutSpeed: 2.55
   fadeInThreshold: 1
   fadeOutThreshold: 0
   fadeListenerImplementer: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6836306340275093447}
   - component: {fileID: 5191002695525361070}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Category Reveal Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ SpriteRenderer:
   m_SortingLayer: 11
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 6d477e5c214132941952aab9f0ec866c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 668484fe9cb481b498b4b5a58513c5de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -211,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7323064929805090436}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Movement Shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ Transform:
   m_GameObject: {fileID: 3264287344944977967}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 5589282514222003760}
   - component: {fileID: 2333831375552085653}
   - component: {fileID: 2077185104202117572}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Category Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ RectTransform:
   m_GameObject: {fileID: 4960619935649656482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.15, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7323064929805090436}
@@ -299,7 +299,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5726685030890006004, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
+  - {fileID: 2907963846830440594, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -345,8 +345,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAYSTATION 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
-  m_sharedMaterial: {fileID: -5726685030890006004, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
+  m_sharedMaterial: {fileID: 2907963846830440594, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -428,7 +428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7180584962800803423}
   - component: {fileID: 4153911816826659136}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Category Reveal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,8 @@ MonoBehaviour:
   categoryTextShadow: {fileID: 4217720525613347805}
   centerScreenPosition: {x: -18, y: 0, z: 0}
   offScreenPosition: {x: -36, y: 0, z: 0}
-  moveSpeed: 41
+  moveSpeed: 42
+  moveShellSpeed: 0.75
 --- !u!1 &7316158246963059192
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +481,7 @@ GameObject:
   - component: {fileID: 9000083096720839053}
   - component: {fileID: 9015736940847729272}
   - component: {fileID: 4217720525613347805}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Category Text Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +497,7 @@ RectTransform:
   m_GameObject: {fileID: 7316158246963059192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.15, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7323064929805090436}
@@ -531,7 +532,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5726685030890006004, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
+  - {fileID: 2907963846830440594, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -577,8 +578,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAYSTATION 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
-  m_sharedMaterial: {fileID: -5726685030890006004, guid: 717dbb368c0bfc54aa3eff3a8a86d684, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
+  m_sharedMaterial: {fileID: 2907963846830440594, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

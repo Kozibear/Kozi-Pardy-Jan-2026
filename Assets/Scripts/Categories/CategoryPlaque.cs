@@ -11,14 +11,18 @@ public class CategoryPlaque : MonoBehaviour
     [SerializeField] TextMeshPro categoryText;
     [SerializeField] TextMeshPro categoryTextShadow;
 
-    [Header("Movement")]
+    [Header("Whole GameObject Movement")]
     [SerializeField] Vector3 centerScreenPosition;
     [SerializeField] Vector3 offScreenPosition;
     Vector3 currentDestination;
 
     [SerializeField] float moveSpeed;
 
+    [Header("Whole GameObject Movement")]
+    [SerializeField] float moveShellSpeed = 1;
+
     private bool canMove = false;
+    private bool canMoveShell = false;
     private bool canDestroy = false;
 
     void Update()
@@ -36,10 +40,16 @@ public class CategoryPlaque : MonoBehaviour
                 ArrivedAtDestination();
             }
         }
+
+        if (canMoveShell)
+        {
+            MoveShell();
+        }
     }
 
     private void ArrivedAtDestination()
     {
+        canMoveShell = true;
         canMove = false;
         if (canDestroy) { Destroy(gameObject); }
         categoryCover.GetComponent<SpriteFade>().FadeOut();
@@ -48,6 +58,11 @@ public class CategoryPlaque : MonoBehaviour
     private void MoveToDestination(float step)
     {
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, currentDestination, step);
+    }
+
+    private void MoveShell()
+    {
+        transform.GetChild(0).transform.Translate(Vector3.left * Time.deltaTime * moveShellSpeed);
     }
 
     public void SetCategoryText(string categoryName)

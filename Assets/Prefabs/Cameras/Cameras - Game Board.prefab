@@ -129,7 +129,7 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1 &2639780310611498997
+--- !u!1 &3247186611725478653
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,38 +137,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3652773753232856626}
-  - component: {fileID: 2401796353859870958}
-  - component: {fileID: 5097968232204890363}
-  m_Layer: 6
-  m_Name: Global Volume - Game
+  - component: {fileID: 429640808029498230}
+  - component: {fileID: 8123310596458749402}
+  - component: {fileID: 1541249777663656058}
+  m_Layer: 7
+  m_Name: Global Volume - 3D Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3652773753232856626
+--- !u!4 &429640808029498230
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2639780310611498997}
+  m_GameObject: {fileID: 3247186611725478653}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 7.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7264678960339494809}
+  m_Father: {fileID: 600723486940456987}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2401796353859870958
+--- !u!114 &8123310596458749402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2639780310611498997}
+  m_GameObject: {fileID: 3247186611725478653}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
@@ -179,21 +179,22 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: f74129f73b660bb46967fa14794a2861, type: 2}
---- !u!114 &5097968232204890363
+--- !u!114 &1541249777663656058
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2639780310611498997}
-  m_Enabled: 0
+  m_GameObject: {fileID: 3247186611725478653}
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6004788e202a89740bea4e076f053530, type: 3}
+  m_Script: {fileID: 11500000, guid: 78b55f52edf304b47ad76d04786517c9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  volume: {fileID: 2401796353859870958}
-  blurSpeed: 450
-  unBlurSpeed: 660
+  m_EditorClassIdentifier: Assembly-CSharp::VignetteFader
+  volume: {fileID: 8123310596458749402}
+  fadeInSpeed: 0.2
+  fadeOutSpeed: 0.2
+  intensityThreshold: 0.14
 --- !u!1 &4040723402126187026
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +206,7 @@ GameObject:
   - component: {fileID: 8355185095782875751}
   - component: {fileID: 1600250118811874719}
   m_Layer: 8
-  m_Name: Global Light 2D - WheelSpin
+  m_Name: Light 2D - WheelSpin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,7 +311,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3652773753232856626}
   - {fileID: 4412458832391882522}
   m_Father: {fileID: 7348324381903806916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -353,7 +353,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
+  m_RenderShadows: 0
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
@@ -413,12 +413,12 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_TaaSettings:
-    m_Quality: 3
+    m_Quality: 2
     m_FrameInfluence: 0.1
     m_JitterScale: 1
     m_MipBias: 0
     m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    m_ContrastAdaptiveSharpening: 0.974
   m_Version: 2
 --- !u!1 &4496278517160416700
 GameObject:
@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 7199893640309651550}
   - component: {fileID: 9066844274423282446}
   m_Layer: 6
-  m_Name: Global Light 2D - 3D objects
+  m_Name: Light 2D - Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 4412458832391882522}
   - component: {fileID: 7786482895611892099}
   m_Layer: 6
-  m_Name: Global Light 2D - Game
+  m_Name: Light 2D - Main Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -678,7 +678,7 @@ Transform:
   m_GameObject: {fileID: 5960096262471625553}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 4.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -769,6 +769,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4325545037349262875}
+  - {fileID: 429640808029498230}
   m_Father: {fileID: 7348324381903806916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &8771513622840831997
@@ -895,7 +896,7 @@ GameObject:
   - component: {fileID: 4325545037349262875}
   - component: {fileID: 3765604788262555049}
   m_Layer: 7
-  m_Name: Global Light 2D - 3D objects
+  m_Name: Light 2D - 3D objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -992,7 +993,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8068605104103988406}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

@@ -633,30 +633,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Black Preground
       objectReference: {fileID: 0}
-    - target: {fileID: 2926044549706629761, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2926044549706629761, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2926044549706629761, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2926044549706629761, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352923599934406689, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
-      propertyPath: fadeInSpeed
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352923599934406689, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
-      propertyPath: fadeInThreshold
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 6659989556750463690, guid: b58e81c50e6b0d245bdcb57c7de178bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
