@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Clue 1-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This 3D platforming game "crashed" into store shelves when it released
-    in 1996
+  clueText: "An \u201Cedgy\u201D character created to market the original PlayStation
+    at E3 1995; he later appeared in a crossover fighting game on the PlayStation
+    3"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'A roguelike shooter with bullet-hell elements developed by Finland''s
-    oldest video game developer '
+  clueText: Finland's oldest video game studio developed this third-person shooter
+    with Bullet Hell elements
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

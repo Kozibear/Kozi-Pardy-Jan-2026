@@ -1,5 +1,3 @@
-using KoziPardy.ColorManagement;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WheelSpinMovement : MonoBehaviour
@@ -73,19 +71,12 @@ public class WheelSpinMovement : MonoBehaviour
 
     private void Rotate()
     {
-        //About Rotation issues:
-        //Previously, my code was tempRotationSpeed -= Time.deltaTime * subtractionFactor
-        //This resulted in the wheel spinning a lot on fast computers, and only a little on slow computers
-        //This is because the way my code was written made the time the wheel took to slow always consistent,
-        //Rather than making the speed at which the wheel moved consistent
-
         elapsedTimeInSeconds += Time.deltaTime;
         float percentageComplete = elapsedTimeInSeconds / desiredDurationInSeconds;
-
         percentageComplete = Mathf.Sin(percentageComplete * Mathf.PI * 0.5f);
-        float zRotation = Mathf.Lerp(startingRotationSpeed, 0, percentageComplete);
 
-        justWheel.transform.Rotate(0, 0, -zRotation);
+        float zRotation = Mathf.Lerp(startingRotationSpeed, 0, percentageComplete);
+        justWheel.transform.Rotate(0, 0, -zRotation * Time.deltaTime);
 
         if (elapsedTimeInSeconds >= desiredDurationInSeconds)
         {

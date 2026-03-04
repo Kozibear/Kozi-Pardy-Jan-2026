@@ -36,13 +36,9 @@ public class GameManager : MonoBehaviour
             if (automaticWheelspins) StartCoroutine(WheelSpinSetup());
             else buttonCanvasControl.ActivateWheelSpinButton();
         }
-        else if (cluesLeft == 1)
+        else if (cluesLeft <= 1)
         {
             buttonCanvasControl.FinalButtonActivation();
-        }
-        else if (cluesLeft <= 0)
-        {
-            EndState();
         }
     }
 
@@ -86,12 +82,6 @@ public class GameManager : MonoBehaviour
     public void ToggleAutoWheelSpins(bool value)
     {
         automaticWheelspins = value;
-    }
-
-    void EndState()
-    {
-        buttonCanvasControl.ResetEverything();
-
     }
 
     public bool GetWheelIsAuto() { return automaticWheelspins; }

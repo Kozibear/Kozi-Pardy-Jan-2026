@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'A highly-regarded remake of this title from Bluepoint games released
-    in 2018 '
+  clueText: British Gangster films such as Get Carter and Snatch inspired this 2002
+    action game from Team Soho
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

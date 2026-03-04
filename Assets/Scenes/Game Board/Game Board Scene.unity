@@ -1411,10 +1411,6 @@ PrefabInstance:
       value: Game Manager
       objectReference: {fileID: 0}
     - target: {fileID: 7059210561463483508, guid: 7f505c05aaebe7945ae5431dec07bf78, type: 3}
-      propertyPath: wheelColorChange
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7059210561463483508, guid: 7f505c05aaebe7945ae5431dec07bf78, type: 3}
       propertyPath: backgroundColorChange
       value: 
       objectReference: {fileID: 1578960658}
@@ -1583,10 +1579,6 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
-    - target: {fileID: 1257492515711553060, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2907963846830440594, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
     - target: {fileID: 1603420185493352802, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 
@@ -1659,18 +1651,6 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
-    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
-    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2907963846830440594, guid: 9d2a930012a17c84b8555f0d8216b771, type: 2}
-    - target: {fileID: 4393868251645287486, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5091022150092220674, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 
@@ -1715,10 +1695,6 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
-    - target: {fileID: 8508531424603299972, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
-      propertyPath: purpleColor.r
-      value: 0.8156863
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

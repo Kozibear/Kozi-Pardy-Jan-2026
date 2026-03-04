@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5136b746b869b87458cdb32f6bdbcfbf, type: 3}
   m_Name: Clue 3-1
   m_EditorClassIdentifier: 
-  clueType: 0
-  clueText: 'A launch game set within the backdrop of an alternate-history alien
-    invasion '
+  clueType: 3
+  clueText: 
   haikuClueText: []
   songLyricText: []
-  image: {fileID: 0}
+  image: {fileID: 3820602023349217090, guid: e3db0cde696b54b46a135576114b31e0, type: 3}
   buttonNumber: 0

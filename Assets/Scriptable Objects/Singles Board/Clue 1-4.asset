@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This 3D platforming game "crashed" into store shelves when it released
-    in 1996
+  clueText: A cinematic role-playing game from Square-Enix that begins on the night
+    before Christmas
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

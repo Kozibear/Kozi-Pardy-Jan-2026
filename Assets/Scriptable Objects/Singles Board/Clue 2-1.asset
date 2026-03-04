@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'A highly-regarded remake of this title from Bluepoint games released
-    in 2018 '
+  clueText: Fumito Ueda directed this minimalist action game that features only 16
+    enemies
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'This 3D platforming game "crashed" into store shelves when it released
-    in 1996 '
+  clueText: This 1999 platformer was the first game that required the DualShock controller
+    to be played
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

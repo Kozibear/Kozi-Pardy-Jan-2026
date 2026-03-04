@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Clue 5-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'A roguelike shooter with bullet-hell elements developed by Finland''s
-    oldest video game developer '
+  clueText: "A literal \u201Cwalking simulator\u201D co-developed by Bennett Foddy"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

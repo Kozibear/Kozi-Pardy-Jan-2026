@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5819696774404646616}
   - component: {fileID: 7732754158159776890}
   - component: {fileID: 4929396572620392930}
+  - component: {fileID: 8055498777351589686}
   m_Layer: 8
   m_Name: 3D Board Button
   m_TagString: Untagged
@@ -34,6 +35,7 @@ Transform:
   m_Children:
   - {fileID: 3838199553869435540}
   - {fileID: 8052581060767927407}
+  - {fileID: 4434413547725478772}
   - {fileID: 7740267323199798078}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57,6 +59,9 @@ MonoBehaviour:
   waitBeforeRotateIn: 0.05
   waitBeforeRotateOut: 0
   buttonCanvasControl: {fileID: 0}
+  audioSource: {fileID: 8055498777351589686}
+  waitBeforePlayingAudio: 0
+  waitBeforeStoppingAudio: 1
 --- !u!114 &7732754158159776890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +77,7 @@ MonoBehaviour:
   clueSO: {fileID: 0}
   frontTextParent: {fileID: 2713969150311978872}
   normalClueTextParent: {fileID: 5592768793358479475}
+  clueImageSpawnPoint: {fileID: 2954274642560627561}
   clueText: {fileID: 6311640276607957268}
   clueTextShadow: {fileID: 1789037110075878597}
 --- !u!114 &4929396572620392930
@@ -90,6 +96,103 @@ MonoBehaviour:
   boardClueColorChange: {fileID: 4879514183250385833}
   pointValueText: {fileID: 6615307873949510732}
   thisCluesCategory: {fileID: 0}
+--- !u!82 &8055498777351589686
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2468669621317944008}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 1
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2713969150311978872
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +337,37 @@ MonoBehaviour:
   purpleDarkened: {r: 0.40392157, g: 0, b: 0.6509804, a: 0}
   resetWhite: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0}
   meshRenderer: {fileID: 6650567186404439522}
+--- !u!1 &2954274642560627561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4434413547725478772}
+  m_Layer: 8
+  m_Name: Clue Image Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4434413547725478772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2954274642560627561}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2627421207624213582}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &5552672689618257138
 GameObject:
   m_ObjectHideFlags: 0

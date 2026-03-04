@@ -26,6 +26,12 @@ public class CategoryHeaderStateControl : MonoBehaviour
         categoryColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Bright, false, false);
     }
 
+    public void GradualLightenIfFinal()
+    {
+        categoryColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Bright, true, false);
+        categoryNameText.Brighten();
+    }
+
     public void DarkenJustCategoryName()
     {
         categoryNameText.InstantDarken();

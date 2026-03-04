@@ -24,6 +24,11 @@ public class BoardClueMovement : MonoBehaviour
     [Header("ButtonCanvasControl")]
     [SerializeField] ButtonCanvasControl buttonCanvasControl;
 
+    //[Header("Audio Source")]
+    //[SerializeField] AudioSource audioSource;
+    //[SerializeField] float waitBeforePlayingAudio = 1;
+    //[SerializeField] float waitBeforeStoppingAudio = 1;
+
     private Vector3 destinationPosition;
     private bool canMoveClue = false;
     private bool isUpFront = false;
@@ -119,4 +124,12 @@ public class BoardClueMovement : MonoBehaviour
             GetComponent<BoardClueStateControl>().GradualDarkenIfOld();
         }
     }
+
+    //private IEnumerator AudioSwoosh()
+    //{
+    //    yield return new WaitForSeconds(waitBeforePlayingAudio);
+    //    audioSource.Play();
+    //    yield return new WaitForSeconds(waitBeforeStoppingAudio);
+    //    audioSource.Stop();
+    //}
 }

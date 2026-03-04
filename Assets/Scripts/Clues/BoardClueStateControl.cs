@@ -68,6 +68,7 @@ public class BoardClueStateControl : MonoBehaviour
     public void GradualBrightenIfFinal()
     {
         pointValueText.GradualBrightenToExactColor();
+        thisCluesCategory.GradualLightenIfFinal();
         boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Bright, true, false);
     }
 }

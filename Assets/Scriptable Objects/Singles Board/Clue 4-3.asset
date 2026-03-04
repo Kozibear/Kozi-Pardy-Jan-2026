@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: Mark Cerny was the director of this single-syllable platforming game
+  clueText: A hostile being called Lisa stalks players in this experimental title
+    that was removed from the PlayStation Store
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'A launch game set within the backdrop of an alternate-history alien
-    invasion '
+  clueText: Atlus published this sendup to old-school Zelda games that features a
+    distinctive, voxel-based art style
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

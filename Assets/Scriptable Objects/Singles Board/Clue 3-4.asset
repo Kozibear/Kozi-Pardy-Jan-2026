@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'A launch game set within the backdrop of an alternate-history alien
-    invasion '
+  clueText: Only four games made use of this flat-shaped peripheral that could display
+    augmented-reality images
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

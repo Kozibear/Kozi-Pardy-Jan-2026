@@ -11,11 +11,15 @@ public class BoardClueMediaManager : MonoBehaviour
 
     [Header("Clue Media")]
     [SerializeField] GameObject normalClueTextParent;
+    [SerializeField] GameObject clueImageSpawnPoint;
     [SerializeField] TextMeshPro clueText;
     [SerializeField] TextMeshPro clueTextShadow;
 
+    private bool spawnedImage = false;
+
     public void CluePrep()
     {
+        //for a normal clue
         if (clueSO.GetClueType() == 0)
         {
             normalClueTextParent.SetActive(true);
@@ -24,7 +28,16 @@ public class BoardClueMediaManager : MonoBehaviour
         }
 
         //For an image:
-        //Instantiate(clueSO.GetImage(), clueImageSpawnPoint.transform.position, Quaternion.identity, clueImageSpawnPoint.transform);
+        if (clueSO.GetClueType() == 3)
+        {
+            clueImageSpawnPoint.SetActive(true);
+
+            if (!spawnedImage)
+            {
+                //Instantiate(clueSO.GetImage(), clueImageSpawnPoint.transform.position, clueImageSpawnPoint.transform.rotation, clueImageSpawnPoint.transform);
+                spawnedImage = true;
+            }
+        }
 
     }
 
@@ -36,5 +49,6 @@ public class BoardClueMediaManager : MonoBehaviour
     public void ClueCleanup()
     {
         normalClueTextParent.SetActive(false);
+        clueImageSpawnPoint.SetActive(false);
     }
 }

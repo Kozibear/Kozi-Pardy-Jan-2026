@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This 3D platforming game "crashed" into store shelves when it released
-    in 1996
+  clueText: '"You Are the Wheelman" was the subtitle of this action game developed
+    by Ubisoft Reflections'
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

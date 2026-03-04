@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: 'A roguelike shooter with bullet-hell elements developed by Finland''s
-    oldest video game developer '
+  clueText: 'A historic action role-playing game set during the twilight years of
+    the Tokugawa Shogunate '
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}
