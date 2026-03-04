@@ -17,6 +17,7 @@ namespace KoziPardy.ColorManagement
 
         [Header("The Board")]
         [SerializeField] BoardSpriteColorChange boardSpriteColorChange;
+        [SerializeField] BoardSpriteColorChange boardSpriteHighlightsColorChange;
 
         [Header("Background")]
         [SerializeField] BackgroundColorChange backgroundColorChange;
@@ -39,6 +40,7 @@ namespace KoziPardy.ColorManagement
             }
 
             boardSpriteColorChange.StartGradualColorChange();
+            boardSpriteHighlightsColorChange.StartGradualColorChange();
 
             backgroundColorChange.StartGradualColorChange();
 

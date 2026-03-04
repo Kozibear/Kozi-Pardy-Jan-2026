@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606cce4ed9eb1e84fa9dee4435ef613e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardButtonCube
-  frontPosition: {x: 0, y: 0, z: -7.08}
+  frontPosition: {x: 0, y: -0.5, z: -7.08}
   originalPosition: {x: 0, y: 0, z: 0}
   frontRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -59,9 +59,6 @@ MonoBehaviour:
   waitBeforeRotateIn: 0.05
   waitBeforeRotateOut: 0
   buttonCanvasControl: {fileID: 0}
-  audioSource: {fileID: 8055498777351589686}
-  waitBeforePlayingAudio: 0
-  waitBeforeStoppingAudio: 1
 --- !u!114 &7732754158159776890
 MonoBehaviour:
   m_ObjectHideFlags: 0

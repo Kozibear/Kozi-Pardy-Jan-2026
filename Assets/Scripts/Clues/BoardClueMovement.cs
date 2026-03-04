@@ -35,7 +35,7 @@ public class BoardClueMovement : MonoBehaviour
 
     void Start()
     {
-        originalPosition = transform.position;
+        originalPosition = transform.localPosition;
         destinationPosition = transform.position;
 
         originalRotation = transform.rotation;
