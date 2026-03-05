@@ -1045,6 +1045,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6827635004736534151, guid: c0a0ebc4c248af34cbdae804088f5559, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7027269341408210049, guid: c0a0ebc4c248af34cbdae804088f5559, type: 3}
       propertyPath: m_Name
       value: Splash Categories Debug Canvas
