@@ -194,7 +194,7 @@ MonoBehaviour:
   volume: {fileID: 8123310596458749402}
   fadeInSpeed: 0.2
   fadeOutSpeed: 0.2
-  intensityThreshold: 0.14
+  intensityThreshold: 0.13
 --- !u!1 &4040723402126187026
 GameObject:
   m_ObjectHideFlags: 0

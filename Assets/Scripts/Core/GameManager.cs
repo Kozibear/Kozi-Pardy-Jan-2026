@@ -11,8 +11,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] WheelSpinMovement wheelSpinMovement;
     [SerializeField] float waitBeforeBringingInWheel = 1f;
 
-    [Header("Button Canvas Control")]
+    [Header("UI Buttons")]
     [SerializeField] ButtonCanvasControl buttonCanvasControl;
+    [SerializeField] DebugOptionsShow showDebugOptionsButton;
 
     [Header("Black Background Fade")]
     [SerializeField] SpriteFade blackBackgroundFade;
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
     public void ShowWheel()
     {
         buttonCanvasControl.ResetEverything();
+        buttonCanvasControl.DisableDebug();
 
         wheelIsActive = true;
 

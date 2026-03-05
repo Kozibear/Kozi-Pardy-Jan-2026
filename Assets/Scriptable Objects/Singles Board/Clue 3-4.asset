@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueType: 0
   clueText: Only four games made use of this flat-shaped peripheral that could display
-    augmented-reality images
+    augmented reality images
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

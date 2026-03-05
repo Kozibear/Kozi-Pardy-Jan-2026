@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 3-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: A launch game set within an alternate-history alien invasion
+  clueText: A launch game that thrusts players into an alternate-history alien invasion
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

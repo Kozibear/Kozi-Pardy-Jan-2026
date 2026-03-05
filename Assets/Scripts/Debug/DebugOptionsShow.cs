@@ -19,4 +19,9 @@ public class DebugOptionsShow : MonoBehaviour
 
         canShowButtons = !canShowButtons;
     }
+
+    public void HideButtons()
+    {
+        if (!canShowButtons) ToggleButtons();
+    }
 }

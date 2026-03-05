@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clueType: 0
   clueText: Finland's oldest video game studio developed this third-person shooter
-    with Bullet Hell elements
+    that features Bullet Hell elements
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

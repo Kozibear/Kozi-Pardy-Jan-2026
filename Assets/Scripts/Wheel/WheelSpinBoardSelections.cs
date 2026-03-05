@@ -17,6 +17,9 @@ public class WheelSpinBoardSelections : MonoBehaviour
     [Header("Board References")]
     List<BoardClueStateControl> boardClueStateControls;
 
+    [Header("WheelSFX")]
+    [SerializeField] WheelSFX wheelSFX;
+
     private int currentSelectedSegment;
     private List<int> currentList;
 
@@ -45,6 +48,8 @@ public class WheelSpinBoardSelections : MonoBehaviour
 
     public void LightUpBoardParts(int selectedSegment, int partNumber)
     {
+        wheelSFX.PlaySegmentDing();
+
         currentSelectedSegment = selectedSegment;
 
         foreach (BoardClueStateControl clue in boardClueStateControls)
@@ -120,6 +125,12 @@ public class WheelSpinBoardSelections : MonoBehaviour
     {
         yield return new WaitForSeconds(waitBeforeFlash);
 
+        if (wheelSFX.GetTimeElapsed() < 0.5f) //we wait just a split-second longer if a ding was just recently performed
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        wheelSFX.PlayEndChime();
         whiteFlash.Pulse(1);
 
         yield return new WaitForSeconds(waitAfterFlash);

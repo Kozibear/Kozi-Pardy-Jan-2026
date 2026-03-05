@@ -713,66 +713,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1267605530306414093, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: fadeInSpeed
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1267605530306414093, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: fadeListenerImplementer
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1840396618710084977, guid: aa104677e67065f47b7946dc7280853a, type: 3}
       propertyPath: m_Name
       value: Board Silhouette
-      objectReference: {fileID: 0}
-    - target: {fileID: 1840396618710084977, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2823286768703435767, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2823286768703435767, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2823286768703435767, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2823286768703435767, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4125607404289171145, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: fadeInSpeed
-      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4125607404289171145, guid: aa104677e67065f47b7946dc7280853a, type: 3}
       propertyPath: fadeListenerImplementer
       value: 
       objectReference: {fileID: 1904622525}
-    - target: {fileID: 6126380172230682829, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6380282942888057664, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.093
-      objectReference: {fileID: 0}
-    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.093
-      objectReference: {fileID: 0}
-    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.093
-      objectReference: {fileID: 0}
     - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -812,18 +760,6 @@ PrefabInstance:
     - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7906056946882447680, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8859732561107849281, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117269755163346637, guid: aa104677e67065f47b7946dc7280853a, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -971,6 +907,10 @@ PrefabInstance:
     - target: {fileID: 6865376399701747155, guid: c30407d91b3f26a4ba9187c376856812, type: 3}
       propertyPath: m_Name
       value: Kozi-Pardy Title Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865376399701747155, guid: c30407d91b3f26a4ba9187c376856812, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7393513000266085047, guid: c30407d91b3f26a4ba9187c376856812, type: 3}
       propertyPath: m_LocalPosition.x

@@ -16,8 +16,7 @@ namespace KoziPardy.ColorManagement
         [SerializeField] List<GameObject> categories;
 
         [Header("The Board")]
-        [SerializeField] BoardSpriteColorChange boardSpriteColorChange;
-        [SerializeField] BoardSpriteColorChange boardSpriteHighlightsColorChange;
+        [SerializeField] List<BoardSpriteColorChange> boardSpriteColorChanges;
 
         [Header("Background")]
         [SerializeField] BackgroundColorChange backgroundColorChange;
@@ -39,8 +38,10 @@ namespace KoziPardy.ColorManagement
                 category.GetComponent<BoardClueColorChange>().StartNexColorShift();
             }
 
-            boardSpriteColorChange.StartGradualColorChange();
-            boardSpriteHighlightsColorChange.StartGradualColorChange();
+            foreach (BoardSpriteColorChange boardSpriteColorChange in boardSpriteColorChanges)
+            {
+                boardSpriteColorChange.StartGradualColorChange();
+            }
 
             backgroundColorChange.StartGradualColorChange();
 

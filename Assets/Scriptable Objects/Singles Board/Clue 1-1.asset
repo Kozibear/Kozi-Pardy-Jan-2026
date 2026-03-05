@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: This 1999 platformer was the first game that required the DualShock controller
-    to be played
+  clueText: This 1999 platformer was the first game that could only be played with
+    the Dualshock controller
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

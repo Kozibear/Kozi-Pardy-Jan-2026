@@ -9,9 +9,14 @@ public class ButtonCanvasControl : MonoBehaviour
     [SerializeField] List<Button> boardButtons;
     [SerializeField] Button backButton;
     [SerializeField] Button wheelSpinButton;
+    [SerializeField] Button rightSFXButton;
+    [SerializeField] Button wrongSFXButton;
+
+    [Header("Debug Buttons")]
+    [SerializeField] DebugOptionsShow showDebugOptionsButton;
+
+    [Header("Game Manager")]
     [SerializeField] GameObject gameManagerObject;
-    GameManager gameManager;
-    GlobalColorManager globalColorManager;
 
     [Header("Board Clues")]
     [SerializeField] List<BoardClueStateControl> boardClueStateControls;
@@ -19,6 +24,8 @@ public class ButtonCanvasControl : MonoBehaviour
     [Header("Vignette Fader")]
     [SerializeField] VignetteFader vignetteFader;
 
+    GameManager gameManager;
+    GlobalColorManager globalColorManager;
 
     private List<int> currentActivatedButtons;
     private bool oldClueIsBeingShown = false;
@@ -30,10 +37,20 @@ public class ButtonCanvasControl : MonoBehaviour
     {
         gameManager = gameManagerObject.GetComponent<GameManager>();
         globalColorManager = gameManagerObject.GetComponent<GlobalColorManager>();
+
+        setAllBoardButtonsState(false);
+        rightSFXButton.gameObject.SetActive(false);
+        wrongSFXButton.gameObject.SetActive(false);
+        backButton.gameObject.SetActive(false);
+
+        wheelSpinButton.gameObject.SetActive(true);
+        showDebugOptionsButton.gameObject.SetActive(true);
     }
 
     public void ActivateSpecificNewCluesAndOldClues(List<int> buttonsToActivate)
     {
+        showDebugOptionsButton.gameObject.SetActive(true);
+
         currentActivatedButtons = buttonsToActivate;
 
         foreach (int i in buttonsToActivate)
@@ -49,6 +66,8 @@ public class ButtonCanvasControl : MonoBehaviour
 
     public void FinalButtonActivation()
     {
+        showDebugOptionsButton.gameObject.SetActive(true);
+
         ResetEverything();
 
         foreach (BoardClueStateControl clueStateControl in boardClueStateControls)
@@ -80,12 +99,14 @@ public class ButtonCanvasControl : MonoBehaviour
         setAllBoardButtonsState(false);
         wheelSpinButton.gameObject.SetActive(false);
 
+        DisableDebug();
+
         vignetteFader.StartVigentteFadeIn();
     }
 
     public void ClueIsUpFront(int buttonToWhiteList, bool hasClueBeenClicked)
     {
-        backButton.gameObject.SetActive(true);
+        ClueUpFrontButtons(true);
 
         if (hasClueBeenClicked)
         {
@@ -100,6 +121,9 @@ public class ButtonCanvasControl : MonoBehaviour
 
     public void BackButtonBeenSelected()
     {
+        ClueUpFrontButtons(false);
+        showDebugOptionsButton.gameObject.SetActive(true);
+
         if (!oldClueIsBeingShown && !finalClue)
         {
             globalColorManager.ChangeGlobalColor();
@@ -172,5 +196,18 @@ public class ButtonCanvasControl : MonoBehaviour
         {
             if (boardButton != null) boardButton.gameObject.SetActive(state);
         }
+    }
+
+    public void DisableDebug()
+    {
+        showDebugOptionsButton.HideButtons();
+        showDebugOptionsButton.gameObject.SetActive(false);
+    }
+
+    private void ClueUpFrontButtons(bool state)
+    {
+        backButton.gameObject.SetActive(state);
+        rightSFXButton.gameObject.SetActive(state);
+        wrongSFXButton.gameObject.SetActive(state);
     }
 }
