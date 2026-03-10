@@ -1,54 +1,70 @@
 using TMPro;
 using UnityEngine;
 
-public class BoardClueMediaManager : MonoBehaviour
+namespace KoziPardy.GameState
 {
-    [Header("Scriptable Object")]
-    [SerializeField] ClueSO clueSO;
-
-    [Header("Front Text")]
-    [SerializeField] GameObject frontTextParent;
-
-    [Header("Clue Media")]
-    [SerializeField] GameObject normalClueTextParent;
-    [SerializeField] GameObject clueImageSpawnPoint;
-    [SerializeField] TextMeshPro clueText;
-    [SerializeField] TextMeshPro clueTextShadow;
-
-    private bool spawnedImage = false;
-
-    public void CluePrep()
+    public class BoardClueMediaManager : MonoBehaviour
     {
-        //for a normal clue
-        if (clueSO.GetClueType() == 0)
-        {
-            normalClueTextParent.SetActive(true);
-            clueText.text = clueSO.GetClueText();
-            clueTextShadow.text = clueSO.GetClueText();
-        }
+        [Header("Scriptable Objects")]
+        [SerializeField] ClueSO singleClueSO;
+        [SerializeField] ClueSO doubleClueSO;
+        ClueSO currentClueSO;
 
-        //For an image:
-        if (clueSO.GetClueType() == 3)
-        {
-            clueImageSpawnPoint.SetActive(true);
+        [Header("Front Text")]
+        [SerializeField] GameObject frontTextParent;
 
-            if (!spawnedImage)
+        [Header("Clue Media")]
+        [SerializeField] GameObject normalClueTextParent;
+        [SerializeField] GameObject clueImageSpawnPoint;
+        [SerializeField] TextMeshPro clueText;
+        [SerializeField] TextMeshPro clueTextShadow;
+
+        private bool spawnedImage = false;
+
+        private void Start()
+        {
+            currentClueSO = singleClueSO;
+
+            if (GameStateManager.globalGameState == GlobalGameState.Double)
             {
-                //Instantiate(clueSO.GetImage(), clueImageSpawnPoint.transform.position, clueImageSpawnPoint.transform.rotation, clueImageSpawnPoint.transform);
-                spawnedImage = true;
+                currentClueSO = doubleClueSO;
             }
         }
 
-    }
+        public void CluePrep()
+        {
+            if (currentClueSO == null) return;
 
-    public void HideFrontText()
-    {
-        frontTextParent.SetActive(false);
-    }
+            //for a normal clue
+            if (currentClueSO.GetClueType() == 0)
+            {
+                normalClueTextParent.SetActive(true);
+                clueText.text = currentClueSO.GetClueText();
+                clueTextShadow.text = currentClueSO.GetClueText();
+            }
 
-    public void ClueCleanup()
-    {
-        normalClueTextParent.SetActive(false);
-        clueImageSpawnPoint.SetActive(false);
+            //For an image:
+            if (currentClueSO.GetClueType() == 3)
+            {
+                clueImageSpawnPoint.SetActive(true);
+
+                if (!spawnedImage)
+                {
+                    //Instantiate(clueSO.GetImage(), clueImageSpawnPoint.transform.position, clueImageSpawnPoint.transform.rotation, clueImageSpawnPoint.transform);
+                    spawnedImage = true;
+                }
+            }
+        }
+
+        public void HideFrontText()
+        {
+            frontTextParent.SetActive(false);
+        }
+
+        public void ClueCleanup()
+        {
+            normalClueTextParent.SetActive(false);
+            clueImageSpawnPoint.SetActive(false);
+        }
     }
 }

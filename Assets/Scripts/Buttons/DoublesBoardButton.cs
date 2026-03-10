@@ -1,3 +1,4 @@
+using KoziPardy.GameState;
 using UnityEngine;
 
 public class DoublesBoardButton : ButtonSprite
@@ -76,7 +77,7 @@ public class DoublesBoardButton : ButtonSprite
             blackBackground.FadeIn();
 
             categoryReveals.gameObject.SetActive(true);
-            categoryReveals.ShowDoublesCategories();
+            //categoryReveals.ShowDoublesCategories();
         }
     }
 

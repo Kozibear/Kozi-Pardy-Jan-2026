@@ -78,18 +78,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CategoryRevealPrefab: {fileID: 6520978425369470359, guid: afd4d70e47d4a984eb084b1052428878, type: 3}
   CategorySpawnPoint: {fileID: 45276487203926996}
-  categoryNames:
-  - PlayStation 1
-  - PlayStation 2
-  - PlayStation 3
-  - PlayStation 4
-  - PlayStation 5
+  categoryNamesSingle:
+  - Singles Cat 1
+  - Singles Cat 2
+  - Singles Cat 3
+  - Singles Cat 4
+  - Singles Cat 5
+  - Singles Cat 6
   categoryNamesDoubles:
-  - N/A
-  - N/A
-  - N/A
-  - N/A
-  - N/A
+  - Doubles Cat 1
+  - Doubles Cat 2
+  - Doubles Cat 3
+  - Doubles Cat 4
+  - Doubles Cat 5
+  - Doubles Cat 6
   waitBeforeNextCategory: 2.6
   waitBeforeChangingScene: 0.2
   blackPreground: {fileID: 0}

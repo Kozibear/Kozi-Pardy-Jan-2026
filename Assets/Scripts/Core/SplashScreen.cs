@@ -1,3 +1,4 @@
+using KoziPardy.GameState;
 using UnityEngine;
 
 public class SplashScreen : MonoBehaviour

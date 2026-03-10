@@ -5,6 +5,9 @@ namespace KoziPardy.ColorManagement
 {
     public class GlobalColorManager : MonoBehaviour
     {
+        [Header("Can Color Change?")]
+        [SerializeField] bool canColorChange = true;
+
         [Header("Static Variables")]
         public static GlobalColorState globalColorState = GlobalColorState.Blue;
         public static readonly float desiredDurationInSeconds = 0.85f;
@@ -28,6 +31,8 @@ namespace KoziPardy.ColorManagement
 
         public void ChangeGlobalColor()
         {
+            if (!canColorChange) return;
+
             foreach (BoardClueStateControl clue in boardClueStateControls)
             {
                 clue.StartNextColorShift();
@@ -44,6 +49,7 @@ namespace KoziPardy.ColorManagement
             }
 
             backgroundColorChange.StartGradualColorChange();
+
 
             if (globalColorState == GlobalColorState.Blue)
             {

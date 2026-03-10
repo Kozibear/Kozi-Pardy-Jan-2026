@@ -1,92 +1,95 @@
 using UnityEngine;
 using System.Collections.Generic;
-using TMPro;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class CategoryReveals : MonoBehaviour, IFadeListener
+namespace KoziPardy.GameState
 {
-    [Header("Categories")]
-    [SerializeField] GameObject CategoryRevealPrefab;
-    [SerializeField] GameObject CategorySpawnPoint;
-    [SerializeField][TextArea] List<string> categoryNames;
-    [SerializeField][TextArea] List<string> categoryNamesDoubles;
-
-    [Header("WaitTimes")]
-    [SerializeField] float waitBeforeNextCategory;
-    [SerializeField] float waitBeforeChangingScene;
-
-    [Header("Black Preground")]
-    [SerializeField] SpriteFade blackPreground;
-
-    [Header("Board Silhouette")]
-    [SerializeField] GameObject boardSilhouette;
-    SpriteFade blackBoardSilhouette;
-    SpriteFade whitePreground;
-
-    private void Start()
+    public class CategoryReveals : MonoBehaviour, IFadeListener
     {
-        blackBoardSilhouette = boardSilhouette.transform.GetChild(0).GetComponent<SpriteFade>();
-        whitePreground = boardSilhouette.transform.GetChild(1).GetComponent<SpriteFade>();
-    }
+        [Header("Categories")]
+        [SerializeField] GameObject CategoryRevealPrefab;
+        [SerializeField] GameObject CategorySpawnPoint;
+        [SerializeField][TextArea] List<string> categoryNamesSingle;
+        [SerializeField][TextArea] List<string> categoryNamesDoubles;
+        private List<string> currentCategoryNames;
 
-    public void StartCategoryReveals()
-    {
-        SetPersistentObjects();
-        StartCoroutine(WaitBetweenCategoryReveals());
-    }
+        [Header("WaitTimes")]
+        [SerializeField] float waitBeforeNextCategory;
+        [SerializeField] float waitBeforeChangingScene;
 
-    private void SetPersistentObjects()
-    {
-        DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(boardSilhouette);
-    }
+        [Header("Black Preground")]
+        [SerializeField] SpriteFade blackPreground;
 
-    IEnumerator WaitBetweenCategoryReveals()
-    {
-        foreach (string categoryName in categoryNames)
+        [Header("Board Silhouette")]
+        [SerializeField] GameObject boardSilhouette;
+        SpriteFade blackBoardSilhouette;
+        SpriteFade whitePreground;
+
+        private void Start()
         {
-            GameObject newCategory = Instantiate(CategoryRevealPrefab, CategorySpawnPoint.transform.position, Quaternion.identity, CategorySpawnPoint.transform);
+            blackBoardSilhouette = boardSilhouette.transform.GetChild(0).GetComponent<SpriteFade>();
+            whitePreground = boardSilhouette.transform.GetChild(1).GetComponent<SpriteFade>();
 
-            newCategory.GetComponent<CategoryPlaque>().SetCategoryText(categoryName);
-            newCategory.GetComponent<CategoryPlaque>().SetCenterDestination();
+            currentCategoryNames = categoryNamesSingle;
 
-            yield return new WaitForSeconds(waitBeforeNextCategory);
-
-            newCategory.GetComponent<CategoryPlaque>().SetOffscreenDestination();
+            if (GameStateManager.globalGameState == GlobalGameState.Double)
+            {
+                currentCategoryNames = categoryNamesDoubles;
+            }
         }
 
-        blackBoardSilhouette.FadeIn();
-        whitePreground.FadeIn();
-    }
+        public void StartCategoryReveals()
+        {
+            SetPersistentObjects();
+            StartCoroutine(WaitBetweenCategoryReveals());
+        }
 
-    IEnumerator ChangeScene()
-    {
-        yield return new WaitForSeconds(waitBeforeChangingScene);
-        yield return SceneManager.LoadSceneAsync(1);
+        private void SetPersistentObjects()
+        {
+            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(boardSilhouette);
+        }
 
-        blackBoardSilhouette.SetFadeSpeeds(1.5f);
-        blackBoardSilhouette.FadeOut();
+        IEnumerator WaitBetweenCategoryReveals()
+        {
+            foreach (string categoryName in currentCategoryNames)
+            {
+                GameObject newCategory = Instantiate(CategoryRevealPrefab, CategorySpawnPoint.transform.position, Quaternion.identity, CategorySpawnPoint.transform);
 
-        whitePreground.SetFadeSpeeds(1f);
-        whitePreground.FadeOut();
-    }
+                newCategory.GetComponent<CategoryPlaque>().SetCategoryText(categoryName);
+                newCategory.GetComponent<CategoryPlaque>().SetCenterDestination();
 
+                yield return new WaitForSeconds(waitBeforeNextCategory);
 
-    public void ShowDoublesCategories()
-    {
-        categoryNames = categoryNamesDoubles;
-        StartCoroutine(WaitBetweenCategoryReveals());
-    }
+                newCategory.GetComponent<CategoryPlaque>().SetOffscreenDestination();
+            }
 
-    public void FadeInComplete()
-    {
-        StartCoroutine(ChangeScene());
-    }
+            blackBoardSilhouette.FadeIn();
+            whitePreground.FadeIn();
+        }
 
-    public void FadeOutComplete()
-    {
-        Destroy(boardSilhouette);
-        Destroy(gameObject);
+        IEnumerator ChangeScene()
+        {
+            yield return new WaitForSeconds(waitBeforeChangingScene);
+            yield return SceneManager.LoadSceneAsync(1);
+
+            blackBoardSilhouette.SetFadeSpeeds(1.5f);
+            blackBoardSilhouette.FadeOut();
+
+            whitePreground.SetFadeSpeeds(1f);
+            whitePreground.FadeOut();
+        }
+
+        public void FadeInComplete()
+        {
+            StartCoroutine(ChangeScene());
+        }
+
+        public void FadeOutComplete()
+        {
+            Destroy(boardSilhouette);
+            Destroy(gameObject);
+        }
     }
 }
