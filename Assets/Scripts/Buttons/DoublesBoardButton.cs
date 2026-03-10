@@ -4,7 +4,7 @@ using UnityEngine;
 public class DoublesBoardButton : ButtonSprite
 {
     [Header("Scripts")]
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameManager;
     [SerializeField] SpriteFade blackBackground;
     [SerializeField] CategoryReveals categoryReveals;
 

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DebugAutoWheelSpins : MonoBehaviour
 {
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameBoardManager;
     [SerializeField] TextMeshProUGUI textMeshProUGUI;
 
     private bool autoMode = false;
@@ -11,13 +11,13 @@ public class DebugAutoWheelSpins : MonoBehaviour
     {
         if (!autoMode)
         {
-            gameManager.ToggleAutoWheelSpins(true);
+            gameBoardManager.ToggleAutoWheelSpins(true);
             autoMode = true;
             textMeshProUGUI.text = "MANUAL SPINS";
         }
         else
         {
-            gameManager.ToggleAutoWheelSpins(false);
+            gameBoardManager.ToggleAutoWheelSpins(false);
             autoMode = false;
             textMeshProUGUI.text = "AUTO SPINS";
         }

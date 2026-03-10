@@ -5,7 +5,7 @@ using UnityEngine;
 public class WheelSpinBoardSelections : MonoBehaviour
 {
     [Header("GameManager")]
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameBoardManager;
 
     [Header("White Flash Sprite Fade")]
     [SerializeField] SpriteFade whiteFlash;
@@ -135,6 +135,6 @@ public class WheelSpinBoardSelections : MonoBehaviour
 
         yield return new WaitForSeconds(waitAfterFlash);
 
-        gameManager.HideWheelAndReturnToBoard(currentList);
+        gameBoardManager.HideWheelAndReturnToBoard(currentList);
     }
 }

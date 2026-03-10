@@ -82,7 +82,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CategoryHeaderStateControl
   number: 0
   categoryColorChange: {fileID: 4176145315664469745}
-  categoryNameText: {fileID: 4447427798195595925}
+  nameText: {fileID: 3569813861808101514}
+  nameTextShadow: {fileID: 2990899718057546360}
+  textColorFade: {fileID: 4447427798195595925}
+  singleTextString: 
+  doubleTextString: 
 --- !u!114 &4176145315664469745
 MonoBehaviour:
   m_ObjectHideFlags: 0

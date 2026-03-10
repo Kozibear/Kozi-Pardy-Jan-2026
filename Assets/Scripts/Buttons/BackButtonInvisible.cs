@@ -4,7 +4,7 @@ public class BackButtonInvisible : ButtonSprite
 {
     [Header("Scripts")]
     [SerializeField] ClueScreen clueScreen;
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameManager;
 
     void Start()
     {

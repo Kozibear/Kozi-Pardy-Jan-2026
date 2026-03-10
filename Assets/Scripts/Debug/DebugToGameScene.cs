@@ -1,12 +1,22 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DebugToGameScene : MonoBehaviour
+namespace KoziPardy.GameState
 {
-    [SerializeField] int sceneIndex;
-
-    public void LoadSpecifiedScene()
+    public class DebugToGameScene : MonoBehaviour
     {
-        SceneManager.LoadScene(sceneIndex);
+        public void SingleSceneLoad(int sceneIndex)
+        {
+            //SceneManager.LoadScene(sceneIndex);
+        }
+
+        public void DoubleSceneLoad(int sceneIndex)
+        {
+            //SceneManager.LoadScene(sceneIndex);
+        }
+        public void FinalSceneLoad(int sceneIndex)
+        {
+            //SceneManager.LoadScene(sceneIndex);
+        }
     }
 }

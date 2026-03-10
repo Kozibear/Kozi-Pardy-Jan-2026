@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd947b129a67e5843b93d34ff0be415f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
-  gameManager: {fileID: 0}
+  gameBoardManager: {fileID: 0}
   originalPosition: {x: 0, y: 0, z: 0}
   wheelSpinPosition: {x: 1.05, y: 0, z: -9.8}
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -879,7 +879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd947b129a67e5843b93d34ff0be415f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
-  gameManager: {fileID: 0}
+  gameBoardManager: {fileID: 0}
   originalPosition: {x: 0, y: 0, z: 0}
   wheelSpinPosition: {x: 1.05, y: 0, z: -9.8}
   originalRotation: {x: 0, y: 0, z: 0, w: 0}

@@ -71,8 +71,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80799474eb9ef114c909299ca95d772a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardClueMediaPrep
-  clueSO: {fileID: 0}
+  singleClueSO: {fileID: 0}
+  doubleClueSO: {fileID: 0}
   frontTextParent: {fileID: 2713969150311978872}
+  frontText: {fileID: 2919056441685826428}
+  frontTextShadow: {fileID: 5139509028212007403}
+  frontTextStringSingle: 
+  frontTextStringDouble: 
   normalClueTextParent: {fileID: 5592768793358479475}
   clueImageSpawnPoint: {fileID: 2954274642560627561}
   clueText: {fileID: 6311640276607957268}
@@ -613,7 +618,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.041, y: -0.037}
+  m_AnchoredPosition: {x: 0.036, y: -0.037}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &6195373186327815176
@@ -712,8 +717,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7.5
-  m_fontSizeBase: 7.5
+  m_fontSize: 6.5
+  m_fontSizeBase: 6.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -894,8 +899,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7.5
-  m_fontSizeBase: 7.5
+  m_fontSize: 6.5
+  m_fontSizeBase: 6.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

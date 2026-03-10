@@ -1,4 +1,5 @@
 using KoziPardy.ColorManagement;
+using KoziPardy.GameState;
 using UnityEngine;
 
 public class BoardClueStateControl : MonoBehaviour

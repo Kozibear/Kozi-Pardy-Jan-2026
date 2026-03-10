@@ -857,7 +857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wheelArrow: {fileID: 1410263878323972140}
   justWheel: {fileID: 5227284701404675202}
-  gameManager: {fileID: 0}
+  gameBoardManager: {fileID: 0}
   ResetPosition: {x: -8.42, y: 0, z: -3.08}
   moveInPosition: {x: -8.42, y: -10.93, z: -3.08}
   moveOutPosition: {x: -8.42, y: -23.5, z: -3.08}
@@ -926,7 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7c6eb3d583653489c5f75e7915a918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WheelSpinBoardLightUps
-  gameManager: {fileID: 0}
+  gameBoardManager: {fileID: 0}
   whiteFlash: {fileID: 0}
   waitBeforeFlash: 0.05
   waitAfterFlash: 0.75

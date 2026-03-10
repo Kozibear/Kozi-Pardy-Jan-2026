@@ -12,7 +12,7 @@ namespace KoziPardy.GameState
         [Header("Starting Game State")]
         [SerializeField] GlobalGameState startingGlobalGameState = GlobalGameState.Single;
 
-        private void Start()
+        private void Awake() //needs to be awake so that objects that use globalGameState get the correct state
         {
             DontDestroyOnLoad(gameObject);
 

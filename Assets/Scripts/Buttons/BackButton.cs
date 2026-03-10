@@ -5,7 +5,7 @@ public class BackButton : ButtonSprite
 {
     [Header("Scripts")]
     [SerializeField] ClueScreen clueScreen;
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameManager;
 
     [Header("Back Arrow Transforms")]
     [Tooltip("The Back Arrow should start offscreen at the bottom, move to the lower-right corner, and then exit offscreen to the right")]

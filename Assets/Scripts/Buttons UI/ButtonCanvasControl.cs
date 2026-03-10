@@ -24,7 +24,7 @@ public class ButtonCanvasControl : MonoBehaviour
     [Header("Vignette Fader")]
     [SerializeField] VignetteFader vignetteFader;
 
-    GameManager gameManager;
+    GameBoardManager gameBoardManager;
     GlobalColorManager globalColorManager;
 
     private List<int> currentActivatedButtons;
@@ -35,7 +35,7 @@ public class ButtonCanvasControl : MonoBehaviour
 
     private void Start()
     {
-        gameManager = gameManagerObject.GetComponent<GameManager>();
+        gameBoardManager = gameManagerObject.GetComponent<GameBoardManager>();
         globalColorManager = gameManagerObject.GetComponent<GlobalColorManager>();
 
         setAllBoardButtonsState(false);
@@ -159,13 +159,13 @@ public class ButtonCanvasControl : MonoBehaviour
         {
             //we don't want any issues from calling an old clue onscreen while the wheel is in auto mode, OR when we have 1 or fewer clues left
             //So in either case, we aren't allowed to activate old clues, or activate the wheelspin button
-            if (!gameManager.GetWheelIsAuto() || gameManager.GetCluesLeft() <= 2)
+            if (!gameBoardManager.GetWheelIsAuto() || gameBoardManager.GetCluesLeft() <= 2)
             {
                 readyForNextTurn = true;
                 ActivateJustOldClues();
             }
 
-            gameManager.BoardBeforeWheelSpin();
+            gameBoardManager.BoardBeforeWheelSpin();
         }
 
         if (readyForNextTurn)

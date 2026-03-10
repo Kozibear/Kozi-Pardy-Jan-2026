@@ -3,7 +3,7 @@ using UnityEngine;
 public class BoardButton : ButtonSprite
 {
     [Header("Scripts")]
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameManager;
 
     [Header("Button Number")]
     [SerializeField] int buttonNumber;

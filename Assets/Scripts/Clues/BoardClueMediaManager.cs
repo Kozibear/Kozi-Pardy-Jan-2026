@@ -12,6 +12,11 @@ namespace KoziPardy.GameState
 
         [Header("Front Text")]
         [SerializeField] GameObject frontTextParent;
+        [SerializeField] TextMeshPro frontText;
+        [SerializeField] TextMeshPro frontTextShadow;
+        [SerializeField] string frontTextStringSingle;
+        [SerializeField] string frontTextStringDouble;
+        private string currentFrontTextString;
 
         [Header("Clue Media")]
         [SerializeField] GameObject normalClueTextParent;
@@ -24,11 +29,16 @@ namespace KoziPardy.GameState
         private void Start()
         {
             currentClueSO = singleClueSO;
+            currentFrontTextString = frontTextStringSingle;
 
             if (GameStateManager.globalGameState == GlobalGameState.Double)
             {
                 currentClueSO = doubleClueSO;
+                currentFrontTextString = frontTextStringDouble;
             }
+
+            frontText.text = currentFrontTextString;
+            frontTextShadow.text = currentFrontTextString;
         }
 
         public void CluePrep()

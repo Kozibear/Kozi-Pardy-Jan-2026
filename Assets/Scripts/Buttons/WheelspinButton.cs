@@ -5,7 +5,7 @@ public class WheelspinButton : ButtonSprite
 {
     [Header("Scripts")]
     [SerializeField] WheelSpinMovement wheelSpin;
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameManager;
 
     [Header("Pulsing")]
     [SerializeField] Color minPulse;

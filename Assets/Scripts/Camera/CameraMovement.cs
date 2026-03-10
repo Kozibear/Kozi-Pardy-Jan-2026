@@ -4,7 +4,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     [Header("GameManager")]
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameBoardManager;
 
     [Header("Position")]
     [SerializeField] Vector3 originalPosition;
@@ -68,7 +68,7 @@ public class CameraMovement : MonoBehaviour
 
         if (transform.localPosition == originalPosition)
         {
-            gameManager.ActivateBoardClues();
+            gameBoardManager.ActivateBoardClues();
         }
     }
 

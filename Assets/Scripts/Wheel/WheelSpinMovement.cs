@@ -7,7 +7,7 @@ public class WheelSpinMovement : MonoBehaviour
     [SerializeField] GameObject justWheel;
 
     [Header("Game Manager")]
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameBoardManager;
 
     [Header("Moving Positions")]
     [SerializeField] Vector3 ResetPosition;

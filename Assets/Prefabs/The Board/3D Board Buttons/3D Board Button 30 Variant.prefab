@@ -58,11 +58,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2919056441685826428, guid: 86f10a370926ac44eae3dc655def2dd9, type: 3}
       propertyPath: m_text
-      value: 30
+      value: $600
       objectReference: {fileID: 0}
     - target: {fileID: 5139509028212007403, guid: 86f10a370926ac44eae3dc655def2dd9, type: 3}
       propertyPath: m_text
-      value: 30
+      value: $600
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732754158159776890, guid: 86f10a370926ac44eae3dc655def2dd9, type: 3}
+      propertyPath: frontTextStringDouble
+      value: $1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732754158159776890, guid: 86f10a370926ac44eae3dc655def2dd9, type: 3}
+      propertyPath: frontTextStringSingle
+      value: $600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

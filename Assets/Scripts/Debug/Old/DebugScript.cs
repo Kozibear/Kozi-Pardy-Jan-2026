@@ -7,7 +7,7 @@ public class DebugScript : MonoBehaviour
     [SerializeField] bool readyDoublesBoard;
 
     [Header("References")]
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameManager;
     [SerializeField] GameObject splashScreen;
     [SerializeField] GameObject categoryReveals;
     [SerializeField] SpriteRenderer blackBackgroundRenderer;

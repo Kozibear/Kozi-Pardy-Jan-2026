@@ -741,7 +741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a3ba591d8b9b947a4e33aa66306c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DebugAutoWheelSpins
-  gameManager: {fileID: 0}
+  gameBoardManager: {fileID: 0}
   textMeshProUGUI: {fileID: 3719902098302134563}
 --- !u!1 &8255409029214000766
 GameObject:

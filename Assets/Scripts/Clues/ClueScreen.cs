@@ -12,7 +12,7 @@ public class ClueScreen : MonoBehaviour
     [SerializeField] float moveSpeed;
 
     [Header("Reference Objects")]
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameManager;
     [SerializeField] GameObject ClueImagesSpawnPoint;
     [SerializeField] BackButton backButton;
     [SerializeField] BackButtonInvisible backButtonInvisible;

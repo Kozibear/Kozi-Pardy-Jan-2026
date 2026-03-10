@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DebugEnableAllClues : MonoBehaviour
 {
-    [SerializeField] GameManager gameManager;
+    [SerializeField] GameBoardManager gameBoardManager;
     [SerializeField] ButtonCanvasControl buttonCanvasControl;
     [SerializeField] GameObject boardButtons;
     [SerializeField] DebugOptionsShow debugOptionsShow;
@@ -13,7 +13,7 @@ public class DebugEnableAllClues : MonoBehaviour
 
     public void EnableAllClues()
     {
-        if (gameManager.GetWheelIsActive()) return;
+        if (gameBoardManager.GetWheelIsActive()) return;
 
         foreach (Transform child in boardButtons.transform)
         {

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1429079374371014141}
-  - component: {fileID: 442658379223631911}
+  - component: {fileID: 2635605346543839590}
   - component: {fileID: 7059210561463483508}
   m_Layer: 6
   m_Name: Game Board Manager
@@ -33,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &442658379223631911
+--- !u!114 &2635605346543839590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,15 +42,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4140443952007408170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3dab0796775e0c41aea78007554cc3c, type: 3}
+  m_Script: {fileID: 11500000, guid: 16fabfc15d3f21c49bb8e4b812ec10d6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameBoardManager
   cameraMovements:
   - {fileID: 0}
   - {fileID: 0}
   wheelSpinMovement: {fileID: 0}
-  waitBeforeBringingInWheel: 0.6
+  waitBeforeBringingInWheel: 0.4
   buttonCanvasControl: {fileID: 0}
+  showDebugOptionsButton: {fileID: 0}
   blackBackgroundFade: {fileID: 0}
   cluesLeft: 25
 --- !u!114 &7059210561463483508
@@ -65,6 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c396ca0a530a1d14fbaaf95edadcd357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GlobalColorManager
+  canColorChange: 0
   boardClueStateControls:
   - {fileID: 0}
   - {fileID: 0}
