@@ -1,4 +1,4 @@
-using KoziPardy.GameState;
+using KoziPardy.Core;
 using UnityEngine;
 
 public class DoublesBoardButton : ButtonSprite

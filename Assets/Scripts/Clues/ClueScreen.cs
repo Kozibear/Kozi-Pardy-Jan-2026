@@ -1,3 +1,4 @@
+using KoziPardy.Core;
 using UnityEngine;
 
 public class ClueScreen : MonoBehaviour
@@ -56,7 +57,7 @@ public class ClueScreen : MonoBehaviour
         }
         if (transform.localPosition == moveOffscreenAbovePosition)
         {
-            gameManager.BoardBeforeWheelSpin();
+            gameManager.BoardBeforeNextTurn();
             transform.localPosition = moveOffscreenBelowPosition;
             if (ClueImagesSpawnPoint.transform.childCount > 0) Destroy(ClueImagesSpawnPoint.transform.GetChild(0).gameObject);
         }

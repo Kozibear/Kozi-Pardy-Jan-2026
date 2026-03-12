@@ -1,3 +1,4 @@
+using KoziPardy.Core;
 using System.Collections;
 using UnityEngine;
 
@@ -68,7 +69,7 @@ public class CameraMovement : MonoBehaviour
 
         if (transform.localPosition == originalPosition)
         {
-            gameBoardManager.ActivateBoardClues();
+            gameBoardManager.ActivateSpecificBoardClues();
         }
     }
 

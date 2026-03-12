@@ -123,8 +123,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3170644223756363850}
-        m_TargetAssemblyTypeName: KoziPardy.GameState.DebugToGameScene, Assembly-CSharp
-        m_MethodName: FinalSceneLoad
+        m_TargetAssemblyTypeName: KoziPardy.Core.DebugToGameScene, Assembly-CSharp
+        m_MethodName: StartFinalScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -555,8 +555,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7483542438706796301}
-        m_TargetAssemblyTypeName: KoziPardy.GameState.DebugToGameScene, Assembly-CSharp
-        m_MethodName: SingleSceneLoad
+        m_TargetAssemblyTypeName: KoziPardy.Core.DebugToGameScene, Assembly-CSharp
+        m_MethodName: StartSingleScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 631442222019890897}
   - component: {fileID: 4970996973742770411}
   m_Layer: 5
-  m_Name: Game-Pardy Debug Canvas
+  m_Name: Debug Button Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1094,8 +1094,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2754562642453016215}
-        m_TargetAssemblyTypeName: KoziPardy.GameState.DebugToGameScene, Assembly-CSharp
-        m_MethodName: SingleSceneLoad
+        m_TargetAssemblyTypeName: KoziPardy.Core.DebugToGameScene, Assembly-CSharp
+        m_MethodName: StartSingleScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1252,8 +1252,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7094851622620033920}
-        m_TargetAssemblyTypeName: KoziPardy.GameState.DebugToGameScene, Assembly-CSharp
-        m_MethodName: DoubleSceneLoad
+        m_TargetAssemblyTypeName: KoziPardy.Core.DebugToGameScene, Assembly-CSharp
+        m_MethodName: StartDoubleScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1546,9 +1546,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8230666127555029228}
-        m_TargetAssemblyTypeName: KoziPardy.GameState.DebugToGameScene, Assembly-CSharp
-        m_MethodName: DoubleSceneLoad
+      - m_Target: {fileID: 7094851622620033920}
+        m_TargetAssemblyTypeName: KoziPardy.Core.DebugToGameScene, Assembly-CSharp
+        m_MethodName: StartDoubleScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

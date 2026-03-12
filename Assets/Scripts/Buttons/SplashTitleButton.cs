@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace KoziPardy.GameState
+namespace KoziPardy.Core
 {
     public class SplashTitleButton : ButtonSprite
     {
@@ -19,7 +19,7 @@ namespace KoziPardy.GameState
         {
             if (interactable)
             {
-                if (GameStateManager.globalGameState == GlobalGameState.Final)
+                if (GameSettings.globalGameState == GlobalGameState.Final)
                 {
                     finalClueControl.BringInFinalClue();
                 }

@@ -1,3 +1,4 @@
+using KoziPardy.Core;
 using UnityEngine;
 
 public class DebugScript : MonoBehaviour
@@ -16,7 +17,7 @@ public class DebugScript : MonoBehaviour
     {
         if (skipIntro)
         {
-            gameManager.BoardBeforeWheelSpin();
+            gameManager.BoardBeforeNextTurn();
 
             splashScreen.SetActive(false);
             categoryReveals.SetActive(false);

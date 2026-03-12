@@ -1,22 +1,23 @@
+using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-namespace KoziPardy.GameState
+namespace KoziPardy.Core
 {
     public class DebugToGameScene : MonoBehaviour
     {
-        public void SingleSceneLoad(int sceneIndex)
+        public void StartSingleScene(int sceneIndex)
         {
-            //SceneManager.LoadScene(sceneIndex);
+            StartCoroutine(GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(sceneIndex, GlobalGameState.Single));
         }
 
-        public void DoubleSceneLoad(int sceneIndex)
+        public void StartDoubleScene(int sceneIndex)
         {
-            //SceneManager.LoadScene(sceneIndex);
+            StartCoroutine(GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(sceneIndex, GlobalGameState.Double));
         }
-        public void FinalSceneLoad(int sceneIndex)
+
+        public void StartFinalScene(int sceneIndex)
         {
-            //SceneManager.LoadScene(sceneIndex);
+            StartCoroutine(GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(sceneIndex, GlobalGameState.Final));
         }
     }
 }

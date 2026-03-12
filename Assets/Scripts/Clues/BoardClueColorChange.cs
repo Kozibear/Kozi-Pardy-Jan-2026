@@ -31,11 +31,8 @@ namespace KoziPardy.ColorManagement
         private bool canChangeColor = false;
         private bool oldClueFading = false;
 
-        private void Start()
-        {
-            currentColor = blueDarkened;
-            meshRenderer.material.color = currentColor;
-        }
+        private bool isWheelSpinGame = true;
+        private bool isDepletedCategory = false;
 
         void Update()
         {
@@ -58,23 +55,36 @@ namespace KoziPardy.ColorManagement
             }
         }
 
+        public void SetStartingColor(bool isThisAWheelSpinGame)
+        {
+            isWheelSpinGame = isThisAWheelSpinGame;
+
+            if (isWheelSpinGame) currentColor = blueDarkened;
+            else currentColor = blueHighlight;
+
+            meshRenderer.material.color = currentColor;
+        }
+
         public void GradualColorChange(float percentageComplete, Color newColor)
         {
             meshRenderer.material.color = Color.Lerp(currentColor, newColor, percentageComplete);
         }
 
-        public void StartNexColorShift()
+        public void StartNexColorShift(bool hasBeenClicked)
         {
             switch (GlobalColorManager.globalColorState)
             {
                 case GlobalColorState.Blue:
-                    nextColor = orangeDarkened;
+                    if (isWheelSpinGame || hasBeenClicked || isDepletedCategory) nextColor = orangeDarkened;
+                    else nextColor = orangeHighlight;
                     break;
                 case GlobalColorState.Orange:
-                    nextColor = purpleDarkened;
+                    if (isWheelSpinGame || hasBeenClicked || isDepletedCategory) nextColor = purpleDarkened;
+                    else nextColor = purpleHighlight;
                     break;
                 case GlobalColorState.Purple:
-                    nextColor = blueDarkened;
+                    if (isWheelSpinGame || hasBeenClicked || isDepletedCategory) nextColor = blueDarkened;
+                    else nextColor = blueHighlight;
                     break;
             }
 
@@ -123,6 +133,11 @@ namespace KoziPardy.ColorManagement
                 elapsedTimeInSeconds = 0;
                 canChangeColor = true;
             }
+        }
+
+        public void SetDepletedCategory(bool state)
+        {
+            isDepletedCategory = state;
         }
     }
 }

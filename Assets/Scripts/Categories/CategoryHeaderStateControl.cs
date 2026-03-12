@@ -2,12 +2,13 @@ using KoziPardy.ColorManagement;
 using UnityEngine;
 using TMPro;
 
-namespace KoziPardy.GameState
+namespace KoziPardy.Core
 {
     public class CategoryHeaderStateControl : MonoBehaviour
     {
         [Header("Cateogry Header Info")]
-        [SerializeField] int number = 0;
+        [SerializeField] int categoryNumber = 0;
+        [SerializeField] int activeCluesInThisCategory = 5;
 
         [Header("Cateogry Color Change")]
         [SerializeField] BoardClueColorChange categoryColorChange;
@@ -21,20 +22,33 @@ namespace KoziPardy.GameState
         [SerializeField] string singleTextString = "";
         [SerializeField] string doubleTextString = "";
 
-        public int GetNumber() { return number; }
+        public int GetNumber() { return categoryNumber; }
+
+        public void ReduceActiveCluesInThisCategory()
+        {
+            if (activeCluesInThisCategory > 0)
+                activeCluesInThisCategory--;
+
+            if (activeCluesInThisCategory <= 0)
+            {
+                InstantDarken();
+                categoryColorChange.SetDepletedCategory(true);
+            }
+        }
 
         void Start()
         {
             nameText.text = singleTextString;
             nameTextShadow.text = singleTextString;
 
-            if (GameStateManager.globalGameState == GlobalGameState.Double)
+            if (GameSettings.globalGameState == GlobalGameState.Double)
             {
                 nameText.text = doubleTextString;
                 nameTextShadow.text = doubleTextString;
             }
 
-            textColorFade.InstantDarken();
+            if (GameSettings.WheelSpinGame) textColorFade.InstantDarken();
+            categoryColorChange.SetStartingColor(GameSettings.WheelSpinGame);
         }
 
         public void InstantDarken()

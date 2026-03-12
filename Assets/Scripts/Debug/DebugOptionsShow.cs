@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -9,7 +8,7 @@ public class DebugOptionsShow : MonoBehaviour
     private bool canShowButtons = true;
     public void ToggleButtons()
     {
-        if (debugButtons == null) return;
+        if (debugButtons == null) return; 
 
         foreach (GameObject debugbutton in debugButtons)
         {

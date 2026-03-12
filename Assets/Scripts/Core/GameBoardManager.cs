@@ -2,89 +2,91 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameBoardManager : MonoBehaviour
+namespace KoziPardy.Core
 {
-    [Header("Wheel Spin")]
-    [SerializeField] bool DoWheelSpin = true;
-    [SerializeField] List<CameraMovement> cameraMovements;
-    [SerializeField] WheelSpinMovement wheelSpinMovement;
-    [SerializeField] float waitBeforeBringingInWheel = 1f;
-
-    [Header("UI Buttons")]
-    [SerializeField] ButtonCanvasControl buttonCanvasControl;
-    [SerializeField] DebugOptionsShow showDebugOptionsButton;
-
-    [Header("Black Background Fade")]
-    [SerializeField] SpriteFade blackBackgroundFade;
-
-    [Header("Clues Left")]
-    [SerializeField] int cluesLeft = 25;
-
-    private List<int> storedButtonsToActivate;
-    private bool automaticWheelspins = false;
-    private bool wheelIsActive = false;
-
-    public void BoardBeforeWheelSpin()
+    public class GameBoardManager : MonoBehaviour
     {
-        cluesLeft--;
+        [Header("Wheel Spin")]
+        [SerializeField] List<CameraMovement> cameraMovements;
+        [SerializeField] WheelSpinMovement wheelSpinMovement;
+        [SerializeField] float waitBeforeBringingInWheel = 1f;
 
-        if (cluesLeft > 1)
+        [Header("UI Buttons")]
+        [SerializeField] ButtonCanvasControl buttonCanvasControl;
+        [SerializeField] DebugOptionsShow showDebugOptionsButton;
+
+        [Header("Black Background Fade")]
+        [SerializeField] SpriteFade blackBackgroundFade;
+
+        [Header("Clues Left")]
+        [SerializeField] int cluesLeft = 25;
+
+        private List<int> storedButtonsToActivate;
+        private bool automaticWheelspins = false;
+        private bool wheelIsActive = false;
+
+        public void BoardBeforeNextTurn()
         {
-            if (automaticWheelspins) StartCoroutine(WheelSpinSetup());
-            else buttonCanvasControl.ActivateWheelSpinButton();
+            cluesLeft--;
+
+            if (cluesLeft > 1)
+            {
+                if (automaticWheelspins && GameSettings.WheelSpinGame)
+                {
+                    StartCoroutine(WheelSpinSetup());
+                }
+                else
+                {
+                    buttonCanvasControl.NewTurnButtonActivations();
+                }
+            }
+            else if (cluesLeft <= 1)
+            {
+                buttonCanvasControl.FinalButtonActivation();
+            }
         }
-        else if (cluesLeft <= 1)
+
+        private IEnumerator WheelSpinSetup()
         {
-            buttonCanvasControl.FinalButtonActivation();
+            yield return new WaitForSeconds(waitBeforeBringingInWheel);
+            ShowWheel();
         }
+
+        public void ShowWheel()
+        {
+            buttonCanvasControl.ResetEverything();
+            buttonCanvasControl.DisableDebug();
+
+            wheelIsActive = true;
+
+            foreach (CameraMovement camera in cameraMovements) { camera.MoveForWheelSpin(); }
+            wheelSpinMovement.StartWheelSpin();
+        }
+
+        public void HideWheelAndReturnToBoard(List<int> buttonsToActivate)
+        {
+            storedButtonsToActivate = buttonsToActivate;
+
+            foreach (CameraMovement camera in cameraMovements) { camera.MoveBackToNormal(); }
+            wheelSpinMovement.MoveOutWheelSpin();
+        }
+
+        public void ActivateSpecificBoardClues()
+        {
+            wheelIsActive = false;
+
+            buttonCanvasControl.ActivateSpecificNewCluesAndOldClues(storedButtonsToActivate);
+        }
+
+        public void ToggleAutoWheelSpins(bool value)
+        {
+            automaticWheelspins = value;
+        }
+
+        public bool GetWheelIsAuto() { return automaticWheelspins; }
+
+        public bool GetWheelIsActive() { return wheelIsActive; }
+
+        public int GetCluesLeft() { return cluesLeft; }
     }
-
-    private IEnumerator WheelSpinSetup()
-    {
-        yield return new WaitForSeconds(waitBeforeBringingInWheel);
-        ShowWheel();
-    }
-
-    public void ShowWheel()
-    {
-        buttonCanvasControl.ResetEverything();
-        buttonCanvasControl.DisableDebug();
-
-        wheelIsActive = true;
-
-        foreach (CameraMovement camera in cameraMovements) { camera.MoveForWheelSpin(); }
-        wheelSpinMovement.StartWheelSpin();
-
-        //blackBackgroundFade.SetFadeInThreshold(0.4f);
-        //blackBackgroundFade.SetFadeSpeeds(2.8f);
-        //blackBackgroundFade.FadeIn();
-    }
-
-    public void HideWheelAndReturnToBoard(List<int> buttonsToActivate)
-    {
-        storedButtonsToActivate = buttonsToActivate;
-
-        foreach (CameraMovement camera in cameraMovements) { camera.MoveBackToNormal(); }
-        wheelSpinMovement.MoveOutWheelSpin();
-
-        //blackBackgroundFade.FadeOut();
-    }
-
-    public void ActivateBoardClues()
-    {
-        wheelIsActive = false;
-
-        buttonCanvasControl.ActivateSpecificNewCluesAndOldClues(storedButtonsToActivate);
-    }
-
-    public void ToggleAutoWheelSpins(bool value)
-    {
-        automaticWheelspins = value;
-    }
-
-    public bool GetWheelIsAuto() { return automaticWheelspins; }
-
-    public bool GetWheelIsActive() { return wheelIsActive; }
-
-    public int GetCluesLeft() { return cluesLeft; }
 }

@@ -1,3 +1,4 @@
+using KoziPardy.Core;
 using UnityEngine;
 
 public class BoardButton : ButtonSprite

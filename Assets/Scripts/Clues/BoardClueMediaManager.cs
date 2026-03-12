@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace KoziPardy.GameState
+namespace KoziPardy.Core
 {
     public class BoardClueMediaManager : MonoBehaviour
     {
@@ -31,7 +31,7 @@ namespace KoziPardy.GameState
             currentClueSO = singleClueSO;
             currentFrontTextString = frontTextStringSingle;
 
-            if (GameStateManager.globalGameState == GlobalGameState.Double)
+            if (GameSettings.globalGameState == GlobalGameState.Double)
             {
                 currentClueSO = doubleClueSO;
                 currentFrontTextString = frontTextStringDouble;

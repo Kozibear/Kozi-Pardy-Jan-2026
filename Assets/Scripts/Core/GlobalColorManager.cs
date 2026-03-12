@@ -1,4 +1,4 @@
-using KoziPardy.GameState;
+using KoziPardy.Core;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,11 +6,9 @@ namespace KoziPardy.ColorManagement
 {
     public class GlobalColorManager : MonoBehaviour
     {
-        [Header("Can Color Change?")]
-        [SerializeField] bool canColorChange = true;
-
         [Header("Static Variables")]
         public static GlobalColorState globalColorState = GlobalColorState.Blue;
+
         public static readonly float desiredDurationInSeconds = 0.85f;
 
         [Header("Board Buttons")]
@@ -25,8 +23,11 @@ namespace KoziPardy.ColorManagement
         [Header("Background")]
         [SerializeField] BackgroundColorChange backgroundColorChange;
 
+        private bool canColorChange = true;
+
         public void Start()
         {
+            canColorChange = GameSettings.ColorChangeGame;
             globalColorState = GlobalColorState.Blue;
         }
 
@@ -41,7 +42,7 @@ namespace KoziPardy.ColorManagement
 
             foreach (GameObject category in categories)
             {
-                category.GetComponent<BoardClueColorChange>().StartNexColorShift();
+                category.GetComponent<BoardClueColorChange>().StartNexColorShift(false);
             }
 
             foreach (BoardSpriteColorChange boardSpriteColorChange in boardSpriteColorChanges)

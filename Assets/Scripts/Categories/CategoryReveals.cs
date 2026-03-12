@@ -1,9 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
-namespace KoziPardy.GameState
+namespace KoziPardy.Core
 {
     public class CategoryReveals : MonoBehaviour, IFadeListener
     {
@@ -26,6 +25,9 @@ namespace KoziPardy.GameState
         SpriteFade blackBoardSilhouette;
         SpriteFade whitePreground;
 
+        [Header("Debug Buttons Canvas")]
+        [SerializeField] GameObject debugButtonsCanvas;
+
         private void Start()
         {
             blackBoardSilhouette = boardSilhouette.transform.GetChild(0).GetComponent<SpriteFade>();
@@ -33,7 +35,7 @@ namespace KoziPardy.GameState
 
             currentCategoryNames = categoryNamesSingle;
 
-            if (GameStateManager.globalGameState == GlobalGameState.Double)
+            if (GameSettings.globalGameState == GlobalGameState.Double)
             {
                 currentCategoryNames = categoryNamesDoubles;
             }
@@ -41,7 +43,6 @@ namespace KoziPardy.GameState
 
         public void StartCategoryReveals()
         {
-            SetPersistentObjects();
             StartCoroutine(WaitBetweenCategoryReveals());
         }
 
@@ -65,14 +66,17 @@ namespace KoziPardy.GameState
                 newCategory.GetComponent<CategoryPlaque>().SetOffscreenDestination();
             }
 
+            debugButtonsCanvas.gameObject.SetActive(false);
             blackBoardSilhouette.FadeIn();
             whitePreground.FadeIn();
         }
 
         IEnumerator ChangeScene()
         {
+            SetPersistentObjects();
             yield return new WaitForSeconds(waitBeforeChangingScene);
-            yield return SceneManager.LoadSceneAsync(1);
+
+            yield return GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(1, GameSettings.globalGameState);
 
             blackBoardSilhouette.SetFadeSpeeds(1.5f);
             blackBoardSilhouette.FadeOut();
