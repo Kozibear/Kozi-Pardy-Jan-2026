@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: thisGamesEndState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7739307080142413234, guid: 1cc4c229ae2ba174c849d459006399e4, type: 3}
+      propertyPath: thisGamesStartState
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1896,6 +1900,76 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
+    - target: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextString
+      value: 'Cover
+
+        athletes'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextString
+      value: 'Chromatic
+
+        cuties'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403903297842837317, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextString
+      value: 'Video game
+
+        cloners'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextString
+      value: Big L's
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.x
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.y
+      value: 0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467489648091740066, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2482099350986172509, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 
@@ -1907,6 +1981,42 @@ PrefabInstance:
     - target: {fileID: 2662030198179600076, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_text
       value: PS1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextString
+      value: 'Big Biz
+
+        pwners'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextString
+      value: 'The artist
+
+        formerly...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832006192279408854, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2833861169918564514, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: m_Name
@@ -1956,6 +2066,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3744788397391919081, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744788397391919081, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884643594132656250, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884643594132656250, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884643594132656250, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884643594132656250, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930287148447551645, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930287148447551645, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930287148447551645, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930287148447551645, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4388010025252210986, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 
@@ -1968,6 +2118,14 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
+    - target: {fileID: 5424210695858633206, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5424210695858633206, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 5475506191519000990, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 
@@ -2000,10 +2158,98 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
+    - target: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextString
+      value: 'I Like to move
+
+        it, move it'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextString
+      value: 'Trick up
+
+        my sleeve'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.x
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.y
+      value: 0.351
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914095767628996297, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextString
+      value: 'Small Biz
+
+        owners'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextString
+      value: 'Featuring 2B
+
+        from Nier'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: doubleTextScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270249807097876328, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: singleTextScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7987653013033759014, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
+    - target: {fileID: 8093102921545295959, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093102921545295959, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093102921545295959, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093102921545295959, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8339604718511973007, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 

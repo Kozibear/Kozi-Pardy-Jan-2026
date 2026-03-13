@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: "Genetically enhanced, with decades of experience as a killer, this man
+    was \u201Cborn\u201D in an underground lab in Romania"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

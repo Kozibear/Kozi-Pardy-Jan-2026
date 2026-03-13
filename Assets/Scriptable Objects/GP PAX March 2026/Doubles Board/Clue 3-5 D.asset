@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: Residing within the Motor Forge, this shopkeeper was voiced by a heavy
+    metal legend
   haikuClueText: []
   songLyricText:
   - It's a whole new place,

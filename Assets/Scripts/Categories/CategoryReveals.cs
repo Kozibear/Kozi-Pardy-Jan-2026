@@ -6,11 +6,15 @@ namespace KoziPardy.Core
 {
     public class CategoryReveals : MonoBehaviour, IFadeListener
     {
-        [Header("Categories")]
+        [Header("Categories GameObjects")]
         [SerializeField] GameObject CategoryRevealPrefab;
         [SerializeField] GameObject CategorySpawnPoint;
+
+        [Header("Categories Texts")]
         [SerializeField][TextArea] List<string> categoryNamesSingle;
+        [SerializeField] List<Vector3> singleTextScales;
         [SerializeField][TextArea] List<string> categoryNamesDoubles;
+        [SerializeField] List<Vector3> doubleTextScales;
         private List<string> currentCategoryNames;
 
         [Header("WaitTimes")]

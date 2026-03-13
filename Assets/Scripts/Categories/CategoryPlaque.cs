@@ -8,6 +8,7 @@ public class CategoryPlaque : MonoBehaviour
     [SerializeField] GameObject categoryCover;
 
     [Header("Texts")]
+    [SerializeField] GameObject categoryTextsGroup;
     [SerializeField] TextMeshPro categoryText;
     [SerializeField] TextMeshPro categoryTextShadow;
 

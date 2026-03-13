@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: This 4v4 arena shooter lasted less than a year until it received its
+    final update, and also features 2B from Nier Automata
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

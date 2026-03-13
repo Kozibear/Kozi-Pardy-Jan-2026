@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-4 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: "Initially a recurring main boss and space pirate, later on this enemy
+    is cloned and first encountered as \u201CLittle Birdie\u201D"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

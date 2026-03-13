@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-3 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: "This man cried \u201CThat\u2019s my Quarterback\u201D years after being
+    the face for the final NFL 2K game"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

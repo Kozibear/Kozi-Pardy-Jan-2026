@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: "Taking inspiration from 1999\u2019s most successful film, this racing
+    title holds the record for best-selling game in its genre"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

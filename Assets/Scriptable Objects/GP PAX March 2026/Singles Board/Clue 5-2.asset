@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: Based on a film franchise that stars Sam Worthington, this open world
+    game puts you in the shoes of a large blue creature
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

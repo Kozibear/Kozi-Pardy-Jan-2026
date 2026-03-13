@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 2-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: Ante up in this popular poker-themed roguelike from solo developer LocalThunk
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

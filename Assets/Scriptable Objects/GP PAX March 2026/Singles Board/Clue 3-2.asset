@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: This MMO from Square Enix had a successful relaunch in 2013, and also
+    features 2B from Nier Automata
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: Introduced in Super Mario Sunshine, this troublemaker is a mirror image
+    of his father
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-2 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: "\u201CFinish the Story\u201D with this blond-haired cover wrestler from
+    WWE 2K24"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-1 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: The best-selling game on the Meta Quest, this popular VR title has you
+    swinging laser swords to music
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

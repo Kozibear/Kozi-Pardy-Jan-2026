@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: Four characters and their unique decks will help you defeat the challenges
+    waiting atop this tall structure
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

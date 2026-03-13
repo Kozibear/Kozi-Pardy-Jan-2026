@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: "The first game based on a popular anime\u2019s \u201CBattle City\u201D
+    arc, this GBA game allows you to wield your own Egyptian God Card"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

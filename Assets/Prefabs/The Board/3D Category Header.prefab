@@ -26,7 +26,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.0025715, z: 0.0000000074506}
-  m_LocalScale: {x: 1, y: 0.89, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.45, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 278202508280692478}
@@ -80,7 +80,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa34ecfb1d93d794388de03543d81d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CategoryHeaderStateControl
-  number: 0
+  categoryNumber: 0
+  activeCluesInThisCategory: 5
   categoryColorChange: {fileID: 4176145315664469745}
   nameText: {fileID: 3569813861808101514}
   nameTextShadow: {fileID: 2990899718057546360}

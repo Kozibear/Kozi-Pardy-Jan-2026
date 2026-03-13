@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-2 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: An antagonist of a popular fighting series, this character is a clone
+    of a blue-clad princess
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

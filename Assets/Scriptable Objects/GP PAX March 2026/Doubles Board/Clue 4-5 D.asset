@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: Beginning as a shower curtain manufacturer, this company saw its downfall
+    after a failed attempt to upload a human mind into an AI program
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

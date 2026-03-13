@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: A red-eyed ghostly figure, it can only be obtained by trading with another
+    like-minded enthusiast
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

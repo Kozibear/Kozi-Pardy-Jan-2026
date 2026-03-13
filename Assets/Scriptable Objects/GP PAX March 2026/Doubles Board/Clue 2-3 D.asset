@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-3 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: An augmented reality peripheral that required the PlayStation Move, it
+    released 4 compatible games in its lifetime
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

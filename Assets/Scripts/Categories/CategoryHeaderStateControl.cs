@@ -19,8 +19,10 @@ namespace KoziPardy.Core
         [SerializeField] TextColorFade textColorFade;
 
         [Header("Category Name Text Content")]
-        [SerializeField] string singleTextString = "";
-        [SerializeField] string doubleTextString = "";
+        [SerializeField][TextArea] string singleTextString = "";
+        [SerializeField] Vector3 singleTextScale = new Vector3(0, 0, 1);
+        [SerializeField][TextArea] string doubleTextString = "";
+        [SerializeField] Vector3 doubleTextScale = new Vector3(0, 0, 1);
 
         public int GetNumber() { return categoryNumber; }
 
@@ -40,11 +42,13 @@ namespace KoziPardy.Core
         {
             nameText.text = singleTextString;
             nameTextShadow.text = singleTextString;
+            transform.GetChild(0).transform.localScale = singleTextScale;
 
             if (GameSettings.globalGameState == GlobalGameState.Double)
             {
                 nameText.text = doubleTextString;
                 nameTextShadow.text = doubleTextString;
+                transform.GetChild(0).transform.localScale = doubleTextScale;
             }
 
             if (GameSettings.WheelSpinGame) textColorFade.InstantDarken();

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Clue 3-3
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: One of the best-selling games of all time, and the title most credited
+    with popularizing the battle royale genre, this game also features 2B from Nier
+    Automata
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

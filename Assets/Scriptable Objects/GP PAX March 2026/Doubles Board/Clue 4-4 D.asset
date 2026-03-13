@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-4 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: Dabbling in industries such as medical equipment and cruise liners, this
+    corporation's biggest output is biological weaponry
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

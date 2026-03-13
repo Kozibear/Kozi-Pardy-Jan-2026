@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-1 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: One half of a set of twins, this spy defeated Liquid Ocelot and the Patriots
+    in his final mission
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

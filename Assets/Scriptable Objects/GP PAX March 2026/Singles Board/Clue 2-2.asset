@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: Part escape room, part roguelike deck builder, this 2021 game is much
+    more than it appears
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-2 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: A Kinect game famously known for featuring a parody of a Jason Derulo
+    song
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

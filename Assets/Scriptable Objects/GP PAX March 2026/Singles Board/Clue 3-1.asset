@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: A recent Playstation platformer that won GOTY awards, and also features
+    2B from Nier Automata
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-1
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: This action adventure game set in the DC universe popularized counter-heavy
+    combat
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

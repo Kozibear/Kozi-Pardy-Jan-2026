@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-1 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: A megacorporation that was directly targeted by Johnny Silverhand, and
+    a main player in Night City
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

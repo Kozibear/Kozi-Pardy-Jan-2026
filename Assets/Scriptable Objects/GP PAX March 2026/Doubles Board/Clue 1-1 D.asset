@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clue 1-1 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: Float like a butterfly with this legacy boxer in the Fight Night series
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

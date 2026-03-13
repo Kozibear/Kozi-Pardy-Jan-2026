@@ -13,12 +13,9 @@ MonoBehaviour:
   m_Name: Clue 3-2 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: A mostly silent merchant, this shopkeep is famous for traversing the
+    River for those who can pay
   haikuClueText: []
-  songLyricText:
-  - To protect the world from devastation!
-  - To unite all peoples within our nation!
-  - To denounce the evils of truth and love!
-  - To extend _______
+  songLyricText: []
   image: {fileID: 0}
   buttonNumber: 0

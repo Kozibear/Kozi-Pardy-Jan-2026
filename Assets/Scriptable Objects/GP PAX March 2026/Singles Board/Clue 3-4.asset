@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 3-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: A 2024 third person action game, which received some criticism for the
+    sexualization of its main character Eve, that also features 2B from Nier Automata
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

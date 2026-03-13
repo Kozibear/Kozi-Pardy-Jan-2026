@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 1-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: This former LSU athlete was the cover athlete for the WNBA edition of
+    NBA 2K26
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

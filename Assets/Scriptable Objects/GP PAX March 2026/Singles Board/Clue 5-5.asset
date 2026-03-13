@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 5-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: "Based on a film franchise that stars Sam Worthington, you utilize hack
+    and slash combat to deal with \u201Cepic\u201D monsters"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

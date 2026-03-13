@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-2
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: Rebelling against his father time after time, this character is always
+    headed upwards
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

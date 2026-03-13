@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-4
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: "This tactical RPG with card battling elements lets you befriend some
+    of earth\u2019s mightiest heroes to take down a demonic threat"
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

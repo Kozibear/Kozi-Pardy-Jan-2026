@@ -13,12 +13,9 @@ MonoBehaviour:
   m_Name: Clue 3-4 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: "First appearing in 2008, this cowardly trickster merchant is a mainstay
+    in a popular game developer\u2019s catalogue"
   haikuClueText: []
-  songLyricText:
-  - It's a whole new place,
-  - with a brand new attitude
-  - But you've still gotta catch 'em all
-  - And be _______
+  songLyricText: []
   image: {fileID: 0}
   buttonNumber: 0

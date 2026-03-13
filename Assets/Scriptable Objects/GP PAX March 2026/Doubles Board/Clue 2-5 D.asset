@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 2-5 D
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A D
+  clueText: A kinect game in which you control a marionette with one hand, and shoot
+    with the other
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}

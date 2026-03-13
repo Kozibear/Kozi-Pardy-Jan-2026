@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clue 4-5
   m_EditorClassIdentifier: 
   clueType: 0
-  clueText: N/A
+  clueText: A series big bad, this villain is famous for being punched in the groin
+    by actor Linden Ashby
   haikuClueText: []
   songLyricText: []
   image: {fileID: 0}
