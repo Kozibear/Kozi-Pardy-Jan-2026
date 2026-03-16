@@ -27,7 +27,7 @@ namespace KoziPardy.ColorManagement
 
         public void Start()
         {
-            canColorChange = GameSettings.ColorChangeGame;
+            canColorChange = GameSettings.colorChangeGame;
             globalColorState = GlobalColorState.Blue;
         }
 

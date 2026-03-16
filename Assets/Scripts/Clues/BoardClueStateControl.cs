@@ -17,8 +17,8 @@ namespace KoziPardy.Core
 
         private void Start()
         {
-            if (GameSettings.WheelSpinGame) pointValueText.InstantDarkenToExactColor();
-            boardClueColorChange.SetStartingColor(GameSettings.WheelSpinGame);
+            if (GameSettings.wheelSpinGame) pointValueText.InstantDarkenToExactColor();
+            boardClueColorChange.SetStartingColor(GameSettings.wheelSpinGame);
         }
 
         public void StartNextColorShift()
@@ -62,11 +62,15 @@ namespace KoziPardy.Core
             }
         }
 
-        public void GradualBrightenIfFinal()
+        public void FinalClueSetup()
         {
-            if (GameSettings.WheelSpinGame) pointValueText.GradualBrightenToExactColor();
+            //we gradually brighten the button
+            if (GameSettings.wheelSpinGame) pointValueText.GradualBrightenToExactColor();
             thisCluesCategory.GradualLightenIfFinal();
             boardClueColorChange.ColorBrightenDarken(BoardClueColorChange.ColorValue.Bright, true, false);
+
+            //We also demark that this button is the final button in the BoardClueMovement script
+            GetComponent<BoardClueMovement>().SetIsFinalClue(true);
         }
 
         public int GetNumber() { return number; }
@@ -74,7 +78,7 @@ namespace KoziPardy.Core
         public void SetHasBeenClicked(bool value)
         {
             hasBeenClicked = value;
-            if (!GameSettings.WheelSpinGame) thisCluesCategory.ReduceActiveCluesInThisCategory();
+            if (!GameSettings.wheelSpinGame) thisCluesCategory.ReduceActiveCluesInThisCategory();
         }
 
         public bool GetHasBeenClicked() { return hasBeenClicked; }

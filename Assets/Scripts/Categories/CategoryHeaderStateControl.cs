@@ -51,8 +51,8 @@ namespace KoziPardy.Core
                 transform.GetChild(0).transform.localScale = doubleTextScale;
             }
 
-            if (GameSettings.WheelSpinGame) textColorFade.InstantDarken();
-            categoryColorChange.SetStartingColor(GameSettings.WheelSpinGame);
+            if (GameSettings.wheelSpinGame) textColorFade.InstantDarken();
+            categoryColorChange.SetStartingColor(GameSettings.wheelSpinGame);
         }
 
         public void InstantDarken()

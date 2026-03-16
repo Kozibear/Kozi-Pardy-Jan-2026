@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4911372178586526450}
   - component: {fileID: 6508981769137983049}
   - component: {fileID: 6289366027318479997}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Right and Wrong SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 6467436035165619247}
   - component: {fileID: 7617221847231725940}
   - component: {fileID: 6169725102664587306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wheel SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 499239124481115720}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SFX Control
   m_TagString: Untagged
   m_Icon: {fileID: 0}

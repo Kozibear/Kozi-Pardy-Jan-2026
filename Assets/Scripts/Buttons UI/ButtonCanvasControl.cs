@@ -46,7 +46,7 @@ namespace KoziPardy.Core
             wrongSFXButton.gameObject.SetActive(false);
             backButton.gameObject.SetActive(false);
 
-            if (GameSettings.WheelSpinGame) SetAllBoardButtonsState(false);
+            if (GameSettings.wheelSpinGame) SetAllBoardButtonsState(false);
 
             NewTurnButtonActivations();
         }
@@ -79,7 +79,7 @@ namespace KoziPardy.Core
                 if (!clueStateControl.GetHasBeenClicked())
                 {
                     boardButtons[clueStateControl.GetNumber()].gameObject.SetActive(true);
-                    clueStateControl.GradualBrightenIfFinal();
+                    clueStateControl.FinalClueSetup();
                 }
             }
 
@@ -118,7 +118,7 @@ namespace KoziPardy.Core
             else
             {
                 newClueHasBeenShownThisTurn = true;
-                if (GameSettings.WheelSpinGame) globalColorManager.DarkenAllOtherBoardButtons(buttonToWhiteList);
+                if (GameSettings.wheelSpinGame) globalColorManager.DarkenAllOtherBoardButtons(buttonToWhiteList);
             }
         }
 
@@ -162,7 +162,7 @@ namespace KoziPardy.Core
             {
                 //If we're a wheelspin game, we don't want any issues from calling an old clue onscreen while the wheel is in auto mode, OR when we have 1 or fewer clues left
                 //So in either case, we aren't allowed to activate old clues, or activate the wheelspin button
-                if (GameSettings.WheelSpinGame && (!gameBoardManager.GetWheelIsAuto() || gameBoardManager.GetCluesLeft() <= 2))
+                if (GameSettings.wheelSpinGame && (!gameBoardManager.GetWheelIsAuto() || gameBoardManager.GetCluesLeft() <= 2))
                 {
                     readyForNextWheelSpin = true;
                     ActivateJustOldClues();
@@ -171,7 +171,7 @@ namespace KoziPardy.Core
                 gameBoardManager.BoardBeforeNextTurn();
             }
 
-            if (!GameSettings.WheelSpinGame || readyForNextWheelSpin)
+            if (!GameSettings.wheelSpinGame || readyForNextWheelSpin)
             {
                 NewTurnButtonActivations();
             }
@@ -179,7 +179,7 @@ namespace KoziPardy.Core
 
         public void NewTurnButtonActivations()
         {
-            if (GameSettings.WheelSpinGame)
+            if (GameSettings.wheelSpinGame)
             {
                 wheelSpinButton.gameObject.SetActive(true);
             }

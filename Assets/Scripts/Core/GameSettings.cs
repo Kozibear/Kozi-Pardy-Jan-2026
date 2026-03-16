@@ -7,8 +7,9 @@ namespace KoziPardy.Core
         [Header("Static Variables")]
         public static GlobalGameState globalGameState = GlobalGameState.Single;
         public static GlobalGameEndState globalGameEndState = GlobalGameEndState.EndAtSingle;
-        public static bool WheelSpinGame = true;
-        public static bool ColorChangeGame = true;
+        public static bool wheelSpinGame = true;
+        public static bool colorChangeGame = true;
+        public static bool naturalSceneSwitch = false;
         public static GameObject theOnlyGameManager;
 
         [Header("Settings")]
@@ -17,6 +18,8 @@ namespace KoziPardy.Core
         [SerializeField] GlobalGameEndState thisGamesEndState = GlobalGameEndState.EndAtSingle;
         [SerializeField] bool isWheelSpinGame = true;
         [SerializeField] bool isColorChangeGame = true;
+
+        //In the future, I should rework this script so that the script, rather than the variables are static, meaning we will have a getter and setter for each variable
 
         private void Awake() //needs to be awake so that objects that use globalGameState get the correct state
         {
@@ -32,8 +35,8 @@ namespace KoziPardy.Core
 
                 globalGameState = thisGamesCurrentState = thisGamesStartState;
                 globalGameEndState = thisGamesEndState;
-                WheelSpinGame = isWheelSpinGame;
-                ColorChangeGame = isColorChangeGame;
+                wheelSpinGame = isWheelSpinGame;
+                colorChangeGame = isColorChangeGame;
             }
         }
 
@@ -45,6 +48,11 @@ namespace KoziPardy.Core
         public void SetGameState(GlobalGameState state)
         {
             globalGameState = thisGamesCurrentState = state;
+        }
+
+        public void SetNaturalSceneSwitch(bool state)
+        {
+            naturalSceneSwitch = state;
         }
     }
 

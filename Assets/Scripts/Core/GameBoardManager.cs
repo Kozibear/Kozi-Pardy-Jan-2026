@@ -31,7 +31,7 @@ namespace KoziPardy.Core
 
             if (cluesLeft > 1)
             {
-                if (automaticWheelspins && GameSettings.WheelSpinGame)
+                if (automaticWheelspins && GameSettings.wheelSpinGame)
                 {
                     StartCoroutine(WheelSpinSetup());
                 }

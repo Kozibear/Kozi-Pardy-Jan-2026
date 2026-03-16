@@ -87,7 +87,7 @@ namespace KoziPardy.Core
             SetPersistentObjects();
             yield return new WaitForSeconds(waitBeforeChangingScene);
 
-            yield return GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(1, GameSettings.globalGameState);
+            yield return GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(1, GameSettings.globalGameState, true);
 
             blackBoardSilhouette.SetFadeSpeeds(1.5f);
             blackBoardSilhouette.FadeOut();

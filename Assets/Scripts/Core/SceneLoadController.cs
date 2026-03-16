@@ -6,9 +6,17 @@ namespace KoziPardy.Core
 {
     public class SceneLoadController : MonoBehaviour
     {
-        public IEnumerator LoadSceneCoroutine(int sceneIndex, GlobalGameState nextGameState)
+        GameSettings gameSettings;
+
+        private void Start()
         {
-            GetComponent<GameSettings>().SetGameState(nextGameState);
+            gameSettings = GetComponent<GameSettings>();
+        }
+
+        public IEnumerator LoadSceneCoroutine(int sceneIndex, GlobalGameState nextGameState, bool naturalSceneSwitch)
+        {
+            gameSettings.SetGameState(nextGameState);
+            gameSettings.SetNaturalSceneSwitch(naturalSceneSwitch);
 
             yield return SceneManager.LoadSceneAsync(sceneIndex);
 

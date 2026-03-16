@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - FinalClueControl
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - 3D Objects
   - Foreground
   - Particle System BG
-  - 
+  - SFX
   - 
   - 
   - 

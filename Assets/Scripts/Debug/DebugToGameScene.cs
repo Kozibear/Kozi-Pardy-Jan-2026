@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 namespace KoziPardy.Core
@@ -7,17 +6,17 @@ namespace KoziPardy.Core
     {
         public void StartSingleScene(int sceneIndex)
         {
-            StartCoroutine(GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(sceneIndex, GlobalGameState.Single));
+            StartCoroutine(GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(sceneIndex, GlobalGameState.Single, false));
         }
 
         public void StartDoubleScene(int sceneIndex)
         {
-            StartCoroutine(GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(sceneIndex, GlobalGameState.Double));
+            StartCoroutine(GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(sceneIndex, GlobalGameState.Double, false));
         }
 
         public void StartFinalScene(int sceneIndex)
         {
-            StartCoroutine(GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(sceneIndex, GlobalGameState.Final));
+            StartCoroutine(GameSettings.theOnlyGameManager.GetComponent<SceneLoadController>().LoadSceneCoroutine(sceneIndex, GlobalGameState.Final, false));
         }
     }
 }
