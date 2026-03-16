@@ -66,6 +66,11 @@ public class CategoryPlaque : MonoBehaviour
         transform.GetChild(0).transform.Translate(Vector3.left * Time.deltaTime * moveShellSpeed);
     }
 
+    public void SetCategoryTextScale(Vector3 scale)
+    {
+        categoryTextsGroup.transform.localScale = scale;
+    }
+
     public void SetCategoryText(string categoryName)
     {
         categoryText.text = categoryName;

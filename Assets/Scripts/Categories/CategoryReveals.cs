@@ -16,6 +16,7 @@ namespace KoziPardy.Core
         [SerializeField][TextArea] List<string> categoryNamesDoubles;
         [SerializeField] List<Vector3> doubleTextScales;
         private List<string> currentCategoryNames;
+        private List<Vector3> currentTextScales;
 
         [Header("WaitTimes")]
         [SerializeField] float waitBeforeNextCategory;
@@ -38,10 +39,12 @@ namespace KoziPardy.Core
             whitePreground = boardSilhouette.transform.GetChild(1).GetComponent<SpriteFade>();
 
             currentCategoryNames = categoryNamesSingle;
+            currentTextScales = singleTextScales;
 
             if (GameSettings.globalGameState == GlobalGameState.Double)
             {
                 currentCategoryNames = categoryNamesDoubles;
+                currentTextScales = doubleTextScales;
             }
         }
 
@@ -58,12 +61,16 @@ namespace KoziPardy.Core
 
         IEnumerator WaitBetweenCategoryReveals()
         {
-            foreach (string categoryName in currentCategoryNames)
+
+            for (int i = 0; i < currentCategoryNames.Count; i++)
             {
                 GameObject newCategory = Instantiate(CategoryRevealPrefab, CategorySpawnPoint.transform.position, Quaternion.identity, CategorySpawnPoint.transform);
+                CategoryPlaque categoryPlaque = newCategory.GetComponent<CategoryPlaque>();
 
-                newCategory.GetComponent<CategoryPlaque>().SetCategoryText(categoryName);
-                newCategory.GetComponent<CategoryPlaque>().SetCenterDestination();
+                //NOTE: IN THE FUTURE, the following two things should be all set using Scriptable Objects that should contain this information:
+                categoryPlaque.SetCategoryTextScale(currentTextScales[i]);
+                categoryPlaque.SetCategoryText(currentCategoryNames[i]);
+                categoryPlaque.SetCenterDestination();
 
                 yield return new WaitForSeconds(waitBeforeNextCategory);
 
