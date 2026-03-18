@@ -4,17 +4,17 @@ namespace KoziPardy.Core
 {
     public class FinalClueControl : MonoBehaviour
     {
+        [Header("FinalClueMovement")]
+        [SerializeField] FinalClueMovement finalClueMovement;
+
+        [Header("Other References")]
+        [SerializeField] SplashTitleButton splashTitleButton;
         [SerializeField] SplashButtonCanvasControl splashButtonCanvasControl;
         [SerializeField] VignetteFader vignetteFader;
 
         private BoardClueMovement childBoardClueMovement;
 
-        public void BringInFinalClue()
-        {
-
-        }
-
-        public void MoveOutClue()
+        public void MoveOutNormalClue()
         {
             if (childBoardClueMovement != null)
             {
@@ -30,5 +30,27 @@ namespace KoziPardy.Core
             splashButtonCanvasControl.SetButtonsWhenClueisShowing();
 
         }
+
+        public void BringInFinalClue()
+        {
+            finalClueMovement.MoveFinalClueIn();
+            vignetteFader.StartVigentteFadeIn();
+        }
+
+        public void FinalClueIsInPlace()
+        {
+            splashButtonCanvasControl.SetButtonsWhenClueisShowing();
+        }
+
+        public void FinalClueIsMovingOut()
+        {
+            vignetteFader.StartVigentteFadeOut();
+        }
+
+        public void FinalClueIsMovedOut()
+        {
+            splashTitleButton.Interactable();
+        }
+
     }
 }

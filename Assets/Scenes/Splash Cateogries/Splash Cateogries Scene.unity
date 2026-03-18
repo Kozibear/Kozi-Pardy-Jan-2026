@@ -176,6 +176,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2dd6f3ae33a5e54fb425fe5f6da681c, type: 3}
+--- !u!1 &62492572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 62492573}
+  - component: {fileID: 62492574}
+  m_Layer: 0
+  m_Name: Final Clue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &62492573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62492572}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &62492574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62492572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53cc76b030624b24d8ac4dd88c6278e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FinalClueMovement
+  finalClueControl: {fileID: 1566009096}
+  resetPosition: {x: 0, y: 0, z: 0}
+  moveInPosition: {x: 0, y: 0, z: 0}
+  pullBackPosition: {x: 0, y: 0, z: 0}
+  moveOutPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &63532528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1412,6 +1461,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 793205776}
     - target: {fileID: 4022645084580058254, guid: e0a5e4a29ffb8aa4f9516ca59eb33e6d, type: 3}
+      propertyPath: finalClueMovement
+      value: 
+      objectReference: {fileID: 62492574}
+    - target: {fileID: 4022645084580058254, guid: e0a5e4a29ffb8aa4f9516ca59eb33e6d, type: 3}
+      propertyPath: splashTitleButton
+      value: 
+      objectReference: {fileID: 1495709189}
+    - target: {fileID: 4022645084580058254, guid: e0a5e4a29ffb8aa4f9516ca59eb33e6d, type: 3}
       propertyPath: splashButtonCanvasControl
       value: 
       objectReference: {fileID: 9166600960237418313}
@@ -1780,5 +1837,6 @@ SceneRoots:
   - {fileID: 5833535177980294137}
   - {fileID: 3809517948015143656}
   - {fileID: 4724360731263195448}
+  - {fileID: 62492573}
   - {fileID: 1465141599723689599}
   - {fileID: 879111067}
