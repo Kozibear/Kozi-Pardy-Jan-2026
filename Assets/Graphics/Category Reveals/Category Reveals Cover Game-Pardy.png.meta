@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 668484fe9cb481b498b4b5a58513c5de
+guid: 90bc89c159a00554a9632d00ba86e473
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7130222054723062073
-    second: Blue Background with Inner Shadow Lighter v2_0
+      213: 4747720589373695874
+    second: Category Reveals Cover Game-Pardy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 1
     allowsAlphaSplitting: 0
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blue Background with Inner Shadow Lighter v2_0
+      name: Category Reveals Cover Game-Pardy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9398c656e23a3f260800000000000000
-      internalID: 7130222054723062073
+      spriteID: 2876d66b8ba43e140800000000000000
+      internalID: 4747720589373695874
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Blue Background with Inner Shadow Lighter v2_0: 7130222054723062073
+      Category Reveals Cover Game-Pardy_0: 4747720589373695874
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

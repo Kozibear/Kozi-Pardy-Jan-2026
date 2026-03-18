@@ -1,11 +1,12 @@
+using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class CategoryPlaque : MonoBehaviour
 {
     [Header("Cover")]
     [SerializeField] GameObject categoryCover;
+    [SerializeField] float waitBeforeRemovingCover;
 
     [Header("Texts")]
     [SerializeField] GameObject categoryTextsGroup;
@@ -53,6 +54,12 @@ public class CategoryPlaque : MonoBehaviour
         canMoveShell = true;
         canMove = false;
         if (canDestroy) { Destroy(gameObject); }
+        StartCoroutine(FadeOutCover());
+    }
+
+    private IEnumerator FadeOutCover()
+    {
+        yield return new WaitForSeconds(waitBeforeRemovingCover);
         categoryCover.GetComponent<SpriteFade>().FadeOut();
     }
 

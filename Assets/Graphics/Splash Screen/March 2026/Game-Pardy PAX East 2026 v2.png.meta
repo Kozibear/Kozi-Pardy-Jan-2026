@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 668484fe9cb481b498b4b5a58513c5de
+guid: f8e76045ac5c53d42a620a9b3bdb678c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7130222054723062073
-    second: Blue Background with Inner Shadow Lighter v2_0
+      213: 6420495592222141147
+    second: Game-Pardy PAX East 2026 v2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -77,7 +77,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blue Background with Inner Shadow Lighter v2_0
+      name: Game-Pardy PAX East 2026 v2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        y: 295
+        width: 2048
+        height: 536
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9398c656e23a3f260800000000000000
-      internalID: 7130222054723062073
+      spriteID: bdaac5059be2a1950800000000000000
+      internalID: 6420495592222141147
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Blue Background with Inner Shadow Lighter v2_0: 7130222054723062073
+      Game-Pardy PAX East 2026 v2_0: 6420495592222141147
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -37,6 +37,7 @@ namespace KoziPardy.Core
                 globalGameEndState = thisGamesEndState;
                 wheelSpinGame = isWheelSpinGame;
                 colorChangeGame = isColorChangeGame;
+                naturalSceneSwitch = false;
             }
         }
 
