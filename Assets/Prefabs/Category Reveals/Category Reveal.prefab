@@ -105,8 +105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempColor: {r: 0, g: 0, b: 0, a: 0}
-  fadeInSpeed: 2.65
-  fadeOutSpeed: 2.65
+  fadeInSpeed: 2.75
+  fadeOutSpeed: 2.75
   fadeInThreshold: 1
   fadeOutThreshold: 0
   fadeListenerImplementer: {fileID: 0}

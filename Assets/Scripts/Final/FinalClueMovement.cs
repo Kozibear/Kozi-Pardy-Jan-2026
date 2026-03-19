@@ -32,7 +32,7 @@ public class FinalClueMovement : MonoBehaviour
 
     private void Start()
     {
-        initialRotation = transform.rotation;
+        transform.localPosition = resetPosition;
         destinationPosition = transform.localPosition;
     }
 

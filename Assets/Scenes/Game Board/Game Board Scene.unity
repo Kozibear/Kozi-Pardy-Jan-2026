@@ -1896,6 +1896,10 @@ PrefabInstance:
       propertyPath: buttonCanvasControl
       value: 
       objectReference: {fileID: 44205209}
+    - target: {fileID: 2042407210597799222, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2388347234411613089, guid: 043342190f8c2864ebe59b4f21aa7be7, type: 3}
       propertyPath: buttonCanvasControl
       value: 
