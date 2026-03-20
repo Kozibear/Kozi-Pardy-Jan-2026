@@ -57,7 +57,7 @@ MonoBehaviour:
   frontRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
   positionMoveSpeed: 12
-  upwardMoveSpeed: 4.5
+  upwardMoveSpeed: 3.5
   waitBeforeRotateIn: 0.05
   waitBeforeRotateOut: 0
   buttonCanvasControl: {fileID: 0}

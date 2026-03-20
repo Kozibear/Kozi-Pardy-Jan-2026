@@ -79,20 +79,45 @@ MonoBehaviour:
   CategoryRevealPrefab: {fileID: 6520978425369470359, guid: afd4d70e47d4a984eb084b1052428878, type: 3}
   CategorySpawnPoint: {fileID: 45276487203926996}
   categoryNamesSingle:
-  - Singles Cat 1
-  - Singles Cat 2
-  - Singles Cat 3
-  - Singles Cat 4
-  - Singles Cat 5
-  - Singles Cat 6
+  - 'Chromatic
+
+    Cuties'
+  - 'Trick Up
+
+    My Sleeve'
+  - 'Featuring 2B From
+
+    Nier Automata'
+  - "The Artist Formerly\nKnown As\u2026"
+  - Big L's
+  singleTextScales:
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: 1, z: 1}
+  - {x: 0.8, y: 0.8, z: 1}
+  - {x: 0.76, y: 0.76, z: 1}
+  - {x: 1, y: 1, z: 1}
   categoryNamesDoubles:
-  - Doubles Cat 1
-  - Doubles Cat 2
-  - Doubles Cat 3
-  - Doubles Cat 4
-  - Doubles Cat 5
-  - Doubles Cat 6
-  waitBeforeNextCategory: 2.6
+  - Cover Athletes
+  - 'I Like To
+
+    Move It, Move It'
+  - 'Small Business
+
+    Owners'
+  - 'Big Business
+
+    Pwners'
+  - 'Video Game
+
+    Cloners'
+  doubleTextScales:
+  - {x: 0.95, y: 0.95, z: 1}
+  - {x: 0.9, y: 0.9, z: 1}
+  - {x: 0.95, y: 0.95, z: 1}
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: 1, z: 1}
+  waitBeforeNextCategory: 3.2
   waitBeforeChangingScene: 0.2
   blackPreground: {fileID: 0}
   boardSilhouette: {fileID: 0}
+  debugButtonsCanvas: {fileID: 0}

@@ -4,6 +4,9 @@ namespace KoziPardy.Core
 {
     public class SplashTitleButton : ButtonSprite
     {
+        [Header("Credits")]
+        [SerializeField] SpriteFade creditsSpriteFade;
+
         [Header("Category Reveals")]
         [SerializeField] CategoryReveals categoryReveals;
 
@@ -13,7 +16,10 @@ namespace KoziPardy.Core
         [Header("Final Clue")]
         [SerializeField] FinalClueControl finalClueControl;
 
-        private void Start() { Interactable(); }
+        private void Start()
+        {
+            Interactable();
+        }
 
         protected override void OnMouseDown()
         {
@@ -30,6 +36,7 @@ namespace KoziPardy.Core
                 }
 
                 GetComponent<SpriteFade>().FadeOut();
+                creditsSpriteFade.FadeOut();
                 NotInteractable();
             }
         }

@@ -46,9 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KoziPardy.Core.GameSettings
   thisGamesStartState: 0
-  thisGamesEndState: 0
-  isWheelSpinGame: 1
-  isColorChangeGame: 1
+  thisGamesCurrentState: 0
+  thisGamesEndState: 2
+  isWheelSpinGame: 0
+  isColorChangeGame: 0
 --- !u!114 &865855513893057307
 MonoBehaviour:
   m_ObjectHideFlags: 0

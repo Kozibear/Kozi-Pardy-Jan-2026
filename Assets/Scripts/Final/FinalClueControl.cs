@@ -12,11 +12,17 @@ namespace KoziPardy.Core
         [SerializeField] SplashButtonCanvasControl splashButtonCanvasControl;
         [SerializeField] VignetteFader vignetteFader;
 
+        [Header("Old Game Board Clue Stuff")]
+        [SerializeField] GameObject oldBoardClueParent;
         private BoardClueMovement childBoardClueMovement;
+
+        private bool finalClueAllowed = false;
 
         public void SetBoardClueChild(GameObject childObject)
         {
-            childObject.transform.parent = transform;
+            splashTitleButton.NotInteractable();
+
+            childObject.transform.parent = oldBoardClueParent.transform;
             childBoardClueMovement = childObject.GetComponent<BoardClueMovement>();
             splashButtonCanvasControl.SetButtonsWhenClueisShowing();
 
@@ -29,21 +35,28 @@ namespace KoziPardy.Core
                 childBoardClueMovement.MoveOutClueFinal();
                 vignetteFader.StartVigentteFadeOut(0);
             }
+
+            splashTitleButton.Interactable();
         }
 
         public void BringInFinalClue()
         {
+            finalClueAllowed = true;
             finalClueMovement.MoveFinalClueIn();
             FadeInVignette(0.4f);
         }
 
         public void FinalClueIsInPlace()
         {
+            if (!finalClueAllowed) return;
+
             splashButtonCanvasControl.SetButtonsWhenClueisShowing();
         }
 
         public void FinalClueBackButtonPressed()
         {
+            if (!finalClueAllowed) return;
+
             if (!finalClueMovement.GetHasBeenRotated())
             {
                 finalClueMovement.PullFinalClueBack();
@@ -53,7 +66,6 @@ namespace KoziPardy.Core
                 finalClueMovement.MoveFinalClueOut();
                 FadeOutVignette(0.4f);
             }
-
         }
 
         public void FadeInVignette(float speed) { vignetteFader.StartVigentteFadeIn(speed); }
@@ -63,11 +75,15 @@ namespace KoziPardy.Core
 
         public void ClueIsMovingOut()
         {
+            if (!finalClueAllowed) return;
+
             splashTitleButton.gameObject.GetComponent<SpriteFade>().FadeIn();
         }
 
         public void FinalClueIsMovedOut()
         {
+            if (!finalClueAllowed) return;
+
             splashTitleButton.Interactable();
         }
 

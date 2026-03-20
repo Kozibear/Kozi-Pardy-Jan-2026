@@ -31,6 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8368424455006442375}
+  - {fileID: 5020496079923196487}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4022645084580058254
@@ -49,6 +50,38 @@ MonoBehaviour:
   splashTitleButton: {fileID: 0}
   splashButtonCanvasControl: {fileID: 0}
   vignetteFader: {fileID: 0}
+  oldBoardClueParent: {fileID: 8567921143689543461}
+--- !u!1 &8567921143689543461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5020496079923196487}
+  m_Layer: 7
+  m_Name: OldBoardClueParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5020496079923196487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567921143689543461}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7660454502392824864}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1375641772508181423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -103,7 +136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
       propertyPath: pullBackSpeed
-      value: 6.2
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
+      propertyPath: movementInSpeed
+      value: 3.2
       objectReference: {fileID: 0}
     - target: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
       propertyPath: finalClueControl
