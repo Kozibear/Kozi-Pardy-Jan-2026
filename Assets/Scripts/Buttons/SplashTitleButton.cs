@@ -26,10 +26,10 @@ namespace KoziPardy.Core
                 else
                 {
                     categoryReveals.StartCategoryReveals();
-                    GetComponent<SpriteFade>().FadeOut();
                     blackForeground.FadeIn();
                 }
 
+                GetComponent<SpriteFade>().FadeOut();
                 NotInteractable();
             }
         }

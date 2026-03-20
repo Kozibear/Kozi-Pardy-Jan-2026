@@ -14,15 +14,6 @@ namespace KoziPardy.Core
 
         private BoardClueMovement childBoardClueMovement;
 
-        public void MoveOutNormalClue()
-        {
-            if (childBoardClueMovement != null)
-            {
-                childBoardClueMovement.MoveOutClueFinal();
-                vignetteFader.StartVigentteFadeOut();
-            }
-        }
-
         public void SetBoardClueChild(GameObject childObject)
         {
             childObject.transform.parent = transform;
@@ -31,10 +22,19 @@ namespace KoziPardy.Core
 
         }
 
+        public void MoveOutNormalClue()
+        {
+            if (childBoardClueMovement != null)
+            {
+                childBoardClueMovement.MoveOutClueFinal();
+                vignetteFader.StartVigentteFadeOut(0);
+            }
+        }
+
         public void BringInFinalClue()
         {
             finalClueMovement.MoveFinalClueIn();
-            vignetteFader.StartVigentteFadeIn();
+            FadeInVignette(0.4f);
         }
 
         public void FinalClueIsInPlace()
@@ -42,9 +42,28 @@ namespace KoziPardy.Core
             splashButtonCanvasControl.SetButtonsWhenClueisShowing();
         }
 
-        public void FinalClueIsMovingOut()
+        public void FinalClueBackButtonPressed()
         {
-            vignetteFader.StartVigentteFadeOut();
+            if (!finalClueMovement.GetHasBeenRotated())
+            {
+                finalClueMovement.PullFinalClueBack();
+            }
+            else
+            {
+                finalClueMovement.MoveFinalClueOut();
+                FadeOutVignette(0.4f);
+            }
+
+        }
+
+        public void FadeInVignette(float speed) { vignetteFader.StartVigentteFadeIn(speed); }
+
+        public void FadeOutVignette(float speed) { vignetteFader.StartVigentteFadeOut(speed); }
+
+
+        public void ClueIsMovingOut()
+        {
+            splashTitleButton.gameObject.GetComponent<SpriteFade>().FadeIn();
         }
 
         public void FinalClueIsMovedOut()

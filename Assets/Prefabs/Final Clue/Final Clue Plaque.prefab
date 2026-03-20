@@ -607,15 +607,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinalClueMovement
   finalClueControl: {fileID: 0}
-  resetPosition: {x: 0, y: 0, z: 0}
-  moveInPosition: {x: 0, y: 0, z: 0}
-  pullBackPosition: {x: 0, y: 0, z: 0}
-  moveOutPosition: {x: 0, y: 0, z: 0}
-  initialRotation: {x: 0, y: 0, z: 0, w: 0}
-  finalRotation: {x: 0, y: 0, z: 0, w: 0}
-  movementSpeed: 1
-  pullBackSpeed: 1
-  SecondsToCompleteRotation: 1
+  resetPosition: {x: 0, y: 1.05, z: -7.08}
+  moveInPosition: {x: 0, y: 0, z: -7.08}
+  pullBackPosition: {x: 0, y: 0, z: -4.6}
+  moveOutPosition: {x: 0, y: -1.05, z: -7.08}
+  halfRotation: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+  finalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+  movementInSpeed: 3
+  movementOutSpeed: 3.8
+  pullBackSpeed: 6.45
 --- !u!1 &7604254435771448263
 GameObject:
   m_ObjectHideFlags: 0

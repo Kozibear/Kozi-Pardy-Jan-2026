@@ -1,4 +1,5 @@
 using KoziPardy.Core;
+using System.Collections;
 using UnityEngine;
 
 public class FinalClueMovement : MonoBehaviour
@@ -14,19 +15,18 @@ public class FinalClueMovement : MonoBehaviour
     private Vector3 destinationPosition;
 
     [Header("Rotations")]
-    [SerializeField] Quaternion initialRotation;
+    [SerializeField] Quaternion halfRotation;
     [SerializeField] Quaternion finalRotation;
 
     [Header("Speeds")]
-    [SerializeField] float movementSpeed = 1;
+    [SerializeField] float movementInSpeed = 1;
+    [SerializeField] float movementOutSpeed = 1;
     [SerializeField] float pullBackSpeed = 1;
-    [SerializeField] float SecondsToCompleteRotation = 1;
-    private float secondsPassed = 0;
+    private float currentMovementSpeed = 0;
     private float step = 0;
     private bool pullingBack = false;
 
     private bool canMove = false;
-    private bool canRotate = false;
 
     private bool hasBeenRotated = false;
 
@@ -40,46 +40,73 @@ public class FinalClueMovement : MonoBehaviour
     {
         if (canMove)
         {
-            if (transform.position != destinationPosition) MoveToDestination();
+            if (transform.localPosition != destinationPosition) MoveToDestination();
             else ArrivedAtDestination();
-        }
-
-        if (canRotate)
-        {
-            if (transform.rotation != finalRotation) RotateOneEighty();
-            else ArrivedAtRotation();
         }
     }
     private void MoveToDestination()
     {
-        if (!pullingBack) step = Time.deltaTime * movementSpeed;
+        if (!pullingBack) step = Time.deltaTime * currentMovementSpeed;
         else step = Time.deltaTime * pullBackSpeed;
 
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, destinationPosition, step);
     }
 
-    private void RotateOneEighty()
+    IEnumerator RotateOneEightyCoroutine(Quaternion destinationRotation)
     {
-        secondsPassed += Time.deltaTime;
-        float rotationStep = secondsPassed / SecondsToCompleteRotation;
+        float startDistance = Vector3.Distance(transform.localPosition, destinationPosition);
+        Quaternion from = transform.localRotation;
 
-        transform.rotation = Quaternion.Slerp(initialRotation, finalRotation, rotationStep);
+        while (transform.localRotation != destinationRotation)
+        {
+            //secondsPassed += Time.deltaTime;
+            //float rotationStep = secondsPassed / SecondsToCompleteRotation;
+
+            float currentDistance = Vector3.Distance(transform.localPosition, destinationPosition);
+            float distanceDifference = (startDistance - currentDistance) / startDistance;
+
+            transform.localRotation = Quaternion.Slerp(from, destinationRotation, distanceDifference);
+
+            //THIS IS VERY IMPORTANT! WE NEED TO TELL UNITY TO ADVANCE TO THE NEXT FRAME AT THE END OF A LOOP IN A COROUTINE!
+            //IF WE DON'T, UNITY WILL ATTEMPT TO DO THIS ENTIRE LOOP INSTANTLY; WITHIN A SINGLE FRAME
+            yield return null;
+        }
+
+        hasBeenRotated = true;
     }
 
     public void MoveFinalClueIn()
     {
+        currentMovementSpeed = movementInSpeed;
         destinationPosition = moveInPosition;
         canMove = true;
     }
 
     public void PullFinalClueBack()
     {
+        finalClueControl.FadeOutVignette(0.3f);
+
+        currentMovementSpeed = pullBackSpeed;
         destinationPosition = pullBackPosition;
+        StartCoroutine(RotateOneEightyCoroutine(halfRotation));
+        canMove = true;
+    }
+
+    public void PullFinalClueForward()
+    {
+        finalClueControl.FadeInVignette(0.3f);
+
+        currentMovementSpeed = pullBackSpeed;
+        destinationPosition = moveInPosition;
+        StartCoroutine(RotateOneEightyCoroutine(finalRotation));
         canMove = true;
     }
 
     public void MoveFinalClueOut()
     {
+        finalClueControl.ClueIsMovingOut();
+
+        currentMovementSpeed = movementOutSpeed;
         destinationPosition = moveOutPosition;
         canMove = true;
     }
@@ -88,26 +115,25 @@ public class FinalClueMovement : MonoBehaviour
     {
         canMove = false;
 
-        if (transform.position == moveInPosition)
+        if (transform.localPosition == moveInPosition)
         {
             finalClueControl.FinalClueIsInPlace();
         }
 
-        if (transform.position == pullBackPosition)
+        if (transform.localPosition == pullBackPosition)
         {
-            canRotate = true;
+            PullFinalClueForward();
         }
-
-        if (transform.position == moveOutPosition)
+        
+        if (transform.localPosition == moveOutPosition)
         {
             finalClueControl.FinalClueIsMovedOut();
+            transform.localPosition = resetPosition;
         }
     }
 
-    private void ArrivedAtRotation()
+    public bool GetHasBeenRotated()
     {
-        canRotate = false;
-        hasBeenRotated = true;
-        MoveFinalClueIn();
+        return hasBeenRotated;
     }
 }

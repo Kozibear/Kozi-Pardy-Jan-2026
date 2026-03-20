@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4fca493e6280b14dbf2be41f15f92eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinalClueControl
-  finalClueMovement: {fileID: 0}
+  finalClueMovement: {fileID: 7729730564595100019}
   splashTitleButton: {fileID: 0}
   splashButtonCanvasControl: {fileID: 0}
   vignetteFader: {fileID: 0}
@@ -67,7 +67,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7437095909106655272, guid: 947faf0ebf221104d807a50867116427, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 7437095909106655272, guid: 947faf0ebf221104d807a50867116427, type: 3}
       propertyPath: m_LocalPosition.z
@@ -101,11 +101,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
+      propertyPath: pullBackSpeed
+      value: 6.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
+      propertyPath: finalClueControl
+      value: 
+      objectReference: {fileID: 4022645084580058254}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 947faf0ebf221104d807a50867116427, type: 3}
+--- !u!114 &7729730564595100019 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
+  m_PrefabInstance: {fileID: 1375641772508181423}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53cc76b030624b24d8ac4dd88c6278e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FinalClueMovement
 --- !u!4 &8368424455006442375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7437095909106655272, guid: 947faf0ebf221104d807a50867116427, type: 3}

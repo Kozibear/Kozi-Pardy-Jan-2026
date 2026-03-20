@@ -12,6 +12,8 @@ namespace KoziPardy.Core
         [Header("Fade Speeds")]
         [SerializeField] float fadeInSpeed = 1;
         [SerializeField] float fadeOutSpeed = 1;
+        private float initialFadeInSpeed;
+        private float initialFadeOutSpeed;
 
         [Header("Threshold")]
         [SerializeField] float intensityThreshold = 0.1f;
@@ -23,6 +25,9 @@ namespace KoziPardy.Core
 
         void Start()
         {
+            initialFadeInSpeed = fadeInSpeed;
+            initialFadeOutSpeed = fadeOutSpeed;
+
             volume.profile.TryGet(out Vignette vignette);
             myVignette = vignette;
 
@@ -63,16 +68,24 @@ namespace KoziPardy.Core
             }
         }
 
-        public void StartVigentteFadeIn()
+        public void StartVigentteFadeIn(float customSpeed)
         {
+            if (customSpeed != 0) fadeInSpeed = customSpeed;
+            else fadeInSpeed = initialFadeInSpeed;
+
             currentIntensity = myVignette.intensity.value;
             fadeIn = true;
+            fadeOut = false;
         }
 
-        public void StartVigentteFadeOut()
+        public void StartVigentteFadeOut(float customSpeed)
         {
+            if (customSpeed != 0) fadeOutSpeed = customSpeed;
+            else fadeOutSpeed = initialFadeOutSpeed;
+
             currentIntensity = myVignette.intensity.value;
             fadeOut = true;
+            fadeIn = false;
         }
 
         public void InstantVignetteFadeOut()

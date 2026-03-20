@@ -104,7 +104,7 @@ namespace KoziPardy.Core
             wheelSpinButton.gameObject.SetActive(false);
             DisableDebug();
 
-            vignetteFader.StartVigentteFadeIn();
+            vignetteFader.StartVigentteFadeIn(0);
         }
 
         public void ClueIsUpFront(int buttonToWhiteList, bool hasClueBeenClicked)
@@ -132,7 +132,7 @@ namespace KoziPardy.Core
                 globalColorManager.ChangeGlobalColor();
             }
 
-            vignetteFader.StartVigentteFadeOut();
+            vignetteFader.StartVigentteFadeOut(0);
         }
 
         public void ClueIsBackHome()
