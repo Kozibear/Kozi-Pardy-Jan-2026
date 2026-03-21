@@ -104,7 +104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7437095909106655272, guid: 947faf0ebf221104d807a50867116427, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.08
+      value: -7.085
       objectReference: {fileID: 0}
     - target: {fileID: 7437095909106655272, guid: 947faf0ebf221104d807a50867116427, type: 3}
       propertyPath: m_LocalRotation.w
@@ -143,9 +143,21 @@ PrefabInstance:
       value: 3.2
       objectReference: {fileID: 0}
     - target: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
+      propertyPath: resetPosition.z
+      value: -7.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
       propertyPath: finalClueControl
       value: 
       objectReference: {fileID: 4022645084580058254}
+    - target: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
+      propertyPath: moveInPosition.z
+      value: -7.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670210047422388956, guid: 947faf0ebf221104d807a50867116427, type: 3}
+      propertyPath: moveOutPosition.z
+      value: -7.085
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

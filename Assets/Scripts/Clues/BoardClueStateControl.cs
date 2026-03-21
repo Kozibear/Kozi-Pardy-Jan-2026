@@ -75,10 +75,10 @@ namespace KoziPardy.Core
 
         public int GetNumber() { return number; }
 
-        public void SetHasBeenClicked(bool value)
+        public void SetHasBeenClicked()
         {
-            hasBeenClicked = value;
-            if (!GameSettings.wheelSpinGame) thisCluesCategory.ReduceActiveCluesInThisCategory();
+            if (!GameSettings.wheelSpinGame && !hasBeenClicked) thisCluesCategory.ReduceActiveCluesInThisCategory();
+            hasBeenClicked = true;
         }
 
         public bool GetHasBeenClicked() { return hasBeenClicked; }

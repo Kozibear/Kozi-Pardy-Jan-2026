@@ -88,7 +88,7 @@ namespace KoziPardy.Core
 
                 buttonCanvasControl.ClueIsUpFront(GetComponent<BoardClueStateControl>().GetNumber(), GetComponent<BoardClueStateControl>().GetHasBeenClicked());
 
-                GetComponent<BoardClueStateControl>().SetHasBeenClicked(true); //this must come after the line above, as otherwise it'll get marked as an old question even if it's not
+                GetComponent<BoardClueStateControl>().SetHasBeenClicked(); //this must come after the line above, as otherwise it'll get marked as an old question even if it's not
 
                 if (isFinalClue)
                 {

@@ -51,9 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606cce4ed9eb1e84fa9dee4435ef613e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardButtonCube
-  frontPosition: {x: 0, y: -0.52, z: -7.08}
+  frontPosition: {x: 0, y: -0.52, z: -7.085}
   originalPosition: {x: 0, y: 0, z: 0}
-  upwardFinalPosition: {x: 0, y: 1.05, z: -7.08}
+  upwardFinalPosition: {x: 0, y: 1.05, z: -7.085}
   frontRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
   positionMoveSpeed: 12
